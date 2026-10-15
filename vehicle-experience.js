@@ -72,6 +72,7 @@ export class VehicleExperience {
     for (const selector of ['#engine-hotspot-list', '#engine-labels']) {
       $(selector).replaceChildren(...(this.profile.hotspots || []).map((h, i) => {
         const b = document.createElement('button'); b.dataset.hotspot = h.id; b.innerHTML = `<b>0${i + 1}</b><span>${h.label}</span>`;
+        b.setAttribute('aria-label', `0${i + 1} · ${h.label}`);
         b.onclick = () => this.selectHotspot(h.id); return b;
       }));
     }
@@ -199,22 +200,37 @@ export class VehicleExperience {
   }
   storyCamera() {
     const preset = this.host.exhibitCamera(this.profile.chapters[this.chapter].view);
-    if (this.host.mobile()) {
-      preset.position.sub(preset.target).multiplyScalar(1.45).add(preset.target);
-      preset.position.y -= .48; preset.target.y -= .48;
+    return this.host.mobile() ? this.host.fitCamera?.(preset) || preset : preset;
+  }
+  engineFramingBounds() {
+    const root = this.engineMode === 'exterior' ? this.exterior : this.engine?.root;
+    if (!root) return null;
+    const framingRoot = this.stage || root;
+    framingRoot.updateWorldMatrix(true, true);
+    const bounds = new THREE.Box3();
+    framingRoot.traverseVisible(mesh => {
+      if (!mesh.isMesh || !mesh.geometry) return;
+      mesh.geometry.computeBoundingBox();
+      if (mesh.geometry.boundingBox) bounds.union(mesh.geometry.boundingBox.clone().applyMatrix4(mesh.matrixWorld));
+    });
+    // Assembly modules already record their collapsed bounds and maximum travel
+    // in engine-root coordinates. Reserve both endpoints before any animation,
+    // keeping every row and removed module in view without moving the camera
+    // while the user scrubs the spread slider.
+    if (this.engineMode === 'assembly') for (const module of this.assembly?._modules || []) {
+      bounds.union(module.bounds.clone().applyMatrix4(root.matrixWorld));
+      bounds.union(module.bounds.clone().translate(module.axis).applyMatrix4(root.matrixWorld));
     }
-    return preset;
+    return bounds.isEmpty() ? null : bounds;
   }
   engineCamera() {
     const preset = this.profile.engineCamera?.[this.engineMode];
     const target = preset?.target ? new THREE.Vector3(...preset.target) : new THREE.Vector3(.25, this.engineMode === 'assembly' ? 1.40 : 1.05, 1.8);
     const position = preset?.position ? new THREE.Vector3(...preset.position) : this.engineMode === 'internal' ? new THREE.Vector3(-3.0, 3.1, 6.0) : new THREE.Vector3(-3.5, 3.2, 6.3);
     if (!preset && this.engineMode === 'assembly') position.sub(target).multiplyScalar(1.18).add(target);
-    if (this.host.mobile()) {
-      const assembly = this.engineMode === 'assembly', shift = assembly ? .20 : .48;
-      position.sub(target).multiplyScalar(assembly ? 3.0 : 2.5).add(target); target.y -= shift; position.y -= shift;
-    }
-    return { position, target };
+    const camera = { position, target };
+    const bounds = this.host.mobile() ? this.engineFramingBounds() : null;
+    return bounds ? this.host.fitCamera?.(camera, bounds, { padding: this.engineMode === 'exterior' ? 1.22 : 1.16 }) || camera : camera;
   }
   async loadExterior() {
     if (!this.capabilities.includes('engine') || this.section !== 'engine') return;
@@ -336,18 +352,11 @@ export class VehicleExperience {
   labCamera() {
     if (this.vehicleLab) {
       const preset = this.host.exhibitCamera(this.profile.id === 'huayra' ? 'hero' : 'side');
-      if (this.host.mobile()) {
-        preset.position.sub(preset.target).multiplyScalar(1.55).add(preset.target);
-        preset.position.y -= .55; preset.target.y -= .55;
-      }
-      return preset;
+      return this.host.mobile() ? this.host.fitCamera?.(preset) || preset : preset;
     }
     const target = new THREE.Vector3(.15, .60, 1.8), position = new THREE.Vector3(-3.5, 4.5, 6.2);
-    if (this.host.mobile()) {
-      const shift = this.profile.labMobileLift ?? 1.0;
-      position.sub(target).multiplyScalar(2.65).add(target); target.y -= shift; position.y -= shift;
-    }
-    return { position, target };
+    const camera = { position, target };
+    return this.host.mobile() && this.lab?.root ? this.host.fitCamera?.(camera, this.lab.root, { padding: 1.16 }) || camera : camera;
   }
   async loadLab(retry = false) {
     if (!this.capabilities.includes('lab') || this.section !== 'lab') return;
@@ -383,10 +392,11 @@ export class VehicleExperience {
     const part = this.host.getRig()?.parts.get(id); if (!part) return;
     const target = part.pivot.getWorldPosition(new THREE.Vector3());
     const fallback = this.labCamera(), direction = fallback.position.clone().sub(fallback.target).normalize();
-    const distance = this.host.mobile() ? 5.0 : 2.8;
-    const position = target.clone().addScaledVector(direction, distance);
-    if (this.host.mobile()) { target.y -= .50; position.y -= .50; }
-    this.host.moveCamera({ position, target });
+    const position = target.clone().addScaledVector(direction, 2.8);
+    const preset = { position, target };
+    part.pivot.updateWorldMatrix(true, true);
+    const bounds = this.host.mobile() ? new THREE.Box3().setFromObject(part.pivot).expandByScalar(.35) : null;
+    this.host.moveCamera(bounds ? this.host.fitCamera?.(preset, bounds, { padding: 1.2 }) || preset : preset);
   }
   buildLab() {
     const profile = this.labProfile;
@@ -487,32 +497,42 @@ export class VehicleExperience {
     if (this.section !== 'engine' || !this.stage || this.engineMode !== 'exterior') return;
     this.stage.updateMatrixWorld(true);
     const placed = [], desktop = !this.host.mobile();
-    const right = desktop ? $('#engine-panel').getBoundingClientRect().left - 16 : innerWidth - 16;
-    for (const h of this.manifest.hotspots) {
+    const viewport = this.host.viewport?.() || { left: 0, top: 0, right: innerWidth, bottom: innerHeight, width: innerWidth, height: innerHeight };
+    const right = desktop ? $('#engine-panel').getBoundingClientRect().left - 16 : viewport.right - 6;
+    const left = desktop ? 16 : viewport.left + 6, top = desktop ? 88 : viewport.top + 6, bottom = desktop ? innerHeight - 65 : viewport.bottom - 6;
+    const hotspots = desktop ? this.manifest.hotspots : [...this.manifest.hotspots].sort((a, b) => Number(b.id === this.hotspot) - Number(a.id === this.hotspot));
+    for (const h of hotspots) {
       const p = this.exterior.localToWorld(new THREE.Vector3(...h.position)).project(this.host.camera), b = $(`#engine-labels [data-hotspot="${h.id}"]`);
-      b.hidden = p.z < -1 || p.z > 1 || (desktop && (Math.abs(p.x) > 1 || Math.abs(p.y) > 1));
+      b.hidden = p.z < -1 || p.z > 1 || Math.abs(p.x) > 1 || Math.abs(p.y) > 1;
       if (b.hidden) continue;
-      const anchorX = (p.x * .5 + .5) * innerWidth, anchorY = (-p.y * .5 + .5) * innerHeight;
+      const anchorX = viewport.left + (p.x * .5 + .5) * viewport.width, anchorY = viewport.top + (-p.y * .5 + .5) * viewport.height;
       let x = anchorX, y = anchorY;
-      if (desktop) {
+      {
         const width = b.offsetWidth, height = b.offsetHeight;
+        if (right - left < width || bottom - top < height) { b.hidden = true; continue; }
         const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
         // Keep real surface anchors. Only the label moves; a leader connects it
         // back to its component when nearby parts project to the same place.
-        const candidates = [-3, -2, -1, 0, 1, 2, 3].flatMap(row => [-2, -1, 0, 1, 2].map(column => {
-          const cx = clamp(anchorX + column * (width + 12), width / 2 + 16, right - width / 2);
-          const cy = clamp(anchorY + row * (height + 12), height / 2 + 88, innerHeight - height / 2 - 65);
+        // Compact layouts use the actual free canvas rectangle, so the numbered
+        // touch targets and their leaders cannot cover the topic panel.
+        const offsets = desktop ? [-2, -1, 0, 1, 2] : [-4, -3, -2, -1, 0, 1, 2, 3, 4];
+        const candidates = [-3, -2, -1, 0, 1, 2, 3].flatMap(row => offsets.map(column => {
+          const cx = clamp(anchorX + column * (width + 12), left + width / 2, right - width / 2);
+          const cy = clamp(anchorY + row * (height + 12), top + height / 2, bottom - height / 2);
           return { x:cx, y:cy, width, height, cost:(cx - anchorX) ** 2 + (cy - anchorY) ** 2 };
         })).sort((a, b) => a.cost - b.cost);
-        const hit = candidates.find(c => placed.every(other => Math.abs(c.x - other.x) >= (c.width + other.width) / 2 + 8 || Math.abs(c.y - other.y) >= (c.height + other.height) / 2 + 8)) || candidates[0];
+        const hit = candidates.find(c => placed.every(other => Math.abs(c.x - other.x) >= (c.width + other.width) / 2 + 8 || Math.abs(c.y - other.y) >= (c.height + other.height) / 2 + 8)) || (desktop ? candidates[0] : null);
+        // If zooming leaves too little room, the full accessible panel list
+        // remains available instead of stacking tiny or overlapping targets.
+        if (!hit) { b.hidden = true; continue; }
         x = hit.x; y = hit.y; placed.push(hit);
       }
       const dx = anchorX - x, dy = anchorY - y, distance = Math.hypot(dx, dy);
       b.style.left = `${x}px`; b.style.top = `${y}px`;
-      b.style.setProperty('--leader-length', `${desktop && distance > 12 ? distance : 0}px`);
+      b.style.setProperty('--leader-length', `${distance > 12 ? distance : 0}px`);
       b.style.setProperty('--leader-angle', `${Math.atan2(dy, dx)}rad`);
       b.style.setProperty('--leader-dx', `${dx}px`); b.style.setProperty('--leader-dy', `${dy}px`);
-      b.style.setProperty('--leader-opacity', desktop && distance > 12 ? '1' : '0');
+      b.style.setProperty('--leader-opacity', distance > 12 ? '1' : '0');
     }
   }
   pick(raycaster) {

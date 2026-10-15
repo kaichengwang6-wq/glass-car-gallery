@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#111413">
   <meta name="description" content="七辆超跑同时陈列在玻璃收藏柜。抽出任意车盒，亲手打开车门、探索机械之心与车型专属机构。">
   <title>玻璃车库 · GLASS GARAGE</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./experience.css">
   <link rel="stylesheet" href="./play.css">
+  <link rel="stylesheet" href="./mobile.css">
+  <link rel="stylesheet" href="./mobile-topics.css">
   <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
 </head>
 <body data-mode="gallery">
@@ -32,6 +34,8 @@
   <nav class="mobile-picker" aria-label="快捷定位收藏车盒"><button data-browse="f430" class="selected">01 <span>F430</span></button><button data-browse="svj">02 <span>Aventador SVJ</span></button></nav>
   <nav id="gallery-paging" class="gallery-paging" aria-label="选择收藏车盒" hidden><button id="page-prev" aria-label="上一辆">←</button><span id="mobile-car-name">F430</span><output id="page-status" aria-live="polite">01 / 07</output><button id="page-next" aria-label="下一辆">→</button></nav>
   <button class="mobile-pull primary" id="mobile-pull">拉出这只车盒 <span>↗</span></button>
+  <p id="mobile-gesture-hint" class="mobile-gesture-hint" hidden>左右滑动切换 · 轻点拉出车盒</p>
+  <button id="mobile-panel-toggle" class="mobile-panel-toggle" aria-expanded="true" aria-controls="controls" hidden><span>收起操作区</span><span aria-hidden="true">⌄</span></button>
   <section class="exhibit-heading" id="exhibit-heading" hidden>
     <button id="return-button" class="return-button">← <span>放回车盒</span></button>
     <p id="car-brand" class="eyebrow"></p><h2 id="car-title"></h2>
