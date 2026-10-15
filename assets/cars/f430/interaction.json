@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "modelRevision": "detail-v3",
+  "units": "meters",
+  "stays": [
+    {
+      "id": "hood_-1",
+      "part": "hood",
+      "fixed": [
+        -0.82,
+        0.42,
+        0.455
+      ],
+      "attached": [
+        -1.4,
+        0.645565020996966,
+        0.397
+      ],
+      "body": "D_STAY_body_hood_-1",
+      "rod": "D_STAY_rod_hood_-1",
+      "collar": "D_STAY_seal_hood_-1",
+      "bodyLength": 0.51,
+      "rodLength": 0.445
+    },
+    {
+      "id": "hood_1",
+      "part": "hood",
+      "fixed": [
+        -0.82,
+        0.42,
+        -0.455
+      ],
+      "attached": [
+        -1.4,
+        0.645565020996966,
+        -0.397
+      ],
+      "body": "D_STAY_body_hood_1",
+      "rod": "D_STAY_rod_hood_1",
+      "collar": "D_STAY_seal_hood_1",
+      "bodyLength": 0.51,
+      "rodLength": 0.445
+    },
+    {
+      "id": "engine_lid_-1",
+      "part": "engine_lid",
+      "fixed": [
+        0.685,
+        0.725,
+        0.534
+      ],
+      "attached": [
+        1.22,
+        0.8437461674451266,
+        0.534
+      ],
+      "body": "D_STAY_body_engine_lid_-1",
+      "rod": "D_STAY_rod_engine_lid_-1",
+      "collar": "D_STAY_seal_engine_lid_-1",
+      "bodyLength": 0.49,
+      "rodLength": 0.485
+    },
+    {
+      "id": "engine_lid_1",
+      "part": "engine_lid",
+      "fixed": [
+        0.685,
+        0.725,
+        -0.534
+      ],
+      "attached": [
+        1.22,
+        0.8437461674451266,
+        -0.534
+      ],
+      "body": "D_STAY_body_engine_lid_1",
+      "rod": "D_STAY_rod_engine_lid_1",
+      "collar": "D_STAY_seal_engine_lid_1",
+      "bodyLength": 0.49,
+      "rodLength": 0.485
+    }
+  ],
+  "parts": [
+    {
+      "id": "driver_door",
+      "label": "驾驶侧车门",
+      "hinge": [
+        -0.7,
+        0.22,
+        0.88
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -1.05,
+      "meshes": [
+        "move_driver_door__61_door_shoulder_-1",
+        "move_driver_door__61_door_outer_-1",
+        "move_driver_door__move_driver_door__61_door_outer_-1_inner",
+        "move_driver_door__move_driver_door__61_door_outer_-1_edge",
+        "move_driver_door__62_door_window_-1",
+        "move_driver_door__62_door_window_lower_trim_-1",
+        "move_driver_door__62_door_belt_-1",
+        "move_driver_door__33_door_handle_-1",
+        "move_driver_door__34_mirror_arm_-1_-22",
+        "move_driver_door__34_mirror_arm_-1_28",
+        "move_driver_door__34_mirror_shell_-1",
+        "move_driver_door__34_mirror_lens_-1",
+        "move_driver_door__D_EXT_mirror_foot_gasket_-1",
+        "move_driver_door__D_EXT_mirror_mount_pad_-1",
+        "move_driver_door__D_EXT_mirror_lens_gasket_-1",
+        "move_driver_door__D_EXT_handle_pocket_-1",
+        "move_driver_door__D_EXT_handle_pedestal_-1_362",
+        "move_driver_door__D_EXT_handle_pedestal_-1_482",
+        "move_driver_door__D_EXT_door_lock",
+        "move_driver_door__D_EXT_window_belt_weatherstrip_-1",
+        "move_driver_door__D_EXT_door_latch_-1_306",
+        "move_driver_door__D_EXT_door_latch_-1_564",
+        "move_driver_door__D_CAB_door_driver_card_leather",
+        "move_driver_door__D_CAB_door_driver_inset_interior",
+        "move_driver_door__D_CAB_door_driver_armrest_black",
+        "move_driver_door__D_CAB_door_driver_inset_stitching_stitch",
+        "move_driver_door__D_CAB_door_driver_armrest_stitching_stitch",
+        "move_driver_door__D_CAB_door_driver_lower_pocket_black",
+        "move_driver_door__D_CAB_door_driver_pocket_rim_leather",
+        "move_driver_door__D_CAB_door_driver_pull_handle_alloy",
+        "move_driver_door__D_CAB_door_driver_pull_handle_grip_black",
+        "move_driver_door__D_CAB_door_driver_latch_recess_black",
+        "move_driver_door__D_CAB_door_driver_release_lever_alloy",
+        "move_driver_door__D_CAB_door_driver_window_switches_dark_metal",
+        "move_driver_door__D_CAB_door_driver_window_icons_light",
+        "move_driver_door__D_CAB_door_driver_speaker_surround_dark_metal",
+        "move_driver_door__D_CAB_door_driver_speaker_rings_alloy",
+        "move_driver_door__D_CAB_door_driver_speaker_cone_black",
+        "move_driver_door__D_CAB_door_driver_speaker_mesh_tire_detail",
+        "move_driver_door__D_CAB_door_driver_seams_stitch",
+        "move_driver_door__D_CAB_door_driver_courtesy_light_light"
+      ],
+      "hotspot": [
+        0.05,
+        0.64,
+        0.88
+      ]
+    },
+    {
+      "id": "passenger_door",
+      "label": "乘客侧车门",
+      "hinge": [
+        -0.7,
+        0.22,
+        -0.88
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 1.05,
+      "meshes": [
+        "move_passenger_door__61_door_shoulder_1",
+        "move_passenger_door__61_door_outer_1",
+        "move_passenger_door__move_passenger_door__61_door_outer_1_inner",
+        "move_passenger_door__move_passenger_door__61_door_outer_1_edge",
+        "move_passenger_door__62_door_window_1",
+        "move_passenger_door__62_door_window_lower_trim_1",
+        "move_passenger_door__62_door_belt_1",
+        "move_passenger_door__33_door_handle_1",
+        "move_passenger_door__34_mirror_arm_1_-22",
+        "move_passenger_door__34_mirror_arm_1_28",
+        "move_passenger_door__34_mirror_shell_1",
+        "move_passenger_door__34_mirror_lens_1",
+        "move_passenger_door__D_EXT_mirror_foot_gasket_1",
+        "move_passenger_door__D_EXT_mirror_mount_pad_1",
+        "move_passenger_door__D_EXT_mirror_lens_gasket_1",
+        "move_passenger_door__D_EXT_handle_pocket_1",
+        "move_passenger_door__D_EXT_handle_pedestal_1_362",
+        "move_passenger_door__D_EXT_handle_pedestal_1_482",
+        "move_passenger_door__D_EXT_window_belt_weatherstrip_1",
+        "move_passenger_door__D_EXT_door_latch_1_306",
+        "move_passenger_door__D_EXT_door_latch_1_564",
+        "move_passenger_door__D_CAB_door_passenger_card_leather",
+        "move_passenger_door__D_CAB_door_passenger_inset_interior",
+        "move_passenger_door__D_CAB_door_passenger_armrest_black",
+        "move_passenger_door__D_CAB_door_passenger_inset_stitching_stitch",
+        "move_passenger_door__D_CAB_door_passenger_armrest_stitching_stitch",
+        "move_passenger_door__D_CAB_door_passenger_lower_pocket_black",
+        "move_passenger_door__D_CAB_door_passenger_pocket_rim_leather",
+        "move_passenger_door__D_CAB_door_passenger_pull_handle_alloy",
+        "move_passenger_door__D_CAB_door_passenger_pull_handle_grip_black",
+        "move_passenger_door__D_CAB_door_passenger_latch_recess_black",
+        "move_passenger_door__D_CAB_door_passenger_release_lever_alloy",
+        "move_passenger_door__D_CAB_door_passenger_window_switches_dark_metal",
+        "move_passenger_door__D_CAB_door_passenger_window_icons_light",
+        "move_passenger_door__D_CAB_door_passenger_speaker_surround_dark_metal",
+        "move_passenger_door__D_CAB_door_passenger_speaker_rings_alloy",
+        "move_passenger_door__D_CAB_door_passenger_speaker_cone_black",
+        "move_passenger_door__D_CAB_door_passenger_speaker_mesh_tire_detail",
+        "move_passenger_door__D_CAB_door_passenger_seams_stitch",
+        "move_passenger_door__D_CAB_door_passenger_courtesy_light_light"
+      ],
+      "hotspot": [
+        0.05,
+        0.64,
+        -0.88
+      ]
+    },
+    {
+      "id": "hood",
+      "label": "前行李舱盖",
+      "hinge": [
+        -0.715,
+        0.706,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -1.03,
+      "meshes": [
+        "move_hood__60_bonnet_panel",
+        "move_hood__move_hood__60_bonnet_panel_inner",
+        "move_hood__move_hood__60_bonnet_panel_edge",
+        "move_hood__30_bonnet_gap",
+        "move_hood__D_BAY_bonnet_inner_insulation",
+        "move_hood__D_BAY_bonnet_inner_bead_-1825",
+        "move_hood__D_BAY_bonnet_inner_bead_-1430",
+        "move_hood__D_BAY_bonnet_inner_bead_-1020",
+        "move_hood__D_BAY_bonnet_inner_latch",
+        "move_hood__D_STAY_lid_ball_hood_-1",
+        "move_hood__D_STAY_lid_ball_hood_1",
+        "move_hood__43_nose_badge"
+      ],
+      "hotspot": [
+        -1.38,
+        0.66,
+        0
+      ]
+    },
+    {
+      "id": "engine_lid",
+      "label": "后发动机盖",
+      "hinge": [
+        0.62,
+        1.14,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 1.03,
+      "meshes": [
+        "move_engine_lid__26_rear_engine_glass",
+        "move_engine_lid__26_rear_glass_seal_0",
+        "move_engine_lid__26_rear_glass_seal_1",
+        "move_engine_lid__63_engine_lid_rail_-1",
+        "move_engine_lid__63_engine_lid_rail_1",
+        "move_engine_lid__63_engine_lid_cross_620",
+        "move_engine_lid__63_engine_lid_cross_1580",
+        "move_engine_lid__D_BAY_hatch_inner_gasket_-1",
+        "move_engine_lid__D_BAY_hatch_inner_gasket_1",
+        "move_engine_lid__D_STAY_lid_ball_engine_lid_-1",
+        "move_engine_lid__D_STAY_lid_ball_engine_lid_1"
+      ],
+      "hotspot": [
+        1.26,
+        0.92,
+        0
+      ]
+    }
+  ]
+}

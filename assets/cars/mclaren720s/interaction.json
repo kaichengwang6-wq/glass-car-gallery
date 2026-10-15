@@ -1,0 +1,509 @@
+{
+  "version": 1,
+  "modelRevision": "batch2-phase1-authored-v1",
+  "units": "meters",
+  "parts": [
+    {
+      "id": "driver_door",
+      "label": "驾驶侧车门",
+      "hinge": [
+        -0.725,
+        0.72,
+        0.8911513584801245
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -1.05,
+      "meshes": [],
+      "hotspot": [
+        -0.1,
+        0.7,
+        0.95
+      ],
+      "tracks": [
+        {
+          "id": "driver_door_multi_axis",
+          "meshes": [
+            "mclaren720s_door_outer_skin_-1",
+            "mclaren720s_door_folded_edge_-1",
+            "mclaren720s_door_inner_carbon_shell_-1",
+            "mclaren720s_door_leather_trim_-1",
+            "mclaren720s_door_side_glass_-1",
+            "mclaren720s_door_window_surround_-1",
+            "mclaren720s_door_window_bottom_trim_-1",
+            "mclaren720s_door_armrest_-1",
+            "mclaren720s_door_interior_pull_-1",
+            "mclaren720s_door_speaker_trim_-1",
+            "mclaren720s_door_speaker_mesh_-1",
+            "mclaren720s_door_exterior_flush_handle_-1",
+            "mclaren720s_mirror_stalk_-1",
+            "mclaren720s_mirror_shell_-1",
+            "mclaren720s_mirror_reflective_face_-1",
+            "mclaren720s_door_stitch_-1_0",
+            "mclaren720s_door_stitch_-1_1",
+            "mclaren720s_door_stitch_-1_2",
+            "mclaren720s_door_stitch_-1_3",
+            "mclaren720s_door_stitch_-1_4",
+            "mclaren720s_door_stitch_-1_5",
+            "mclaren720s_door_stitch_-1_6",
+            "mclaren720s_door_stitch_-1_7",
+            "mclaren720s_door_stitch_-1_8",
+            "mclaren720s_door_stitch_-1_9",
+            "mclaren720s_door_stitch_-1_10",
+            "mclaren720s_door_stitch_-1_11",
+            "mclaren720s_door_stitch_-1_12",
+            "mclaren720s_door_stitch_-1_13",
+            "mclaren720s_door_stitch_-1_14",
+            "mclaren720s_door_stitch_-1_15",
+            "mclaren720s_door_stitch_-1_16",
+            "mclaren720s_door_stitch_-1_17",
+            "mclaren720s_door_stitch_-1_18",
+            "mclaren720s_door_stitch_-1_19",
+            "mclaren720s_720S_door_double_skin_channel_-1",
+            "mclaren720s_720S_door_channel_return_-1",
+            "mclaren720s_720S_door_aero_blade_-1"
+          ],
+          "hinge": [
+            -0.725,
+            0.72,
+            0.8911513584801245
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "translation": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "t": 0.28,
+              "rotation": [
+                0.25,
+                -0.18,
+                0.13
+              ],
+              "translation": [
+                0,
+                0.025,
+                0.1
+              ]
+            },
+            {
+              "t": 1,
+              "rotation": [
+                0.4,
+                -0.2,
+                1.08
+              ],
+              "translation": [
+                0.015,
+                0.08,
+                0.13
+              ]
+            }
+          ]
+        }
+      ],
+      "motionNote": "车门多轴轨迹为展示近似；未采用未公开的原厂铰链尺寸。"
+    },
+    {
+      "id": "passenger_door",
+      "label": "乘客侧车门",
+      "hinge": [
+        -0.725,
+        0.72,
+        -0.8911513584801245
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 1.05,
+      "meshes": [],
+      "hotspot": [
+        -0.1,
+        0.7,
+        -0.95
+      ],
+      "tracks": [
+        {
+          "id": "passenger_door_multi_axis",
+          "meshes": [
+            "mclaren720s_door_outer_skin_1",
+            "mclaren720s_door_folded_edge_1",
+            "mclaren720s_door_inner_carbon_shell_1",
+            "mclaren720s_door_leather_trim_1",
+            "mclaren720s_door_side_glass_1",
+            "mclaren720s_door_window_surround_1",
+            "mclaren720s_door_window_bottom_trim_1",
+            "mclaren720s_door_armrest_1",
+            "mclaren720s_door_interior_pull_1",
+            "mclaren720s_door_speaker_trim_1",
+            "mclaren720s_door_speaker_mesh_1",
+            "mclaren720s_door_exterior_flush_handle_1",
+            "mclaren720s_mirror_stalk_1",
+            "mclaren720s_mirror_shell_1",
+            "mclaren720s_mirror_reflective_face_1",
+            "mclaren720s_door_stitch_1_0",
+            "mclaren720s_door_stitch_1_1",
+            "mclaren720s_door_stitch_1_2",
+            "mclaren720s_door_stitch_1_3",
+            "mclaren720s_door_stitch_1_4",
+            "mclaren720s_door_stitch_1_5",
+            "mclaren720s_door_stitch_1_6",
+            "mclaren720s_door_stitch_1_7",
+            "mclaren720s_door_stitch_1_8",
+            "mclaren720s_door_stitch_1_9",
+            "mclaren720s_door_stitch_1_10",
+            "mclaren720s_door_stitch_1_11",
+            "mclaren720s_door_stitch_1_12",
+            "mclaren720s_door_stitch_1_13",
+            "mclaren720s_door_stitch_1_14",
+            "mclaren720s_door_stitch_1_15",
+            "mclaren720s_door_stitch_1_16",
+            "mclaren720s_door_stitch_1_17",
+            "mclaren720s_door_stitch_1_18",
+            "mclaren720s_door_stitch_1_19",
+            "mclaren720s_720S_door_double_skin_channel_1",
+            "mclaren720s_720S_door_channel_return_1",
+            "mclaren720s_720S_door_aero_blade_1"
+          ],
+          "hinge": [
+            -0.725,
+            0.72,
+            -0.8911513584801245
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "translation": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "t": 0.28,
+              "rotation": [
+                -0.25,
+                0.18,
+                0.13
+              ],
+              "translation": [
+                0,
+                0.025,
+                -0.1
+              ]
+            },
+            {
+              "t": 1,
+              "rotation": [
+                -0.4,
+                0.2,
+                1.08
+              ],
+              "translation": [
+                0.015,
+                0.08,
+                -0.13
+              ]
+            }
+          ]
+        }
+      ],
+      "motionNote": "车门多轴轨迹为展示近似；未采用未公开的原厂铰链尺寸。"
+    },
+    {
+      "id": "hood",
+      "label": "前行李舱盖",
+      "hinge": [
+        -0.841,
+        0.7638063416297307,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -1.02,
+      "meshes": [
+        "mclaren720s_front_luggage_lid",
+        "mclaren720s_front_lid_carbon_liner",
+        "mclaren720s_front_lid_return",
+        "mclaren720s_front_lid_stiffener_-1",
+        "mclaren720s_front_lid_stiffener_1"
+      ],
+      "hotspot": [
+        -1.53825,
+        0.7,
+        0
+      ]
+    },
+    {
+      "id": "roof",
+      "label": "电动硬顶",
+      "labOnly": true,
+      "hotspot": [
+        0.15,
+        1.2,
+        0
+      ],
+      "tracks": [
+        {
+          "id": "roof_top",
+          "meshes": [
+            "mclaren720s_roof_panel_skin_0",
+            "mclaren720s_roof_headliner_0",
+            "mclaren720s_roof_edge_-1",
+            "mclaren720s_roof_edge_1",
+            "mclaren720s_roof_stay_upper_ball_-1",
+            "mclaren720s_roof_stay_upper_ball_1"
+          ],
+          "hinge": [
+            0,
+            1.15,
+            0
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "translation": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "t": 0.15,
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "translation": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "t": 0.3,
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "translation": [
+                0.12,
+                0.25,
+                0
+              ]
+            },
+            {
+              "t": 0.66,
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "translation": [
+                1.2,
+                0.25,
+                0
+              ]
+            },
+            {
+              "t": 0.86,
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "translation": [
+                1.2,
+                -0.4,
+                0
+              ]
+            },
+            {
+              "t": 1,
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "translation": [
+                1.2,
+                -0.4,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "roof_cover",
+          "meshes": [
+            "mclaren720s_roof_storage_tonneau_skin",
+            "mclaren720s_roof_storage_tonneau_liner"
+          ],
+          "hinge": [
+            1.84,
+            0.84,
+            0
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "translation": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "t": 0.15,
+              "rotation": [
+                0,
+                0,
+                -1.65
+              ],
+              "translation": [
+                0,
+                0.03,
+                0
+              ]
+            },
+            {
+              "t": 0.86,
+              "rotation": [
+                0,
+                0,
+                -1.65
+              ],
+              "translation": [
+                0,
+                0.03,
+                0
+              ]
+            },
+            {
+              "t": 1,
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "translation": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ],
+      "motionNote": "单片电动硬顶；本展示用简化伸缩支架和分段轨迹说明顶盖、支架、收纳舱关系，并非原厂连杆尺寸或控制时序。"
+    }
+  ],
+  "lights": {
+    "head": [
+      "mclaren720s_720S_eye_LED_brow_-1",
+      "mclaren720s_720S_eye_projector_lens_-1_0",
+      "mclaren720s_720S_eye_projector_lens_-1_1",
+      "mclaren720s_720S_eye_LED_brow_1",
+      "mclaren720s_720S_eye_projector_lens_1_0",
+      "mclaren720s_720S_eye_projector_lens_1_1"
+    ],
+    "tail": [
+      "mclaren720s_rear_LED_blade_-1",
+      "mclaren720s_rear_LED_blade_1"
+    ]
+  },
+  "inspectionMeshes": [
+    "mclaren720s_rear_haunch_skin_-1",
+    "mclaren720s_rear_haunch_skin_1",
+    "mclaren720s_rear_centre_deck_skin",
+    "mclaren720s_roof_storage_tonneau_skin",
+    "mclaren720s_roof_storage_tonneau_liner"
+  ],
+  "stays": [
+    {
+      "id": "roof_support_-1",
+      "part": "roof",
+      "attachedTrack": "roof_top",
+      "fixed": [
+        0.65,
+        0.4,
+        0.55
+      ],
+      "attached": [
+        0.4,
+        1.16,
+        0.55
+      ],
+      "body": "mclaren720s_roof_stay_body_-1",
+      "rod": "mclaren720s_roof_stay_rod_-1",
+      "collar": "mclaren720s_roof_stay_collar_-1",
+      "bodyLength": 0.76,
+      "rodLength": 0.83
+    },
+    {
+      "id": "roof_support_1",
+      "part": "roof",
+      "attachedTrack": "roof_top",
+      "fixed": [
+        0.65,
+        0.4,
+        -0.55
+      ],
+      "attached": [
+        0.4,
+        1.16,
+        -0.55
+      ],
+      "body": "mclaren720s_roof_stay_body_1",
+      "rod": "mclaren720s_roof_stay_rod_1",
+      "collar": "mclaren720s_roof_stay_collar_1",
+      "bodyLength": 0.76,
+      "rodLength": 0.83
+    }
+  ],
+  "description": "指定量产版本的独立展示模型，未公开铰链尺寸和运动轨迹以教学示意表达。",
+  "sources": [
+    [
+      "迈凯伦 720S Spider 原厂车型页",
+      "https://www.mclaren.com/cars/gl_en/legacy/720s-spider"
+    ],
+    [
+      "720S Spider 原厂宣传册存档",
+      "https://kurumacatalog.com/wp-content/uploads/2021/01/2019_McLaren_720S_Spider_catalog.pdf"
+    ]
+  ]
+}

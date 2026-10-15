@@ -1,0 +1,176 @@
+{
+  "version": 1,
+  "modelRevision": "batch2-phase1-authored-v1",
+  "units": "meters",
+  "parts": [
+    {
+      "id": "driver_door",
+      "label": "驾驶侧车门",
+      "hinge": [
+        -0.7,
+        0.72,
+        0.9327429754562848
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -1.05,
+      "meshes": [
+        "chiron_door_outer_skin_-1",
+        "chiron_door_folded_edge_-1",
+        "chiron_door_inner_carbon_shell_-1",
+        "chiron_door_leather_trim_-1",
+        "chiron_door_window_bottom_trim_-1",
+        "chiron_door_armrest_-1",
+        "chiron_door_interior_pull_-1",
+        "chiron_door_speaker_trim_-1",
+        "chiron_door_speaker_mesh_-1",
+        "chiron_door_exterior_flush_handle_-1",
+        "chiron_mirror_stalk_-1",
+        "chiron_mirror_shell_-1",
+        "chiron_mirror_reflective_face_-1",
+        "chiron_door_stitch_-1_0",
+        "chiron_door_stitch_-1_1",
+        "chiron_door_stitch_-1_2",
+        "chiron_door_stitch_-1_3",
+        "chiron_door_stitch_-1_4",
+        "chiron_door_stitch_-1_5",
+        "chiron_door_stitch_-1_6",
+        "chiron_door_stitch_-1_7",
+        "chiron_door_stitch_-1_8",
+        "chiron_door_stitch_-1_9",
+        "chiron_door_stitch_-1_10",
+        "chiron_door_stitch_-1_11",
+        "chiron_door_stitch_-1_12",
+        "chiron_door_stitch_-1_13",
+        "chiron_door_stitch_-1_14",
+        "chiron_door_stitch_-1_15",
+        "chiron_door_stitch_-1_16",
+        "chiron_door_stitch_-1_17",
+        "chiron_door_stitch_-1_18",
+        "chiron_door_stitch_-1_19",
+        "chiron_rounded_side_door_glass_-1",
+        "chiron_rounded_door_window_frame_-1"
+      ],
+      "hotspot": [
+        -0.1,
+        0.7,
+        0.95
+      ]
+    },
+    {
+      "id": "passenger_door",
+      "label": "乘客侧车门",
+      "hinge": [
+        -0.7,
+        0.72,
+        -0.9327429754562848
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 1.05,
+      "meshes": [
+        "chiron_door_outer_skin_1",
+        "chiron_door_folded_edge_1",
+        "chiron_door_inner_carbon_shell_1",
+        "chiron_door_leather_trim_1",
+        "chiron_door_window_bottom_trim_1",
+        "chiron_door_armrest_1",
+        "chiron_door_interior_pull_1",
+        "chiron_door_speaker_trim_1",
+        "chiron_door_speaker_mesh_1",
+        "chiron_door_exterior_flush_handle_1",
+        "chiron_mirror_stalk_1",
+        "chiron_mirror_shell_1",
+        "chiron_mirror_reflective_face_1",
+        "chiron_door_stitch_1_0",
+        "chiron_door_stitch_1_1",
+        "chiron_door_stitch_1_2",
+        "chiron_door_stitch_1_3",
+        "chiron_door_stitch_1_4",
+        "chiron_door_stitch_1_5",
+        "chiron_door_stitch_1_6",
+        "chiron_door_stitch_1_7",
+        "chiron_door_stitch_1_8",
+        "chiron_door_stitch_1_9",
+        "chiron_door_stitch_1_10",
+        "chiron_door_stitch_1_11",
+        "chiron_door_stitch_1_12",
+        "chiron_door_stitch_1_13",
+        "chiron_door_stitch_1_14",
+        "chiron_door_stitch_1_15",
+        "chiron_door_stitch_1_16",
+        "chiron_door_stitch_1_17",
+        "chiron_door_stitch_1_18",
+        "chiron_door_stitch_1_19",
+        "chiron_rounded_side_door_glass_1",
+        "chiron_rounded_door_window_frame_1"
+      ],
+      "hotspot": [
+        -0.1,
+        0.7,
+        -0.95
+      ]
+    },
+    {
+      "id": "hood",
+      "label": "前行李舱盖",
+      "hinge": [
+        -0.816,
+        0.7982466487935657,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -1.02,
+      "meshes": [
+        "chiron_front_luggage_lid",
+        "chiron_front_lid_carbon_liner",
+        "chiron_front_lid_return",
+        "chiron_front_lid_stiffener_-1",
+        "chiron_front_lid_stiffener_1"
+      ],
+      "hotspot": [
+        -1.526,
+        0.7,
+        0
+      ]
+    }
+  ],
+  "lights": {
+    "head": [
+      "chiron_Chiron_fourjewel_projector_-1_0",
+      "chiron_Chiron_fourjewel_projector_-1_1",
+      "chiron_Chiron_fourjewel_projector_-1_2",
+      "chiron_Chiron_fourjewel_projector_-1_3",
+      "chiron_Chiron_fourjewel_projector_1_0",
+      "chiron_Chiron_fourjewel_projector_1_1",
+      "chiron_Chiron_fourjewel_projector_1_2",
+      "chiron_Chiron_fourjewel_projector_1_3"
+    ],
+    "tail": [
+      "chiron_fullwidth_rear_tail_light"
+    ]
+  },
+  "inspectionMeshes": [],
+  "stays": [],
+  "description": "指定量产版本的独立展示模型，未公开铰链尺寸和运动轨迹以教学示意表达。",
+  "sources": [
+    [
+      "布加迪 Chiron 2016 原厂发布资料",
+      "https://newsroom.bugatti.com/press-releases/geneva-international-motor-show-2016"
+    ],
+    [
+      "布加迪 Chiron 原厂技术参数",
+      "https://bugatti-newsroom.imgix.net/66703700d9bf8f4b7ce9211c/211122_BU_Chiron%20ENG.pdf"
+    ]
+  ]
+}

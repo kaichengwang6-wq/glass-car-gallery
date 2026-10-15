@@ -1,0 +1,217 @@
+{
+  "id": "jesko",
+  "bounds": {
+    "min": [
+      -0.375,
+      -0.004,
+      -0.558
+    ],
+    "max": [
+      0.3445565286104892,
+      0.6505,
+      0.5513361019820554
+    ]
+  },
+  "hotspots": [
+    {
+      "id": "intake",
+      "meshes": [
+        "jesko_central_carbon_collector",
+        "jesko_arched_carbon_runner_-1_0",
+        "jesko_runner_flange_-1_0",
+        "jesko_arched_carbon_runner_-1_1",
+        "jesko_runner_flange_-1_1",
+        "jesko_arched_carbon_runner_-1_2",
+        "jesko_runner_flange_-1_2",
+        "jesko_arched_carbon_runner_-1_3",
+        "jesko_runner_flange_-1_3",
+        "jesko_carbon_charge_pipe_-1",
+        "jesko_arched_carbon_runner_1_0",
+        "jesko_runner_flange_1_0",
+        "jesko_arched_carbon_runner_1_1",
+        "jesko_runner_flange_1_1",
+        "jesko_arched_carbon_runner_1_2",
+        "jesko_runner_flange_1_2",
+        "jesko_arched_carbon_runner_1_3",
+        "jesko_runner_flange_1_3",
+        "jesko_carbon_charge_pipe_1",
+        "jesko_collector_upper_plaque"
+      ],
+      "position": [
+        -0.02,
+        0.65,
+        0.01
+      ]
+    },
+    {
+      "id": "block",
+      "meshes": [
+        "jesko_crankcase",
+        "jesko_sump_gasket",
+        "jesko_dry_sump_lower",
+        "jesko_case_web_-1_0",
+        "jesko_case_web_1_0",
+        "jesko_case_web_-1_1",
+        "jesko_case_web_1_1",
+        "jesko_case_web_-1_2",
+        "jesko_case_web_1_2",
+        "jesko_case_web_-1_3",
+        "jesko_case_web_1_3",
+        "jesko_case_web_-1_4",
+        "jesko_case_web_1_4",
+        "jesko_case_web_-1_5",
+        "jesko_case_web_1_5",
+        "jesko_case_web_-1_6",
+        "jesko_case_web_1_6",
+        "jesko_case_web_-1_7",
+        "jesko_case_web_1_7",
+        "jesko_bank_casting_-1",
+        "jesko_cylinder_head_-1",
+        "jesko_mount_boss_-1",
+        "jesko_mount_socket_-1",
+        "jesko_bank_casting_1",
+        "jesko_cylinder_head_1",
+        "jesko_mount_boss_1",
+        "jesko_mount_socket_1",
+        "jesko_timing_case",
+        "jesko_crank_hub",
+        "jesko_crank_hub_rim",
+        "jesko_cam_drive_cap_-1",
+        "jesko_timing_case_bolts_-1",
+        "jesko_cam_drive_cap_1",
+        "jesko_timing_case_bolts_1",
+        "jesko_front_alternator",
+        "jesko_alternator_slot_0",
+        "jesko_alternator_slot_1",
+        "jesko_alternator_slot_2",
+        "jesko_alternator_slot_3",
+        "jesko_alternator_slot_4",
+        "jesko_alternator_slot_5",
+        "jesko_alternator_slot_6",
+        "jesko_alternator_slot_7",
+        "jesko_alternator_slot_8",
+        "jesko_alternator_slot_9",
+        "jesko_alternator_slot_10",
+        "jesko_alternator_slot_11"
+      ],
+      "position": [
+        -0.346,
+        0.22,
+        0.07
+      ]
+    },
+    {
+      "id": "covers",
+      "meshes": [
+        "jesko_cam_cover_-1",
+        "jesko_cover_gasket_-1",
+        "jesko_cover_fasteners_-1",
+        "jesko_cam_cover_1",
+        "jesko_cover_gasket_1",
+        "jesko_cover_fasteners_1",
+        "jesko_cover_rib_-1_0",
+        "jesko_cover_rib_-1_1",
+        "jesko_cover_rib_-1_2",
+        "jesko_cover_rib_-1_3",
+        "jesko_cover_rib_-1_4",
+        "jesko_cover_rib_-1_5",
+        "jesko_cover_rib_-1_6",
+        "jesko_cover_rib_-1_7",
+        "jesko_cover_rib_1_0",
+        "jesko_cover_rib_1_1",
+        "jesko_cover_rib_1_2",
+        "jesko_cover_rib_1_3",
+        "jesko_cover_rib_1_4",
+        "jesko_cover_rib_1_5",
+        "jesko_cover_rib_1_6",
+        "jesko_cover_rib_1_7"
+      ],
+      "position": [
+        0.0,
+        0.451,
+        0.265
+      ]
+    },
+    {
+      "id": "ignition",
+      "meshes": [
+        "jesko_coil_-1_0",
+        "jesko_coil_lead_-1_0",
+        "jesko_coil_connector_-1_0",
+        "jesko_coil_-1_1",
+        "jesko_coil_lead_-1_1",
+        "jesko_coil_connector_-1_1",
+        "jesko_coil_-1_2",
+        "jesko_coil_lead_-1_2",
+        "jesko_coil_connector_-1_2",
+        "jesko_coil_-1_3",
+        "jesko_coil_lead_-1_3",
+        "jesko_coil_connector_-1_3",
+        "jesko_loom_-1",
+        "jesko_coil_1_0",
+        "jesko_coil_lead_1_0",
+        "jesko_coil_connector_1_0",
+        "jesko_coil_1_1",
+        "jesko_coil_lead_1_1",
+        "jesko_coil_connector_1_1",
+        "jesko_coil_1_2",
+        "jesko_coil_lead_1_2",
+        "jesko_coil_connector_1_2",
+        "jesko_coil_1_3",
+        "jesko_coil_lead_1_3",
+        "jesko_coil_connector_1_3",
+        "jesko_loom_1"
+      ],
+      "position": [
+        0.2,
+        0.463,
+        -0.27
+      ]
+    },
+    {
+      "id": "turbo",
+      "meshes": [
+        "jesko_turbo_-1_compressor_volute",
+        "jesko_turbo_-1_compressor_hub",
+        "jesko_turbo_-1_hot_volute",
+        "jesko_turbo_-1_turbine_hub",
+        "jesko_turbo_-1_shaft_housing",
+        "jesko_turbo_-1_intake_lip",
+        "jesko_turbo_-1_inlet_bore",
+        "jesko_turbo_-1_compressor_blades",
+        "jesko_turbo_-1_actuator_link",
+        "jesko_turbo_-1_actuator",
+        "jesko_exhaust_header_-1_-215.0",
+        "jesko_exhaust_header_-1_-71.7",
+        "jesko_exhaust_header_-1_71.7",
+        "jesko_exhaust_header_-1_215.0",
+        "jesko_exhaust_downpipe_-1_125.0",
+        "jesko_turbo_1_compressor_volute",
+        "jesko_turbo_1_compressor_hub",
+        "jesko_turbo_1_hot_volute",
+        "jesko_turbo_1_turbine_hub",
+        "jesko_turbo_1_shaft_housing",
+        "jesko_turbo_1_intake_lip",
+        "jesko_turbo_1_inlet_bore",
+        "jesko_turbo_1_compressor_blades",
+        "jesko_turbo_1_actuator_link",
+        "jesko_turbo_1_actuator",
+        "jesko_exhaust_header_1_-215.0",
+        "jesko_exhaust_header_1_-71.7",
+        "jesko_exhaust_header_1_71.7",
+        "jesko_exhaust_header_1_215.0",
+        "jesko_exhaust_downpipe_1_125.0"
+      ],
+      "position": [
+        0.085,
+        0.21,
+        0.43
+      ]
+    }
+  ],
+  "note": "按车型动力总成特征独立制作的外观教学模型；外壳、附件和管线尺度为示意，非原厂 CAD。",
+  "sources": [
+    "https://www.koenigsegg.com/technical-specifications-jesko-attack",
+    "https://www.koenigsegg.com/engines"
+  ]
+}

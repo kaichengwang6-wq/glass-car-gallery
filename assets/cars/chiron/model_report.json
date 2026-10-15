@@ -1,0 +1,2242 @@
+{
+  "id": "chiron",
+  "modelRevision": "batch2-phase1-authored-v1",
+  "units": "metres",
+  "orientation": "Y up; nose -X",
+  "nominal_mm": [
+    4544,
+    2038,
+    1212
+  ],
+  "wheelbase_mm": 2711,
+  "parts": 439,
+  "triangles": 418180,
+  "invalid_meshes": [],
+  "bounds_m": [
+    [
+      -2.280381591796875,
+      0.0,
+      -1.156180419921875
+    ],
+    [
+      2.272,
+      1.210845458984375,
+      1.156180419921875
+    ]
+  ],
+  "glb_bytes": 12337520,
+  "preview_bytes": 3624456,
+  "interactive_meshes": {
+    "driver_door": 35,
+    "passenger_door": 35,
+    "hood": 5
+  },
+  "note": "独立构建的展示模型；轮廓和标志性细节参考指定原厂版本，非原厂工程 CAD。未公开内部尺寸和动作轨迹为可视化示意。",
+  "sources": [
+    [
+      "布加迪 Chiron 2016 原厂发布资料",
+      "https://newsroom.bugatti.com/press-releases/geneva-international-motor-show-2016"
+    ],
+    [
+      "布加迪 Chiron 原厂技术参数",
+      "https://bugatti-newsroom.imgix.net/66703700d9bf8f4b7ce9211c/211122_BU_Chiron%20ENG.pdf"
+    ]
+  ],
+  "components": [
+    {
+      "name": "chiron_front_luggage_lid",
+      "triangles": 2632,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_front_lid_carbon_liner",
+      "triangles": 1512,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_front_lid_return",
+      "triangles": 144,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_front_lid_weather_seal",
+      "triangles": 1152,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_front_lid_stiffener_-1",
+      "triangles": 44,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_front_lid_stiffener_1",
+      "triangles": 44,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_front_luggage_floor",
+      "triangles": 336,
+      "material": "carpet"
+    },
+    {
+      "name": "chiron_front_luggage_bag",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_front_luggage_bag_handle",
+      "triangles": 60,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_side_sculpted_skin_-1",
+      "triangles": 13307,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_side_carbon_sill_-1",
+      "triangles": 16,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_front_arch_fold_-1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_front_arch_liner_-1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_rear_arch_fold_-1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_rear_arch_liner_-1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_door_fixed_jamb_-1",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_door_aperture_seal_-1",
+      "triangles": 652,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_lower_skin_fold_-1_0",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_lower_skin_fold_-1_1",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_lower_skin_fold_-1_2",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_side_sculpted_skin_1",
+      "triangles": 13307,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_side_carbon_sill_1",
+      "triangles": 16,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_front_arch_fold_1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_front_arch_liner_1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_rear_arch_fold_1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_rear_arch_liner_1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_door_fixed_jamb_1",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_door_aperture_seal_1",
+      "triangles": 652,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_lower_skin_fold_1_0",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_lower_skin_fold_1_1",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_lower_skin_fold_1_2",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_rear_haunch_skin_-1",
+      "triangles": 7424,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_rear_haunch_skin_1",
+      "triangles": 7424,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_rear_centre_deck_skin",
+      "triangles": 8400,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_underfloor_carbon_pan",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_door_outer_skin_-1",
+      "triangles": 2856,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_door_folded_edge_-1",
+      "triangles": 144,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_door_inner_carbon_shell_-1",
+      "triangles": 1736,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_door_leather_trim_-1",
+      "triangles": 700,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_door_window_bottom_trim_-1",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_door_armrest_-1",
+      "triangles": 28,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_door_interior_pull_-1",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_door_speaker_trim_-1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_door_speaker_mesh_-1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "chiron_door_exterior_flush_handle_-1",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_mirror_stalk_-1",
+      "triangles": 268,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_mirror_shell_-1",
+      "triangles": 832,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_mirror_reflective_face_-1",
+      "triangles": 528,
+      "material": "mirror"
+    },
+    {
+      "name": "chiron_door_stitch_-1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_7",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_8",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_9",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_10",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_11",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_12",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_13",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_14",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_15",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_16",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_17",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_18",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_-1_19",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_outer_skin_1",
+      "triangles": 2856,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_door_folded_edge_1",
+      "triangles": 144,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_door_inner_carbon_shell_1",
+      "triangles": 1736,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_door_leather_trim_1",
+      "triangles": 700,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_door_window_bottom_trim_1",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_door_armrest_1",
+      "triangles": 28,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_door_interior_pull_1",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_door_speaker_trim_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_door_speaker_mesh_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "chiron_door_exterior_flush_handle_1",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_mirror_stalk_1",
+      "triangles": 268,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_mirror_shell_1",
+      "triangles": 832,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_mirror_reflective_face_1",
+      "triangles": 528,
+      "material": "mirror"
+    },
+    {
+      "name": "chiron_door_stitch_1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_7",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_8",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_9",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_10",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_11",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_12",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_13",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_14",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_15",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_16",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_17",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_18",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_door_stitch_1_19",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_rounded_side_door_glass_-1",
+      "triangles": 3456,
+      "material": "glass"
+    },
+    {
+      "name": "chiron_rounded_door_window_frame_-1",
+      "triangles": 2000,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_rounded_side_door_glass_1",
+      "triangles": 3456,
+      "material": "glass"
+    },
+    {
+      "name": "chiron_rounded_door_window_frame_1",
+      "triangles": 2000,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_cockpit_floor",
+      "triangles": 12,
+      "material": "carpet"
+    },
+    {
+      "name": "chiron_rear_firewall",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_dashboard_upper",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_dashboard_lower",
+      "triangles": 336,
+      "material": "interior"
+    },
+    {
+      "name": "chiron_seat_carbon_shell_-1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_seat_squab_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_seat_back_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_seat_back_carbon_-1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_seat_headrest_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_seat_hip_bolster_-1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_seat_shoulder_bolster_-1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_seat_hip_bolster_-1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_seat_shoulder_bolster_-1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_seat_stitch_squab_-1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_seat_stitch_squab_-1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_seat_stitch_squab_-1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_seat_stitch_squab_-1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_seat_stitch_squab_-1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_seat_stitch_squab_-1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_seat_stitch_squab_-1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_seat_belt_-1",
+      "triangles": 32,
+      "material": "black"
+    },
+    {
+      "name": "chiron_seat_buckle_-1",
+      "triangles": 336,
+      "material": "tail"
+    },
+    {
+      "name": "chiron_floor_mat_-1",
+      "triangles": 336,
+      "material": "carpet"
+    },
+    {
+      "name": "chiron_seat_carbon_shell_1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_seat_squab_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_seat_back_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_seat_back_carbon_1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_seat_headrest_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_seat_hip_bolster_1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_seat_shoulder_bolster_1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_seat_hip_bolster_1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_seat_shoulder_bolster_1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_seat_stitch_squab_1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_seat_stitch_squab_1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_seat_stitch_squab_1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_seat_stitch_squab_1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_seat_stitch_squab_1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_seat_stitch_squab_1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_seat_stitch_squab_1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "chiron_seat_belt_1",
+      "triangles": 32,
+      "material": "black"
+    },
+    {
+      "name": "chiron_seat_buckle_1",
+      "triangles": 336,
+      "material": "tail"
+    },
+    {
+      "name": "chiron_floor_mat_1",
+      "triangles": 336,
+      "material": "carpet"
+    },
+    {
+      "name": "chiron_steering_wheel_rim",
+      "triangles": 1440,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_steering_wheel_hub",
+      "triangles": 528,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_steering_spoke_0",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_steering_spoke_3.141592653589793",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_steering_spoke_4.71238898038469",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_steering_column",
+      "triangles": 68,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_steering_shift_paddle_-1",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_steering_shift_paddle_1",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_instrument_binnacle",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_driver_display",
+      "triangles": 336,
+      "material": "screen"
+    },
+    {
+      "name": "chiron_driver_display_rpm_0",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "chiron_driver_display_rpm_1",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "chiron_driver_display_rpm_2",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "chiron_driver_display_rpm_3",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "chiron_driver_display_rpm_4",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "chiron_driver_display_rpm_5",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "chiron_driver_display_rpm_6",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "chiron_driver_display_rpm_7",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "chiron_driver_display_rpm_8",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "chiron_driver_display_rpm_9",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "chiron_driver_display_rpm_10",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "chiron_centre_console",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_centre_touchscreen",
+      "triangles": 336,
+      "material": "screen"
+    },
+    {
+      "name": "chiron_console_side_trim_-1",
+      "triangles": 44,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_dash_vent_ring_-1_0",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_dash_vent_shadow_-1_0",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "chiron_dash_vent_blade_-1_0_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_blade_-1_0_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_blade_-1_0_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_ring_-1_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_dash_vent_shadow_-1_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "chiron_dash_vent_blade_-1_1_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_blade_-1_1_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_blade_-1_1_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_ring_-1_2",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_dash_vent_shadow_-1_2",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "chiron_dash_vent_blade_-1_2_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_blade_-1_2_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_blade_-1_2_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_console_side_trim_1",
+      "triangles": 44,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_dash_vent_ring_1_0",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_dash_vent_shadow_1_0",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "chiron_dash_vent_blade_1_0_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_blade_1_0_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_blade_1_0_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_ring_1_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_dash_vent_shadow_1_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "chiron_dash_vent_blade_1_1_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_blade_1_1_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_blade_1_1_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_ring_1_2",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_dash_vent_shadow_1_2",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "chiron_dash_vent_blade_1_2_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_blade_1_2_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_dash_vent_blade_1_2_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_console_rotary_control_0",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_console_rotary_indicator_0",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "chiron_console_rotary_control_1",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_console_rotary_indicator_1",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "chiron_console_rotary_control_2",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_console_rotary_indicator_2",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "chiron_console_rotary_control_3",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_console_rotary_indicator_3",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "chiron_console_armrest",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "chiron_pedal_0",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_pedal_1",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_pedal_2",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_compound_wraparound_windshield",
+      "triangles": 10208,
+      "material": "glass"
+    },
+    {
+      "name": "chiron_curved_windshield_A_pillar_-1",
+      "triangles": 1436,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_curved_windshield_A_pillar_1",
+      "triangles": 1436,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_curved_windshield_header",
+      "triangles": 1196,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_curved_windshield_cowl",
+      "triangles": 1196,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_curved_windshield_wiper",
+      "triangles": 636,
+      "material": "black"
+    },
+    {
+      "name": "chiron_curved_canopy_roof_0",
+      "triangles": 6384,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_curved_canopy_headliner_0",
+      "triangles": 2112,
+      "material": "alcantara"
+    },
+    {
+      "name": "chiron_curved_roof_side_rail_-1",
+      "triangles": 1436,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_curved_rear_pillar_-1",
+      "triangles": 2780,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_curved_B_pillar_-1",
+      "triangles": 716,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_curved_rear_quarter_window_-1",
+      "triangles": 432,
+      "material": "glass"
+    },
+    {
+      "name": "chiron_curved_roof_side_rail_1",
+      "triangles": 1436,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_curved_rear_pillar_1",
+      "triangles": 2780,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_curved_B_pillar_1",
+      "triangles": 716,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_curved_rear_quarter_window_1",
+      "triangles": 432,
+      "material": "glass"
+    },
+    {
+      "name": "chiron_curved_rear_window",
+      "triangles": 3456,
+      "material": "glass"
+    },
+    {
+      "name": "chiron_front_right_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_front_right_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_front_right_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_front_right_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_front_right_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_front_right_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "chiron_front_right_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "chiron_front_right_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_front_right_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "chiron_front_right_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_front_right_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_front_right_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_front_right_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "chiron_front_right_caliper_cast_piston_housings",
+      "triangles": 336,
+      "material": "caliper"
+    },
+    {
+      "name": "chiron_front_right_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_front_right_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "chiron_front_right_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_front_right_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_front_signature_spokes_-1",
+      "triangles": 360,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_front_left_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_front_left_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_front_left_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_front_left_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_front_left_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_front_left_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "chiron_front_left_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "chiron_front_left_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_front_left_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "chiron_front_left_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_front_left_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_front_left_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_front_left_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "chiron_front_left_caliper_cast_piston_housings",
+      "triangles": 336,
+      "material": "caliper"
+    },
+    {
+      "name": "chiron_front_left_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_front_left_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "chiron_front_left_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_front_left_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_front_signature_spokes_1",
+      "triangles": 360,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_rear_right_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_rear_right_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_rear_right_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_right_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_rear_right_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_right_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "chiron_rear_right_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "chiron_rear_right_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_rear_right_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "chiron_rear_right_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_right_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_right_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_rear_right_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "chiron_rear_right_caliper_cast_piston_housings",
+      "triangles": 224,
+      "material": "caliper"
+    },
+    {
+      "name": "chiron_rear_right_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_right_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "chiron_rear_right_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_rear_right_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_signature_spokes_-1",
+      "triangles": 360,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_rear_left_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_rear_left_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_rear_left_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_left_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_rear_left_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_left_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "chiron_rear_left_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "chiron_rear_left_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_rear_left_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "chiron_rear_left_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_left_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_left_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_rear_left_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "chiron_rear_left_caliper_cast_piston_housings",
+      "triangles": 224,
+      "material": "caliper"
+    },
+    {
+      "name": "chiron_rear_left_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_left_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "chiron_rear_left_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_rear_left_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_signature_spokes_1",
+      "triangles": 360,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_rear_grille_shadow",
+      "triangles": 36,
+      "material": "black"
+    },
+    {
+      "name": "chiron_rear_engine_vent_mesh",
+      "triangles": 1136,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_diffuser_ramp",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_rear_diffuser_strake_0",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_rear_diffuser_strake_1",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_rear_diffuser_strake_2",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_rear_diffuser_strake_3",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_rear_diffuser_strake_4",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_rear_diffuser_strake_5",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_rear_diffuser_strake_6",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_nose_emblem",
+      "triangles": 432,
+      "material": "badge"
+    },
+    {
+      "name": "chiron_sculpted_front_fascia",
+      "triangles": 11472,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_Chiron_horseshoe_tunnel",
+      "triangles": 140,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_Chiron_horseshoe_dark_depth",
+      "triangles": 630,
+      "material": "black"
+    },
+    {
+      "name": "chiron_Chiron_horseshoe_rolled_lip",
+      "triangles": 1680,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_Chiron_horseshoe_chrome",
+      "triangles": 1680,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_Chiron_front_oval_emblem",
+      "triangles": 528,
+      "material": "tail"
+    },
+    {
+      "name": "chiron_Chiron_lower_radiator_-1_tunnel",
+      "triangles": 100,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_Chiron_lower_radiator_-1_dark_depth",
+      "triangles": 450,
+      "material": "black"
+    },
+    {
+      "name": "chiron_Chiron_lower_radiator_-1_rolled_lip",
+      "triangles": 1200,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_Chiron_horizontal_splitter_-1",
+      "triangles": 92,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_Chiron_lower_radiator_1_tunnel",
+      "triangles": 100,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_Chiron_lower_radiator_1_dark_depth",
+      "triangles": 450,
+      "material": "black"
+    },
+    {
+      "name": "chiron_Chiron_lower_radiator_1_rolled_lip",
+      "triangles": 1200,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_Chiron_horizontal_splitter_1",
+      "triangles": 92,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_engine_block_visible",
+      "triangles": 336,
+      "material": "bay_cast"
+    },
+    {
+      "name": "chiron_engine_bank_cover_-1",
+      "triangles": 336,
+      "material": "bay_cast"
+    },
+    {
+      "name": "chiron_engine_air_duct_-1",
+      "triangles": 92,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_engine_bay_brace_-1",
+      "triangles": 36,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_engine_cover_rib_-1_0",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_engine_cover_rib_-1_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_engine_cover_rib_-1_2",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_engine_cover_rib_-1_3",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_engine_cover_rib_-1_4",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_engine_cover_rib_-1_5",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_engine_cover_rib_-1_6",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_engine_cover_rib_-1_7",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_suspension_upper_link_-1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_suspension_second_link_-1",
+      "triangles": 28,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_engine_bank_cover_1",
+      "triangles": 336,
+      "material": "bay_cast"
+    },
+    {
+      "name": "chiron_engine_air_duct_1",
+      "triangles": 92,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_engine_bay_brace_1",
+      "triangles": 36,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_engine_cover_rib_1_0",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_engine_cover_rib_1_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_engine_cover_rib_1_2",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_engine_cover_rib_1_3",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_engine_cover_rib_1_4",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_engine_cover_rib_1_5",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_engine_cover_rib_1_6",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_engine_cover_rib_1_7",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_suspension_upper_link_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_rear_suspension_second_link_1",
+      "triangles": 28,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_engine_deck_vent_-1_0",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_-1_1",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_-1_2",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_-1_3",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_-1_4",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_-1_5",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_-1_6",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_-1_7",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_-1_8",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_-1_9",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_1_0",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_1_1",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_1_2",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_1_3",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_1_4",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_1_5",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_1_6",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_1_7",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_1_8",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_engine_deck_vent_1_9",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "chiron_exhaust_outlet_-1_-1",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_exhaust_bore_-1_-1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "chiron_exhaust_outlet_-1_1",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_exhaust_bore_-1_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "chiron_exhaust_outlet_1_-1",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_exhaust_bore_1_-1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "chiron_exhaust_outlet_1_1",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "chiron_exhaust_bore_1_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "chiron_fullwidth_rear_tail_light",
+      "triangles": 96,
+      "material": "tail"
+    },
+    {
+      "name": "chiron_rear_tail_light_shadow",
+      "triangles": 76,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_rear_wing_stowed",
+      "triangles": 1728,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_rear_W16_visible_airbox_-1",
+      "triangles": 336,
+      "material": "bay_cast"
+    },
+    {
+      "name": "chiron_rear_W16_visible_airbox_1",
+      "triangles": 336,
+      "material": "bay_cast"
+    },
+    {
+      "name": "chiron_front_quarter_skin",
+      "triangles": 12204,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_recess_wall_-1",
+      "triangles": 128,
+      "material": "black"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_recess_floor_-1",
+      "triangles": 576,
+      "material": "black"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_recess_seal_-1",
+      "triangles": 1024,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_chrome_frame_-1_0",
+      "triangles": 336,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_projector_-1_0",
+      "triangles": 336,
+      "material": "light"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_chrome_frame_-1_1",
+      "triangles": 336,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_projector_-1_1",
+      "triangles": 336,
+      "material": "light"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_chrome_frame_-1_2",
+      "triangles": 336,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_projector_-1_2",
+      "triangles": 336,
+      "material": "light"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_chrome_frame_-1_3",
+      "triangles": 336,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_projector_-1_3",
+      "triangles": 336,
+      "material": "light"
+    },
+    {
+      "name": "chiron_Chiron_C_arch_chrome_-1",
+      "triangles": 3956,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_Chiron_C_intake_recess_wall_-1",
+      "triangles": 108,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_Chiron_C_intake_recess_back_-1",
+      "triangles": 486,
+      "material": "black"
+    },
+    {
+      "name": "chiron_Chiron_intake_recess_fin_-1_0",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_Chiron_intake_recess_fin_-1_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_Chiron_intake_recess_fin_-1_2",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_Chiron_intake_recess_fin_-1_3",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_Chiron_intake_recess_fin_-1_4",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_recess_wall_1",
+      "triangles": 128,
+      "material": "black"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_recess_floor_1",
+      "triangles": 576,
+      "material": "black"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_recess_seal_1",
+      "triangles": 1024,
+      "material": "rubber"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_chrome_frame_1_0",
+      "triangles": 336,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_projector_1_0",
+      "triangles": 336,
+      "material": "light"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_chrome_frame_1_1",
+      "triangles": 336,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_projector_1_1",
+      "triangles": 336,
+      "material": "light"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_chrome_frame_1_2",
+      "triangles": 336,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_projector_1_2",
+      "triangles": 336,
+      "material": "light"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_chrome_frame_1_3",
+      "triangles": 336,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_Chiron_fourjewel_projector_1_3",
+      "triangles": 336,
+      "material": "light"
+    },
+    {
+      "name": "chiron_Chiron_C_arch_chrome_1",
+      "triangles": 3956,
+      "material": "chrome"
+    },
+    {
+      "name": "chiron_Chiron_C_intake_recess_wall_1",
+      "triangles": 108,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_Chiron_C_intake_recess_back_1",
+      "triangles": 486,
+      "material": "black"
+    },
+    {
+      "name": "chiron_Chiron_intake_recess_fin_1_0",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_Chiron_intake_recess_fin_1_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_Chiron_intake_recess_fin_1_2",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_Chiron_intake_recess_fin_1_3",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_Chiron_intake_recess_fin_1_4",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "chiron_Chiron_rounded_roof_spine",
+      "triangles": 996,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_front_luggage_wall_-1",
+      "triangles": 800,
+      "material": "carpet"
+    },
+    {
+      "name": "chiron_front_luggage_wall_1",
+      "triangles": 800,
+      "material": "carpet"
+    },
+    {
+      "name": "chiron_front_luggage_crosswall_-1932.0",
+      "triangles": 668,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_front_luggage_crosswall_-890",
+      "triangles": 668,
+      "material": "carbon"
+    },
+    {
+      "name": "chiron_rear_rolled_corner_-1",
+      "triangles": 1848,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_rear_rolled_corner_1",
+      "triangles": 1848,
+      "material": "paint"
+    },
+    {
+      "name": "chiron_rear_bumper_skin",
+      "triangles": 3160,
+      "material": "paint"
+    }
+  ]
+}

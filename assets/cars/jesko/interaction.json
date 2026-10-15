@@ -1,0 +1,287 @@
+{
+  "version": 1,
+  "modelRevision": "batch2-phase1-authored-v1",
+  "units": "meters",
+  "parts": [
+    {
+      "id": "driver_door",
+      "label": "驾驶侧车门",
+      "hinge": [
+        -0.755,
+        0.72,
+        0.9040609384380863
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -1.05,
+      "meshes": [],
+      "hotspot": [
+        -0.1,
+        0.7,
+        0.95
+      ],
+      "tracks": [
+        {
+          "id": "driver_door_multi_axis",
+          "meshes": [
+            "jesko_door_outer_skin_-1",
+            "jesko_door_folded_edge_-1",
+            "jesko_door_inner_carbon_shell_-1",
+            "jesko_door_leather_trim_-1",
+            "jesko_door_window_bottom_trim_-1",
+            "jesko_door_armrest_-1",
+            "jesko_door_interior_pull_-1",
+            "jesko_door_speaker_trim_-1",
+            "jesko_door_speaker_mesh_-1",
+            "jesko_door_exterior_flush_handle_-1",
+            "jesko_mirror_stalk_-1",
+            "jesko_mirror_shell_-1",
+            "jesko_mirror_reflective_face_-1",
+            "jesko_door_stitch_-1_0",
+            "jesko_door_stitch_-1_1",
+            "jesko_door_stitch_-1_2",
+            "jesko_door_stitch_-1_3",
+            "jesko_door_stitch_-1_4",
+            "jesko_door_stitch_-1_5",
+            "jesko_door_stitch_-1_6",
+            "jesko_door_stitch_-1_7",
+            "jesko_door_stitch_-1_8",
+            "jesko_door_stitch_-1_9",
+            "jesko_door_stitch_-1_10",
+            "jesko_door_stitch_-1_11",
+            "jesko_door_stitch_-1_12",
+            "jesko_door_stitch_-1_13",
+            "jesko_door_stitch_-1_14",
+            "jesko_door_stitch_-1_15",
+            "jesko_door_stitch_-1_16",
+            "jesko_door_stitch_-1_17",
+            "jesko_door_stitch_-1_18",
+            "jesko_door_stitch_-1_19",
+            "jesko_rounded_side_door_glass_-1",
+            "jesko_rounded_door_window_frame_-1"
+          ],
+          "hinge": [
+            -0.755,
+            0.72,
+            0.9040609384380863
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "translation": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "t": 0.28,
+              "rotation": [
+                0.25,
+                -0.18,
+                0.13
+              ],
+              "translation": [
+                0,
+                0.025,
+                0.1
+              ]
+            },
+            {
+              "t": 1,
+              "rotation": [
+                0.69,
+                -0.19,
+                1.22
+              ],
+              "translation": [
+                0.015,
+                0.08,
+                0.13
+              ]
+            }
+          ]
+        }
+      ],
+      "motionNote": "车门多轴轨迹为展示近似；未采用未公开的原厂铰链尺寸。"
+    },
+    {
+      "id": "passenger_door",
+      "label": "乘客侧车门",
+      "hinge": [
+        -0.755,
+        0.72,
+        -0.9040609384380863
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 1.05,
+      "meshes": [],
+      "hotspot": [
+        -0.1,
+        0.7,
+        -0.95
+      ],
+      "tracks": [
+        {
+          "id": "passenger_door_multi_axis",
+          "meshes": [
+            "jesko_door_outer_skin_1",
+            "jesko_door_folded_edge_1",
+            "jesko_door_inner_carbon_shell_1",
+            "jesko_door_leather_trim_1",
+            "jesko_door_window_bottom_trim_1",
+            "jesko_door_armrest_1",
+            "jesko_door_interior_pull_1",
+            "jesko_door_speaker_trim_1",
+            "jesko_door_speaker_mesh_1",
+            "jesko_door_exterior_flush_handle_1",
+            "jesko_mirror_stalk_1",
+            "jesko_mirror_shell_1",
+            "jesko_mirror_reflective_face_1",
+            "jesko_door_stitch_1_0",
+            "jesko_door_stitch_1_1",
+            "jesko_door_stitch_1_2",
+            "jesko_door_stitch_1_3",
+            "jesko_door_stitch_1_4",
+            "jesko_door_stitch_1_5",
+            "jesko_door_stitch_1_6",
+            "jesko_door_stitch_1_7",
+            "jesko_door_stitch_1_8",
+            "jesko_door_stitch_1_9",
+            "jesko_door_stitch_1_10",
+            "jesko_door_stitch_1_11",
+            "jesko_door_stitch_1_12",
+            "jesko_door_stitch_1_13",
+            "jesko_door_stitch_1_14",
+            "jesko_door_stitch_1_15",
+            "jesko_door_stitch_1_16",
+            "jesko_door_stitch_1_17",
+            "jesko_door_stitch_1_18",
+            "jesko_door_stitch_1_19",
+            "jesko_rounded_side_door_glass_1",
+            "jesko_rounded_door_window_frame_1"
+          ],
+          "hinge": [
+            -0.755,
+            0.72,
+            -0.9040609384380863
+          ],
+          "keyframes": [
+            {
+              "t": 0,
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "translation": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "t": 0.28,
+              "rotation": [
+                -0.25,
+                0.18,
+                0.13
+              ],
+              "translation": [
+                0,
+                0.025,
+                -0.1
+              ]
+            },
+            {
+              "t": 1,
+              "rotation": [
+                -0.69,
+                0.19,
+                1.22
+              ],
+              "translation": [
+                0.015,
+                0.08,
+                -0.13
+              ]
+            }
+          ]
+        }
+      ],
+      "motionNote": "车门多轴轨迹为展示近似；未采用未公开的原厂铰链尺寸。"
+    },
+    {
+      "id": "hood",
+      "label": "前行李舱盖",
+      "hinge": [
+        -0.871,
+        0.7638389715832206,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -1.02,
+      "meshes": [
+        "jesko_front_luggage_lid",
+        "jesko_front_lid_carbon_liner",
+        "jesko_front_lid_return",
+        "jesko_front_lid_stiffener_-1",
+        "jesko_front_lid_stiffener_1"
+      ],
+      "hotspot": [
+        -1.574,
+        0.7,
+        0
+      ]
+    }
+  ],
+  "lights": {
+    "head": [
+      "jesko_headlamp_LED_sweep_-1",
+      "jesko_headlamp_projector_-1_0",
+      "jesko_headlamp_projector_-1_1",
+      "jesko_headlamp_LED_sweep_1",
+      "jesko_headlamp_projector_1_0",
+      "jesko_headlamp_projector_1_1"
+    ],
+    "tail": [
+      "jesko_rear_tail_LED_-1",
+      "jesko_rear_tail_LED_lower_-1",
+      "jesko_rear_tail_LED_1",
+      "jesko_rear_tail_LED_lower_1"
+    ]
+  },
+  "inspectionMeshes": [],
+  "stays": [],
+  "description": "指定量产版本的独立展示模型，未公开铰链尺寸和运动轨迹以教学示意表达。",
+  "sources": [
+    [
+      "科尼赛克 Jesko Attack 原厂车型页",
+      "https://www.koenigsegg.com/model/jesko-attack"
+    ],
+    [
+      "Jesko Attack 原厂技术参数",
+      "https://www.koenigsegg.com/technical-specifications-jesko-attack"
+    ],
+    [
+      "科尼赛克旋翼门原理",
+      "https://www.koenigsegg.com/dihedral-synchro-helix-doors"
+    ]
+  ]
+}

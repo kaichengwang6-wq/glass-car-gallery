@@ -1,0 +1,2465 @@
+{
+  "id": "huayra",
+  "modelRevision": "batch2-phase1-authored-v1",
+  "units": "metres",
+  "orientation": "Y up; nose -X",
+  "nominal_mm": [
+    4605,
+    2036,
+    1169
+  ],
+  "wheelbase_mm": 2795,
+  "parts": 483,
+  "triangles": 532079,
+  "invalid_meshes": [],
+  "bounds_m": [
+    [
+      -2.3025,
+      0.0,
+      -1.1271695556640624
+    ],
+    [
+      2.3025,
+      1.169,
+      1.1271695556640624
+    ]
+  ],
+  "glb_bytes": 14103612,
+  "preview_bytes": 3994364,
+  "interactive_meshes": {
+    "driver_door": 38,
+    "passenger_door": 38,
+    "front_left": 4,
+    "rear_left": 4,
+    "front_right": 4,
+    "rear_right": 4
+  },
+  "note": "独立构建的展示模型；轮廓和标志性细节参考指定原厂版本，非原厂工程 CAD。未公开内部尺寸和动作轨迹为可视化示意。",
+  "sources": [
+    [
+      "帕加尼 Huayra 原厂车型资料",
+      "https://www.pagani.com/huayra/"
+    ],
+    [
+      "原厂 2012 Monterey 技术介绍",
+      "https://www.pagani.com/news/pagani-automobili-at-the-monterey-car-week-2012/"
+    ]
+  ],
+  "components": [
+    {
+      "name": "huayra_side_sculpted_skin_-1",
+      "triangles": 13041,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_side_intake_tunnel_-1",
+      "triangles": 10,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_side_intake_shadow_-1",
+      "triangles": 45,
+      "material": "black"
+    },
+    {
+      "name": "huayra_side_intake_carbon_lip_-1",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_side_intake_vane_-1_0",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_side_intake_vane_-1_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_side_intake_vane_-1_2",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_side_intake_vane_-1_3",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_side_intake_vane_-1_4",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_side_carbon_sill_-1",
+      "triangles": 16,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_front_arch_fold_-1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_front_arch_liner_-1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_rear_arch_fold_-1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_rear_arch_liner_-1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_door_fixed_jamb_-1",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_door_aperture_seal_-1",
+      "triangles": 652,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_lower_skin_fold_-1_0",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_lower_skin_fold_-1_1",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_lower_skin_fold_-1_2",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_side_sculpted_skin_1",
+      "triangles": 13041,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_side_intake_tunnel_1",
+      "triangles": 10,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_side_intake_shadow_1",
+      "triangles": 45,
+      "material": "black"
+    },
+    {
+      "name": "huayra_side_intake_carbon_lip_1",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_side_intake_vane_1_0",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_side_intake_vane_1_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_side_intake_vane_1_2",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_side_intake_vane_1_3",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_side_intake_vane_1_4",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_side_carbon_sill_1",
+      "triangles": 16,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_front_arch_fold_1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_front_arch_liner_1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_rear_arch_fold_1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_rear_arch_liner_1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_door_fixed_jamb_1",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_door_aperture_seal_1",
+      "triangles": 652,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_lower_skin_fold_1_0",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_lower_skin_fold_1_1",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_lower_skin_fold_1_2",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_rear_haunch_skin_-1",
+      "triangles": 7154,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_rear_haunch_skin_1",
+      "triangles": 7156,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_rear_centre_deck_skin",
+      "triangles": 7904,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_underfloor_carbon_pan",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_door_outer_skin_-1",
+      "triangles": 2856,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_door_folded_edge_-1",
+      "triangles": 144,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_door_inner_carbon_shell_-1",
+      "triangles": 1736,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_door_leather_trim_-1",
+      "triangles": 700,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_door_window_bottom_trim_-1",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_door_armrest_-1",
+      "triangles": 28,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_door_interior_pull_-1",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_door_speaker_trim_-1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_door_speaker_mesh_-1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_door_exterior_flush_handle_-1",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_mirror_stalk_-1",
+      "triangles": 268,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_mirror_shell_-1",
+      "triangles": 832,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_mirror_reflective_face_-1",
+      "triangles": 528,
+      "material": "mirror"
+    },
+    {
+      "name": "huayra_door_stitch_-1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_7",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_8",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_9",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_10",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_11",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_12",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_13",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_14",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_15",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_16",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_17",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_18",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_-1_19",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_outer_skin_1",
+      "triangles": 2856,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_door_folded_edge_1",
+      "triangles": 144,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_door_inner_carbon_shell_1",
+      "triangles": 1736,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_door_leather_trim_1",
+      "triangles": 700,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_door_window_bottom_trim_1",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_door_armrest_1",
+      "triangles": 28,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_door_interior_pull_1",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_door_speaker_trim_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_door_speaker_mesh_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_door_exterior_flush_handle_1",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_mirror_stalk_1",
+      "triangles": 268,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_mirror_shell_1",
+      "triangles": 832,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_mirror_reflective_face_1",
+      "triangles": 528,
+      "material": "mirror"
+    },
+    {
+      "name": "huayra_door_stitch_1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_7",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_8",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_9",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_10",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_11",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_12",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_13",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_14",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_15",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_16",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_17",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_18",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_door_stitch_1_19",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_rounded_side_door_glass_-1",
+      "triangles": 3456,
+      "material": "glass"
+    },
+    {
+      "name": "huayra_rounded_door_window_frame_-1",
+      "triangles": 2000,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_rounded_side_door_glass_1",
+      "triangles": 3456,
+      "material": "glass"
+    },
+    {
+      "name": "huayra_rounded_door_window_frame_1",
+      "triangles": 2000,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_cockpit_floor",
+      "triangles": 12,
+      "material": "carpet"
+    },
+    {
+      "name": "huayra_rear_firewall",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_dashboard_upper",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_dashboard_lower",
+      "triangles": 336,
+      "material": "interior"
+    },
+    {
+      "name": "huayra_seat_carbon_shell_-1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_seat_squab_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_seat_back_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_seat_back_carbon_-1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_seat_headrest_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_seat_hip_bolster_-1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_seat_shoulder_bolster_-1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_seat_hip_bolster_-1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_seat_shoulder_bolster_-1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_seat_stitch_squab_-1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_seat_stitch_squab_-1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_seat_stitch_squab_-1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_seat_stitch_squab_-1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_seat_stitch_squab_-1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_seat_stitch_squab_-1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_seat_stitch_squab_-1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_seat_belt_-1",
+      "triangles": 32,
+      "material": "black"
+    },
+    {
+      "name": "huayra_seat_buckle_-1",
+      "triangles": 336,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_floor_mat_-1",
+      "triangles": 336,
+      "material": "carpet"
+    },
+    {
+      "name": "huayra_seat_carbon_shell_1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_seat_squab_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_seat_back_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_seat_back_carbon_1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_seat_headrest_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_seat_hip_bolster_1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_seat_shoulder_bolster_1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_seat_hip_bolster_1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_seat_shoulder_bolster_1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_seat_stitch_squab_1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_seat_stitch_squab_1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_seat_stitch_squab_1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_seat_stitch_squab_1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_seat_stitch_squab_1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_seat_stitch_squab_1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_seat_stitch_squab_1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "huayra_seat_belt_1",
+      "triangles": 32,
+      "material": "black"
+    },
+    {
+      "name": "huayra_seat_buckle_1",
+      "triangles": 336,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_floor_mat_1",
+      "triangles": 336,
+      "material": "carpet"
+    },
+    {
+      "name": "huayra_steering_wheel_rim",
+      "triangles": 1440,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_steering_wheel_hub",
+      "triangles": 528,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_steering_spoke_0",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_steering_spoke_3.141592653589793",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_steering_spoke_4.71238898038469",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_steering_column",
+      "triangles": 68,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_steering_shift_paddle_-1",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_steering_shift_paddle_1",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_instrument_binnacle",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_gauge_bezel_0",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_gauge_face_0",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_gauge_needle_0",
+      "triangles": 16,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_gauge_tick_0",
+      "triangles": 304,
+      "material": "white"
+    },
+    {
+      "name": "huayra_gauge_bezel_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_gauge_face_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_gauge_needle_1",
+      "triangles": 16,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_gauge_tick_1",
+      "triangles": 304,
+      "material": "white"
+    },
+    {
+      "name": "huayra_gauge_bezel_2",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_gauge_face_2",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_gauge_needle_2",
+      "triangles": 16,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_gauge_tick_2",
+      "triangles": 304,
+      "material": "white"
+    },
+    {
+      "name": "huayra_centre_console",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_centre_touchscreen",
+      "triangles": 336,
+      "material": "screen"
+    },
+    {
+      "name": "huayra_console_side_trim_-1",
+      "triangles": 44,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_dash_vent_ring_-1_0",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_dash_vent_shadow_-1_0",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_dash_vent_blade_-1_0_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_blade_-1_0_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_blade_-1_0_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_ring_-1_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_dash_vent_shadow_-1_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_dash_vent_blade_-1_1_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_blade_-1_1_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_blade_-1_1_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_ring_-1_2",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_dash_vent_shadow_-1_2",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_dash_vent_blade_-1_2_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_blade_-1_2_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_blade_-1_2_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_console_side_trim_1",
+      "triangles": 44,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_dash_vent_ring_1_0",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_dash_vent_shadow_1_0",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_dash_vent_blade_1_0_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_blade_1_0_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_blade_1_0_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_ring_1_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_dash_vent_shadow_1_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_dash_vent_blade_1_1_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_blade_1_1_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_blade_1_1_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_ring_1_2",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_dash_vent_shadow_1_2",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_dash_vent_blade_1_2_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_blade_1_2_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_dash_vent_blade_1_2_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_console_rotary_control_0",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_console_rotary_indicator_0",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "huayra_console_rotary_control_1",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_console_rotary_indicator_1",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "huayra_console_rotary_control_2",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_console_rotary_indicator_2",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "huayra_console_rotary_control_3",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_console_rotary_indicator_3",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "huayra_console_armrest",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "huayra_pedal_0",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_pedal_1",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_pedal_2",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_compound_wraparound_windshield",
+      "triangles": 10208,
+      "material": "glass"
+    },
+    {
+      "name": "huayra_curved_windshield_A_pillar_-1",
+      "triangles": 1436,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_curved_windshield_A_pillar_1",
+      "triangles": 1436,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_curved_windshield_header",
+      "triangles": 1196,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_curved_windshield_cowl",
+      "triangles": 1196,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_curved_windshield_wiper",
+      "triangles": 636,
+      "material": "black"
+    },
+    {
+      "name": "huayra_curved_canopy_roof_0",
+      "triangles": 6384,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_curved_canopy_headliner_0",
+      "triangles": 2112,
+      "material": "alcantara"
+    },
+    {
+      "name": "huayra_curved_canopy_roof_1",
+      "triangles": 6384,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_curved_canopy_headliner_1",
+      "triangles": 2112,
+      "material": "alcantara"
+    },
+    {
+      "name": "huayra_curved_canopy_roof_2",
+      "triangles": 6384,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_curved_canopy_headliner_2",
+      "triangles": 2112,
+      "material": "alcantara"
+    },
+    {
+      "name": "huayra_curved_roof_side_rail_-1",
+      "triangles": 1436,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_curved_rear_pillar_-1",
+      "triangles": 2780,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_curved_B_pillar_-1",
+      "triangles": 716,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_curved_rear_quarter_window_-1",
+      "triangles": 432,
+      "material": "glass"
+    },
+    {
+      "name": "huayra_curved_roof_side_rail_1",
+      "triangles": 1436,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_curved_rear_pillar_1",
+      "triangles": 2780,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_curved_B_pillar_1",
+      "triangles": 716,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_curved_rear_quarter_window_1",
+      "triangles": 432,
+      "material": "glass"
+    },
+    {
+      "name": "huayra_curved_rear_window",
+      "triangles": 3456,
+      "material": "glass"
+    },
+    {
+      "name": "huayra_front_right_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_front_right_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_front_right_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_front_right_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_front_right_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_front_right_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "huayra_front_right_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "huayra_front_right_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_front_right_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "huayra_front_right_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_front_right_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_front_right_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_front_right_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "huayra_front_right_caliper_cast_piston_housings",
+      "triangles": 336,
+      "material": "caliper"
+    },
+    {
+      "name": "huayra_front_right_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_front_right_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "huayra_front_right_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_front_right_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_front_signature_spokes_-1",
+      "triangles": 504,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_front_left_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_front_left_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_front_left_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_front_left_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_front_left_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_front_left_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "huayra_front_left_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "huayra_front_left_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_front_left_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "huayra_front_left_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_front_left_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_front_left_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_front_left_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "huayra_front_left_caliper_cast_piston_housings",
+      "triangles": 336,
+      "material": "caliper"
+    },
+    {
+      "name": "huayra_front_left_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_front_left_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "huayra_front_left_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_front_left_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_front_signature_spokes_1",
+      "triangles": 504,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_rear_right_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_rear_right_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_rear_right_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_right_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_rear_right_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_right_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "huayra_rear_right_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "huayra_rear_right_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_rear_right_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "huayra_rear_right_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_right_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_right_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_rear_right_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "huayra_rear_right_caliper_cast_piston_housings",
+      "triangles": 224,
+      "material": "caliper"
+    },
+    {
+      "name": "huayra_rear_right_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_right_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "huayra_rear_right_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_rear_right_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_signature_spokes_-1",
+      "triangles": 504,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_rear_left_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_rear_left_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_rear_left_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_left_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_rear_left_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_left_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "huayra_rear_left_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "huayra_rear_left_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_rear_left_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "huayra_rear_left_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_left_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_left_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_rear_left_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "huayra_rear_left_caliper_cast_piston_housings",
+      "triangles": 224,
+      "material": "caliper"
+    },
+    {
+      "name": "huayra_rear_left_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_left_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "huayra_rear_left_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_rear_left_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_signature_spokes_1",
+      "triangles": 504,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_rear_grille_shadow",
+      "triangles": 36,
+      "material": "black"
+    },
+    {
+      "name": "huayra_rear_engine_vent_mesh",
+      "triangles": 1136,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_diffuser_ramp",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_rear_diffuser_strake_0",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_rear_diffuser_strake_1",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_rear_diffuser_strake_2",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_rear_diffuser_strake_3",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_rear_diffuser_strake_4",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_rear_diffuser_strake_5",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_rear_diffuser_strake_6",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_nose_emblem",
+      "triangles": 432,
+      "material": "badge"
+    },
+    {
+      "name": "huayra_sculpted_front_fascia",
+      "triangles": 13351,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_Huayra_swept_front_mouth_-1_tunnel",
+      "triangles": 140,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_Huayra_swept_front_mouth_-1_dark_depth",
+      "triangles": 630,
+      "material": "black"
+    },
+    {
+      "name": "huayra_Huayra_swept_front_mouth_-1_rolled_lip",
+      "triangles": 1680,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_Huayra_lower_curved_splitter_-1",
+      "triangles": 1172,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_Huayra_swept_front_mouth_1_tunnel",
+      "triangles": 140,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_Huayra_swept_front_mouth_1_dark_depth",
+      "triangles": 630,
+      "material": "black"
+    },
+    {
+      "name": "huayra_Huayra_swept_front_mouth_1_rolled_lip",
+      "triangles": 1680,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_Huayra_lower_curved_splitter_1",
+      "triangles": 1172,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_engine_block_visible",
+      "triangles": 336,
+      "material": "bay_cast"
+    },
+    {
+      "name": "huayra_engine_bank_cover_-1",
+      "triangles": 336,
+      "material": "bay_cast"
+    },
+    {
+      "name": "huayra_engine_air_duct_-1",
+      "triangles": 92,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_engine_bay_brace_-1",
+      "triangles": 36,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_engine_cover_rib_-1_0",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_engine_cover_rib_-1_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_engine_cover_rib_-1_2",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_engine_cover_rib_-1_3",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_engine_cover_rib_-1_4",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_engine_cover_rib_-1_5",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_engine_cover_rib_-1_6",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_engine_cover_rib_-1_7",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_suspension_upper_link_-1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_suspension_second_link_-1",
+      "triangles": 28,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_engine_bank_cover_1",
+      "triangles": 336,
+      "material": "bay_cast"
+    },
+    {
+      "name": "huayra_engine_air_duct_1",
+      "triangles": 92,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_engine_bay_brace_1",
+      "triangles": 36,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_engine_cover_rib_1_0",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_engine_cover_rib_1_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_engine_cover_rib_1_2",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_engine_cover_rib_1_3",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_engine_cover_rib_1_4",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_engine_cover_rib_1_5",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_engine_cover_rib_1_6",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_engine_cover_rib_1_7",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_suspension_upper_link_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_suspension_second_link_1",
+      "triangles": 28,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_engine_deck_vent_-1_0",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_-1_1",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_-1_2",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_-1_3",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_-1_4",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_-1_5",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_-1_6",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_-1_7",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_-1_8",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_-1_9",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_1_0",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_1_1",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_1_2",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_1_3",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_1_4",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_1_5",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_1_6",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_1_7",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_1_8",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_engine_deck_vent_1_9",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "huayra_active_flap_skin_front_left",
+      "triangles": 532,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_active_flap_inner_front_left",
+      "triangles": 420,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_active_flap_recess_front_left",
+      "triangles": 36,
+      "material": "black"
+    },
+    {
+      "name": "huayra_active_flap_hinge_front_left",
+      "triangles": 44,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_active_flap_hinge_mount_front_left_-1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_active_flap_hinge_mount_front_left_1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_active_flap_skin_rear_left",
+      "triangles": 532,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_active_flap_inner_rear_left",
+      "triangles": 420,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_active_flap_recess_rear_left",
+      "triangles": 36,
+      "material": "black"
+    },
+    {
+      "name": "huayra_active_flap_hinge_rear_left",
+      "triangles": 44,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_active_flap_hinge_mount_rear_left_-1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_active_flap_hinge_mount_rear_left_1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_round_lamp_bezel_-1_0",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_rear_round_lamp_ring_-1_0",
+      "triangles": 960,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_rear_round_lamp_inner_-1_0",
+      "triangles": 432,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_rear_round_lamp_bezel_-1_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_rear_round_lamp_ring_-1_1",
+      "triangles": 960,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_rear_round_lamp_inner_-1_1",
+      "triangles": 432,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_rear_round_lamp_bezel_-1_2",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_rear_round_lamp_ring_-1_2",
+      "triangles": 960,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_rear_round_lamp_inner_-1_2",
+      "triangles": 432,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_active_flap_skin_front_right",
+      "triangles": 532,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_active_flap_inner_front_right",
+      "triangles": 420,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_active_flap_recess_front_right",
+      "triangles": 36,
+      "material": "black"
+    },
+    {
+      "name": "huayra_active_flap_hinge_front_right",
+      "triangles": 44,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_active_flap_hinge_mount_front_right_-1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_active_flap_hinge_mount_front_right_1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_active_flap_skin_rear_right",
+      "triangles": 532,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_active_flap_inner_rear_right",
+      "triangles": 420,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_active_flap_recess_rear_right",
+      "triangles": 36,
+      "material": "black"
+    },
+    {
+      "name": "huayra_active_flap_hinge_rear_right",
+      "triangles": 44,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_active_flap_hinge_mount_rear_right_-1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_active_flap_hinge_mount_rear_right_1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_round_lamp_bezel_1_0",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_rear_round_lamp_ring_1_0",
+      "triangles": 960,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_rear_round_lamp_inner_1_0",
+      "triangles": 432,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_rear_round_lamp_bezel_1_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_rear_round_lamp_ring_1_1",
+      "triangles": 960,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_rear_round_lamp_inner_1_1",
+      "triangles": 432,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_rear_round_lamp_bezel_1_2",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_rear_round_lamp_ring_1_2",
+      "triangles": 960,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_rear_round_lamp_inner_1_2",
+      "triangles": 432,
+      "material": "tail"
+    },
+    {
+      "name": "huayra_central_quad_exhaust_-54_596",
+      "triangles": 108,
+      "material": "bay_heat"
+    },
+    {
+      "name": "huayra_central_quad_exhaust_lip_-54_596",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_central_quad_exhaust_bore_-54_596",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_central_quad_exhaust_-54_704",
+      "triangles": 108,
+      "material": "bay_heat"
+    },
+    {
+      "name": "huayra_central_quad_exhaust_lip_-54_704",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_central_quad_exhaust_bore_-54_704",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_central_quad_exhaust_54_596",
+      "triangles": 108,
+      "material": "bay_heat"
+    },
+    {
+      "name": "huayra_central_quad_exhaust_lip_54_596",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_central_quad_exhaust_bore_54_596",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_central_quad_exhaust_54_704",
+      "triangles": 108,
+      "material": "bay_heat"
+    },
+    {
+      "name": "huayra_central_quad_exhaust_lip_54_704",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "huayra_central_quad_exhaust_bore_54_704",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "huayra_cockpit_exposed_gear_lever",
+      "triangles": 44,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_cockpit_metal_gear_knob",
+      "triangles": 528,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_cockpit_gear_linkage_-1",
+      "triangles": 44,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_cockpit_gear_linkage_1",
+      "triangles": 44,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_front_quarter_skin",
+      "triangles": 22524,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_Huayra_headlamp_recess_wall_-1",
+      "triangles": 144,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_Huayra_headlamp_recess_floor_-1",
+      "triangles": 19656,
+      "material": "black"
+    },
+    {
+      "name": "huayra_Huayra_teardrop_lamp_seal_-1",
+      "triangles": 1440,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_Huayra_round_lens_bezel_-1_0",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_Huayra_round_projector_-1_0",
+      "triangles": 728,
+      "material": "light"
+    },
+    {
+      "name": "huayra_Huayra_round_lens_bezel_-1_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_Huayra_round_projector_-1_1",
+      "triangles": 728,
+      "material": "light"
+    },
+    {
+      "name": "huayra_Huayra_round_lens_bezel_-1_2",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_Huayra_round_projector_-1_2",
+      "triangles": 728,
+      "material": "light"
+    },
+    {
+      "name": "huayra_Huayra_round_lens_bezel_-1_3",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_Huayra_round_projector_-1_3",
+      "triangles": 728,
+      "material": "light"
+    },
+    {
+      "name": "huayra_Huayra_flush_clear_headlamp_cover_-1",
+      "triangles": 19656,
+      "material": "lamp_lens"
+    },
+    {
+      "name": "huayra_Huayra_headlamp_recess_wall_1",
+      "triangles": 144,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_Huayra_headlamp_recess_floor_1",
+      "triangles": 19656,
+      "material": "black"
+    },
+    {
+      "name": "huayra_Huayra_teardrop_lamp_seal_1",
+      "triangles": 1440,
+      "material": "rubber"
+    },
+    {
+      "name": "huayra_Huayra_round_lens_bezel_1_0",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_Huayra_round_projector_1_0",
+      "triangles": 728,
+      "material": "light"
+    },
+    {
+      "name": "huayra_Huayra_round_lens_bezel_1_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_Huayra_round_projector_1_1",
+      "triangles": 728,
+      "material": "light"
+    },
+    {
+      "name": "huayra_Huayra_round_lens_bezel_1_2",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_Huayra_round_projector_1_2",
+      "triangles": 728,
+      "material": "light"
+    },
+    {
+      "name": "huayra_Huayra_round_lens_bezel_1_3",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "huayra_Huayra_round_projector_1_3",
+      "triangles": 728,
+      "material": "light"
+    },
+    {
+      "name": "huayra_Huayra_flush_clear_headlamp_cover_1",
+      "triangles": 19656,
+      "material": "lamp_lens"
+    },
+    {
+      "name": "huayra_Huayra_flap_recess_wall_front_left",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_Huayra_flap_shaft_bracket_front_left_-1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_Huayra_flap_shaft_bracket_front_left_1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_Huayra_flap_recess_wall_rear_left",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_Huayra_flap_shaft_bracket_rear_left_-1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_Huayra_flap_shaft_bracket_rear_left_1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_Huayra_flap_recess_wall_front_right",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_Huayra_flap_shaft_bracket_front_right_-1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_Huayra_flap_shaft_bracket_front_right_1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_Huayra_flap_recess_wall_rear_right",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "huayra_Huayra_flap_shaft_bracket_rear_right_-1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_Huayra_flap_shaft_bracket_rear_right_1",
+      "triangles": 36,
+      "material": "dark_metal"
+    },
+    {
+      "name": "huayra_rear_rolled_corner_-1",
+      "triangles": 1848,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_rear_rolled_corner_1",
+      "triangles": 1848,
+      "material": "paint"
+    },
+    {
+      "name": "huayra_rear_bumper_skin",
+      "triangles": 3454,
+      "material": "paint"
+    }
+  ]
+}

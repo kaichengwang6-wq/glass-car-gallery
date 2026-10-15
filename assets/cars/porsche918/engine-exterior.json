@@ -1,0 +1,200 @@
+{
+  "id": "porsche918",
+  "bounds": {
+    "min": [
+      -0.3846007492693456,
+      -0.004,
+      -0.42
+    ],
+    "max": [
+      0.448,
+      0.6364146309289452,
+      0.42
+    ]
+  },
+  "hotspots": [
+    {
+      "id": "intake",
+      "meshes": [
+        "porsche918_outboard_intake_plenum_-1",
+        "porsche918_outer_inlet_runner_-1_0",
+        "porsche918_outer_inlet_runner_-1_1",
+        "porsche918_outer_inlet_runner_-1_2",
+        "porsche918_outer_inlet_runner_-1_3",
+        "porsche918_outside_inlet_-1",
+        "porsche918_outboard_intake_plenum_1",
+        "porsche918_outer_inlet_runner_1_0",
+        "porsche918_outer_inlet_runner_1_1",
+        "porsche918_outer_inlet_runner_1_2",
+        "porsche918_outer_inlet_runner_1_3",
+        "porsche918_outside_inlet_1"
+      ],
+      "position": [
+        -0.01,
+        0.415,
+        0.405
+      ]
+    },
+    {
+      "id": "block",
+      "meshes": [
+        "porsche918_crankcase",
+        "porsche918_sump_gasket",
+        "porsche918_dry_sump_lower",
+        "porsche918_case_web_-1_0",
+        "porsche918_case_web_1_0",
+        "porsche918_case_web_-1_1",
+        "porsche918_case_web_1_1",
+        "porsche918_case_web_-1_2",
+        "porsche918_case_web_1_2",
+        "porsche918_case_web_-1_3",
+        "porsche918_case_web_1_3",
+        "porsche918_case_web_-1_4",
+        "porsche918_case_web_1_4",
+        "porsche918_case_web_-1_5",
+        "porsche918_case_web_1_5",
+        "porsche918_case_web_-1_6",
+        "porsche918_case_web_1_6",
+        "porsche918_case_web_-1_7",
+        "porsche918_case_web_1_7",
+        "porsche918_bank_casting_-1",
+        "porsche918_cylinder_head_-1",
+        "porsche918_mount_boss_-1",
+        "porsche918_mount_socket_-1",
+        "porsche918_bank_casting_1",
+        "porsche918_cylinder_head_1",
+        "porsche918_mount_boss_1",
+        "porsche918_mount_socket_1",
+        "porsche918_timing_case",
+        "porsche918_crank_hub",
+        "porsche918_crank_hub_rim",
+        "porsche918_cam_drive_cap_-1",
+        "porsche918_timing_case_bolts_-1",
+        "porsche918_cam_drive_cap_1",
+        "porsche918_timing_case_bolts_1"
+      ],
+      "position": [
+        -0.316,
+        0.22,
+        0.07
+      ]
+    },
+    {
+      "id": "covers",
+      "meshes": [
+        "porsche918_cam_cover_-1",
+        "porsche918_cover_gasket_-1",
+        "porsche918_cover_fasteners_-1",
+        "porsche918_cam_cover_1",
+        "porsche918_cover_gasket_1",
+        "porsche918_cover_fasteners_1",
+        "porsche918_central_exhaust_header_-1_0",
+        "porsche918_central_exhaust_header_-1_1",
+        "porsche918_central_exhaust_header_-1_2",
+        "porsche918_central_exhaust_header_-1_3",
+        "porsche918_heatshield_-1",
+        "porsche918_top_exhaust_-1",
+        "porsche918_top_exhaust_lip_-1",
+        "porsche918_top_exhaust_bore_-1",
+        "porsche918_central_exhaust_header_1_0",
+        "porsche918_central_exhaust_header_1_1",
+        "porsche918_central_exhaust_header_1_2",
+        "porsche918_central_exhaust_header_1_3",
+        "porsche918_heatshield_1",
+        "porsche918_top_exhaust_1",
+        "porsche918_top_exhaust_lip_1",
+        "porsche918_top_exhaust_bore_1"
+      ],
+      "position": [
+        0.17,
+        0.55,
+        0.07
+      ]
+    },
+    {
+      "id": "ignition",
+      "meshes": [
+        "porsche918_coil_-1_0",
+        "porsche918_coil_lead_-1_0",
+        "porsche918_coil_connector_-1_0",
+        "porsche918_coil_-1_1",
+        "porsche918_coil_lead_-1_1",
+        "porsche918_coil_connector_-1_1",
+        "porsche918_coil_-1_2",
+        "porsche918_coil_lead_-1_2",
+        "porsche918_coil_connector_-1_2",
+        "porsche918_coil_-1_3",
+        "porsche918_coil_lead_-1_3",
+        "porsche918_coil_connector_-1_3",
+        "porsche918_loom_-1",
+        "porsche918_coil_1_0",
+        "porsche918_coil_lead_1_0",
+        "porsche918_coil_connector_1_0",
+        "porsche918_coil_1_1",
+        "porsche918_coil_lead_1_1",
+        "porsche918_coil_connector_1_1",
+        "porsche918_coil_1_2",
+        "porsche918_coil_lead_1_2",
+        "porsche918_coil_connector_1_2",
+        "porsche918_coil_1_3",
+        "porsche918_coil_lead_1_3",
+        "porsche918_coil_connector_1_3",
+        "porsche918_loom_1"
+      ],
+      "position": [
+        0.16666666666666666,
+        0.465,
+        -0.28
+      ]
+    },
+    {
+      "id": "hybrid",
+      "meshes": [
+        "porsche918_rear_hybrid_housing_310",
+        "porsche918_rear_hybrid_housing_327",
+        "porsche918_rear_hybrid_housing_348",
+        "porsche918_rear_hybrid_housing_385",
+        "porsche918_motor_cooling_fin_0",
+        "porsche918_motor_cooling_fin_1",
+        "porsche918_motor_cooling_fin_2",
+        "porsche918_motor_cooling_fin_3",
+        "porsche918_motor_cooling_fin_4",
+        "porsche918_motor_cooling_fin_5",
+        "porsche918_motor_cooling_fin_6",
+        "porsche918_motor_cooling_fin_7",
+        "porsche918_motor_cooling_fin_8",
+        "porsche918_motor_cooling_fin_9",
+        "porsche918_motor_cooling_fin_10",
+        "porsche918_motor_cooling_fin_11",
+        "porsche918_motor_cooling_fin_12",
+        "porsche918_motor_cooling_fin_13",
+        "porsche918_motor_cooling_fin_14",
+        "porsche918_motor_cooling_fin_15",
+        "porsche918_motor_cooling_fin_16",
+        "porsche918_motor_cooling_fin_17",
+        "porsche918_motor_cooling_fin_18",
+        "porsche918_motor_cooling_fin_19",
+        "porsche918_motor_cooling_fin_20",
+        "porsche918_motor_cooling_fin_21",
+        "porsche918_motor_cooling_fin_22",
+        "porsche918_motor_cooling_fin_23",
+        "porsche918_rear_motor_output",
+        "porsche918_high_voltage_socket",
+        "porsche918_HV_cable_0",
+        "porsche918_HV_cable_1",
+        "porsche918_HV_cable_2"
+      ],
+      "position": [
+        0.367,
+        0.345,
+        0.115
+      ]
+    }
+  ],
+  "note": "按车型动力总成特征独立制作的外观教学模型；外壳、附件和管线尺度为示意，非原厂 CAD。",
+  "sources": [
+    "https://newsroom.porsche.com/en/press-kits/Media-Drive-Cayenne-E-Performance/10-Jahre-Porsche-918-Spyder.html",
+    "https://newsroom.porsche.com/en/company/porsche-eight-cylinder-engines-history-12690.html",
+    "https://www.scribd.com/doc/247128024/Tech-Specs-2015-Porsche-918-Spyder"
+  ]
+}

@@ -1,0 +1,758 @@
+{
+  "id": "jesko",
+  "revision": "engine-exterior-v1",
+  "units": "metres Y up, crankshaft X",
+  "meshCount": 145,
+  "triangles": 53016,
+  "bounds": {
+    "min": [
+      -0.375,
+      -0.004,
+      -0.558
+    ],
+    "max": [
+      0.3445565286104892,
+      0.6505,
+      0.5513361019820554
+    ]
+  },
+  "bytes": 1473724,
+  "sha256": "dcecc83be67de2653d8ef2420b6491e272a31a4aff383366b1270d8dfae5dd6d",
+  "features": [
+    "eight arched carbon intake runners",
+    "central carbon plenum",
+    "two external turbochargers",
+    "separate long-stroke V8 block"
+  ],
+  "sources": [
+    "https://www.koenigsegg.com/technical-specifications-jesko-attack",
+    "https://www.koenigsegg.com/engines"
+  ],
+  "components": [
+    {
+      "name": "jesko_crankcase",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_sump_gasket",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_dry_sump_lower",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_case_web_-1_0",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_1_0",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_-1_1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_1_1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_-1_2",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_1_2",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_-1_3",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_1_3",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_-1_4",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_1_4",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_-1_5",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_1_5",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_-1_6",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_1_6",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_-1_7",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_case_web_1_7",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "jesko_bank_casting_-1",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_cylinder_head_-1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_cam_cover_-1",
+      "material": "carbon",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_cover_gasket_-1",
+      "material": "rubber",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_fasteners_-1",
+      "material": "alloy",
+      "triangles": 180
+    },
+    {
+      "name": "jesko_coil_-1_0",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_coil_lead_-1_0",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "jesko_coil_connector_-1_0",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_coil_-1_1",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_coil_lead_-1_1",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "jesko_coil_connector_-1_1",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_coil_-1_2",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_coil_lead_-1_2",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "jesko_coil_connector_-1_2",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_coil_-1_3",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_coil_lead_-1_3",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "jesko_coil_connector_-1_3",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_loom_-1",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "jesko_mount_boss_-1",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_mount_socket_-1",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "jesko_bank_casting_1",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_cylinder_head_1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_cam_cover_1",
+      "material": "carbon",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_cover_gasket_1",
+      "material": "rubber",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_fasteners_1",
+      "material": "alloy",
+      "triangles": 180
+    },
+    {
+      "name": "jesko_coil_1_0",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_coil_lead_1_0",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "jesko_coil_connector_1_0",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_coil_1_1",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_coil_lead_1_1",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "jesko_coil_connector_1_1",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_coil_1_2",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_coil_lead_1_2",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "jesko_coil_connector_1_2",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_coil_1_3",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_coil_lead_1_3",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "jesko_coil_connector_1_3",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_loom_1",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "jesko_mount_boss_1",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_mount_socket_1",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "jesko_timing_case",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_crank_hub",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "jesko_crank_hub_rim",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "jesko_cam_drive_cap_-1",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "jesko_timing_case_bolts_-1",
+      "material": "alloy",
+      "triangles": 60
+    },
+    {
+      "name": "jesko_cam_drive_cap_1",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "jesko_timing_case_bolts_1",
+      "material": "alloy",
+      "triangles": 60
+    },
+    {
+      "name": "jesko_central_carbon_collector",
+      "material": "carbon",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_arched_carbon_runner_-1_0",
+      "material": "carbon",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_runner_flange_-1_0",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "jesko_arched_carbon_runner_-1_1",
+      "material": "carbon",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_runner_flange_-1_1",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "jesko_arched_carbon_runner_-1_2",
+      "material": "carbon",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_runner_flange_-1_2",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "jesko_arched_carbon_runner_-1_3",
+      "material": "carbon",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_runner_flange_-1_3",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "jesko_turbo_-1_compressor_volute",
+      "material": "alloy",
+      "triangles": 2304
+    },
+    {
+      "name": "jesko_turbo_-1_compressor_hub",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "jesko_turbo_-1_hot_volute",
+      "material": "bay_heat",
+      "triangles": 2304
+    },
+    {
+      "name": "jesko_turbo_-1_turbine_hub",
+      "material": "bay_heat",
+      "triangles": 124
+    },
+    {
+      "name": "jesko_turbo_-1_shaft_housing",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "jesko_turbo_-1_intake_lip",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "jesko_turbo_-1_inlet_bore",
+      "material": "black",
+      "triangles": 124
+    },
+    {
+      "name": "jesko_turbo_-1_compressor_blades",
+      "material": "alloy",
+      "triangles": 24
+    },
+    {
+      "name": "jesko_turbo_-1_actuator_link",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_turbo_-1_actuator",
+      "material": "dark_metal",
+      "triangles": 1224
+    },
+    {
+      "name": "jesko_exhaust_header_-1_-215.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_exhaust_header_-1_-71.7",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_exhaust_header_-1_71.7",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_exhaust_header_-1_215.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_exhaust_downpipe_-1_125.0",
+      "material": "bay_heat",
+      "triangles": 472
+    },
+    {
+      "name": "jesko_carbon_charge_pipe_-1",
+      "material": "carbon",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_cover_rib_-1_0",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_rib_-1_1",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_rib_-1_2",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_rib_-1_3",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_rib_-1_4",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_rib_-1_5",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_rib_-1_6",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_rib_-1_7",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_arched_carbon_runner_1_0",
+      "material": "carbon",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_runner_flange_1_0",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "jesko_arched_carbon_runner_1_1",
+      "material": "carbon",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_runner_flange_1_1",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "jesko_arched_carbon_runner_1_2",
+      "material": "carbon",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_runner_flange_1_2",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "jesko_arched_carbon_runner_1_3",
+      "material": "carbon",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_runner_flange_1_3",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "jesko_turbo_1_compressor_volute",
+      "material": "alloy",
+      "triangles": 2304
+    },
+    {
+      "name": "jesko_turbo_1_compressor_hub",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "jesko_turbo_1_hot_volute",
+      "material": "bay_heat",
+      "triangles": 2304
+    },
+    {
+      "name": "jesko_turbo_1_turbine_hub",
+      "material": "bay_heat",
+      "triangles": 124
+    },
+    {
+      "name": "jesko_turbo_1_shaft_housing",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "jesko_turbo_1_intake_lip",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "jesko_turbo_1_inlet_bore",
+      "material": "black",
+      "triangles": 124
+    },
+    {
+      "name": "jesko_turbo_1_compressor_blades",
+      "material": "alloy",
+      "triangles": 24
+    },
+    {
+      "name": "jesko_turbo_1_actuator_link",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_turbo_1_actuator",
+      "material": "dark_metal",
+      "triangles": 1224
+    },
+    {
+      "name": "jesko_exhaust_header_1_-215.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_exhaust_header_1_-71.7",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_exhaust_header_1_71.7",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_exhaust_header_1_215.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_exhaust_downpipe_1_125.0",
+      "material": "bay_heat",
+      "triangles": 472
+    },
+    {
+      "name": "jesko_carbon_charge_pipe_1",
+      "material": "carbon",
+      "triangles": 696
+    },
+    {
+      "name": "jesko_cover_rib_1_0",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_rib_1_1",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_rib_1_2",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_rib_1_3",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_rib_1_4",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_rib_1_5",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_rib_1_6",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_cover_rib_1_7",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_collector_upper_plaque",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "jesko_front_alternator",
+      "material": "bay_cast",
+      "triangles": 124
+    },
+    {
+      "name": "jesko_alternator_slot_0",
+      "material": "dark_metal",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_alternator_slot_1",
+      "material": "dark_metal",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_alternator_slot_2",
+      "material": "dark_metal",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_alternator_slot_3",
+      "material": "dark_metal",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_alternator_slot_4",
+      "material": "dark_metal",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_alternator_slot_5",
+      "material": "dark_metal",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_alternator_slot_6",
+      "material": "dark_metal",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_alternator_slot_7",
+      "material": "dark_metal",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_alternator_slot_8",
+      "material": "dark_metal",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_alternator_slot_9",
+      "material": "dark_metal",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_alternator_slot_10",
+      "material": "dark_metal",
+      "triangles": 52
+    },
+    {
+      "name": "jesko_alternator_slot_11",
+      "material": "dark_metal",
+      "triangles": 52
+    }
+  ]
+}

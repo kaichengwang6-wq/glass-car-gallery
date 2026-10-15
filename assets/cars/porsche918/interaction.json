@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "modelRevision": "batch2-phase1-authored-v1",
+  "units": "meters",
+  "parts": [
+    {
+      "id": "driver_door",
+      "label": "驾驶侧车门",
+      "hinge": [
+        -0.78,
+        0.72,
+        0.8850054990541115
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": -1.05,
+      "meshes": [
+        "porsche918_door_outer_skin_-1",
+        "porsche918_door_folded_edge_-1",
+        "porsche918_door_inner_carbon_shell_-1",
+        "porsche918_door_leather_trim_-1",
+        "porsche918_door_side_glass_-1",
+        "porsche918_door_window_surround_-1",
+        "porsche918_door_window_bottom_trim_-1",
+        "porsche918_door_armrest_-1",
+        "porsche918_door_interior_pull_-1",
+        "porsche918_door_speaker_trim_-1",
+        "porsche918_door_speaker_mesh_-1",
+        "porsche918_door_exterior_flush_handle_-1",
+        "porsche918_mirror_stalk_-1",
+        "porsche918_mirror_shell_-1",
+        "porsche918_mirror_reflective_face_-1",
+        "porsche918_door_stitch_-1_0",
+        "porsche918_door_stitch_-1_1",
+        "porsche918_door_stitch_-1_2",
+        "porsche918_door_stitch_-1_3",
+        "porsche918_door_stitch_-1_4",
+        "porsche918_door_stitch_-1_5",
+        "porsche918_door_stitch_-1_6",
+        "porsche918_door_stitch_-1_7",
+        "porsche918_door_stitch_-1_8",
+        "porsche918_door_stitch_-1_9",
+        "porsche918_door_stitch_-1_10",
+        "porsche918_door_stitch_-1_11",
+        "porsche918_door_stitch_-1_12",
+        "porsche918_door_stitch_-1_13",
+        "porsche918_door_stitch_-1_14",
+        "porsche918_door_stitch_-1_15",
+        "porsche918_door_stitch_-1_16",
+        "porsche918_door_stitch_-1_17",
+        "porsche918_door_stitch_-1_18",
+        "porsche918_door_stitch_-1_19",
+        "porsche918_918_door_rounded_shoulder_-1"
+      ],
+      "hotspot": [
+        -0.1,
+        0.7,
+        0.95
+      ]
+    },
+    {
+      "id": "passenger_door",
+      "label": "乘客侧车门",
+      "hinge": [
+        -0.78,
+        0.72,
+        -0.8850054990541115
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "angle": 1.05,
+      "meshes": [
+        "porsche918_door_outer_skin_1",
+        "porsche918_door_folded_edge_1",
+        "porsche918_door_inner_carbon_shell_1",
+        "porsche918_door_leather_trim_1",
+        "porsche918_door_side_glass_1",
+        "porsche918_door_window_surround_1",
+        "porsche918_door_window_bottom_trim_1",
+        "porsche918_door_armrest_1",
+        "porsche918_door_interior_pull_1",
+        "porsche918_door_speaker_trim_1",
+        "porsche918_door_speaker_mesh_1",
+        "porsche918_door_exterior_flush_handle_1",
+        "porsche918_mirror_stalk_1",
+        "porsche918_mirror_shell_1",
+        "porsche918_mirror_reflective_face_1",
+        "porsche918_door_stitch_1_0",
+        "porsche918_door_stitch_1_1",
+        "porsche918_door_stitch_1_2",
+        "porsche918_door_stitch_1_3",
+        "porsche918_door_stitch_1_4",
+        "porsche918_door_stitch_1_5",
+        "porsche918_door_stitch_1_6",
+        "porsche918_door_stitch_1_7",
+        "porsche918_door_stitch_1_8",
+        "porsche918_door_stitch_1_9",
+        "porsche918_door_stitch_1_10",
+        "porsche918_door_stitch_1_11",
+        "porsche918_door_stitch_1_12",
+        "porsche918_door_stitch_1_13",
+        "porsche918_door_stitch_1_14",
+        "porsche918_door_stitch_1_15",
+        "porsche918_door_stitch_1_16",
+        "porsche918_door_stitch_1_17",
+        "porsche918_door_stitch_1_18",
+        "porsche918_door_stitch_1_19",
+        "porsche918_918_door_rounded_shoulder_1"
+      ],
+      "hotspot": [
+        -0.1,
+        0.7,
+        -0.95
+      ]
+    },
+    {
+      "id": "hood",
+      "label": "前行李舱盖",
+      "hinge": [
+        -0.896,
+        0.7637919945261717,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -1.02,
+      "meshes": [
+        "porsche918_front_luggage_lid",
+        "porsche918_front_lid_carbon_liner",
+        "porsche918_front_lid_return",
+        "porsche918_front_lid_stiffener_-1",
+        "porsche918_front_lid_stiffener_1"
+      ],
+      "hotspot": [
+        -1.59075,
+        0.7,
+        0
+      ]
+    }
+  ],
+  "lights": {
+    "head": [
+      "porsche918_918_front_bumper_DRL_-1",
+      "porsche918_918_front_bumper_DRL_1",
+      "porsche918_918_four_point_LED_-1_0",
+      "porsche918_918_four_point_LED_-1_1",
+      "porsche918_918_four_point_LED_-1_2",
+      "porsche918_918_four_point_LED_-1_3",
+      "porsche918_918_main_projector_lens_-1",
+      "porsche918_918_four_point_LED_1_0",
+      "porsche918_918_four_point_LED_1_1",
+      "porsche918_918_four_point_LED_1_2",
+      "porsche918_918_four_point_LED_1_3",
+      "porsche918_918_main_projector_lens_1"
+    ],
+    "tail": [
+      "porsche918_rear_tail_light_outline_-1",
+      "porsche918_rear_tail_light_lower_-1",
+      "porsche918_rear_tail_light_outline_1",
+      "porsche918_rear_tail_light_lower_1"
+    ]
+  },
+  "inspectionMeshes": [],
+  "stays": [],
+  "description": "指定量产版本的独立展示模型，未公开铰链尺寸和运动轨迹以教学示意表达。",
+  "sources": [
+    [
+      "保时捷 918 十周年原厂资料",
+      "https://newsroom.porsche.eu/en/press-kits/Media-Drive-Cayenne-E-Performance/10-Jahre-Porsche-918-Spyder.html"
+    ],
+    [
+      "918 Spyder 原厂技术参数存档",
+      "https://www.motorshow.me/uploadImages/GalleryDocs/Doc5853.pdf"
+    ]
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "id": "huayra",
+  "bounds": {
+    "min": [
+      -0.436,
+      -0.004,
+      -0.523
+    ],
+    "max": [
+      0.44447659322003874,
+      0.59,
+      0.516108829050554
+    ]
+  },
+  "hotspots": [
+    {
+      "id": "intake",
+      "meshes": [
+        "huayra_long_V12_plenum_-1",
+        "huayra_plenum_silver_top_-1",
+        "huayra_V12_inlet_runner_-1_0",
+        "huayra_V12_inlet_runner_-1_1",
+        "huayra_V12_inlet_runner_-1_2",
+        "huayra_V12_inlet_runner_-1_3",
+        "huayra_V12_inlet_runner_-1_4",
+        "huayra_V12_inlet_runner_-1_5",
+        "huayra_long_plenum_edge_-1",
+        "huayra_turbo_charge_pipe_-1",
+        "huayra_charge_pipe_collar_-1_0",
+        "huayra_charge_pipe_collar_-1_1",
+        "huayra_charge_pipe_collar_-1_2",
+        "huayra_long_V12_plenum_1",
+        "huayra_plenum_silver_top_1",
+        "huayra_V12_inlet_runner_1_0",
+        "huayra_V12_inlet_runner_1_1",
+        "huayra_V12_inlet_runner_1_2",
+        "huayra_V12_inlet_runner_1_3",
+        "huayra_V12_inlet_runner_1_4",
+        "huayra_V12_inlet_runner_1_5",
+        "huayra_long_plenum_edge_1",
+        "huayra_turbo_charge_pipe_1",
+        "huayra_charge_pipe_collar_1_0",
+        "huayra_charge_pipe_collar_1_1",
+        "huayra_charge_pipe_collar_1_2",
+        "huayra_central_silver_spine"
+      ],
+      "position": [
+        -0.08,
+        0.59,
+        0.11
+      ]
+    },
+    {
+      "id": "block",
+      "meshes": [
+        "huayra_crankcase",
+        "huayra_sump_gasket",
+        "huayra_dry_sump_lower",
+        "huayra_case_web_-1_0",
+        "huayra_case_web_1_0",
+        "huayra_case_web_-1_1",
+        "huayra_case_web_1_1",
+        "huayra_case_web_-1_2",
+        "huayra_case_web_1_2",
+        "huayra_case_web_-1_3",
+        "huayra_case_web_1_3",
+        "huayra_case_web_-1_4",
+        "huayra_case_web_1_4",
+        "huayra_case_web_-1_5",
+        "huayra_case_web_1_5",
+        "huayra_case_web_-1_6",
+        "huayra_case_web_1_6",
+        "huayra_case_web_-1_7",
+        "huayra_case_web_1_7",
+        "huayra_bank_casting_-1",
+        "huayra_cylinder_head_-1",
+        "huayra_mount_boss_-1",
+        "huayra_mount_socket_-1",
+        "huayra_bank_casting_1",
+        "huayra_cylinder_head_1",
+        "huayra_mount_boss_1",
+        "huayra_mount_socket_1",
+        "huayra_timing_case",
+        "huayra_crank_hub",
+        "huayra_crank_hub_rim",
+        "huayra_cam_drive_cap_-1",
+        "huayra_timing_case_bolts_-1",
+        "huayra_cam_drive_cap_1",
+        "huayra_timing_case_bolts_1"
+      ],
+      "position": [
+        -0.426,
+        0.22,
+        0.07
+      ]
+    },
+    {
+      "id": "covers",
+      "meshes": [
+        "huayra_cam_cover_-1",
+        "huayra_cover_gasket_-1",
+        "huayra_cover_fasteners_-1",
+        "huayra_cam_cover_1",
+        "huayra_cover_gasket_1",
+        "huayra_cover_fasteners_1",
+        "huayra_handbuilt_engine_plate"
+      ],
+      "position": [
+        -0.08,
+        0.465,
+        0.265
+      ]
+    },
+    {
+      "id": "ignition",
+      "meshes": [
+        "huayra_coil_-1_0",
+        "huayra_coil_lead_-1_0",
+        "huayra_coil_connector_-1_0",
+        "huayra_coil_-1_1",
+        "huayra_coil_lead_-1_1",
+        "huayra_coil_connector_-1_1",
+        "huayra_coil_-1_2",
+        "huayra_coil_lead_-1_2",
+        "huayra_coil_connector_-1_2",
+        "huayra_coil_-1_3",
+        "huayra_coil_lead_-1_3",
+        "huayra_coil_connector_-1_3",
+        "huayra_coil_-1_4",
+        "huayra_coil_lead_-1_4",
+        "huayra_coil_connector_-1_4",
+        "huayra_coil_-1_5",
+        "huayra_coil_lead_-1_5",
+        "huayra_coil_connector_-1_5",
+        "huayra_loom_-1",
+        "huayra_coil_1_0",
+        "huayra_coil_lead_1_0",
+        "huayra_coil_connector_1_0",
+        "huayra_coil_1_1",
+        "huayra_coil_lead_1_1",
+        "huayra_coil_connector_1_1",
+        "huayra_coil_1_2",
+        "huayra_coil_lead_1_2",
+        "huayra_coil_connector_1_2",
+        "huayra_coil_1_3",
+        "huayra_coil_lead_1_3",
+        "huayra_coil_connector_1_3",
+        "huayra_coil_1_4",
+        "huayra_coil_lead_1_4",
+        "huayra_coil_connector_1_4",
+        "huayra_coil_1_5",
+        "huayra_coil_lead_1_5",
+        "huayra_coil_connector_1_5",
+        "huayra_loom_1"
+      ],
+      "position": [
+        0.26,
+        0.465,
+        -0.275
+      ]
+    },
+    {
+      "id": "turbo",
+      "meshes": [
+        "huayra_turbo_-1_compressor_volute",
+        "huayra_turbo_-1_compressor_hub",
+        "huayra_turbo_-1_hot_volute",
+        "huayra_turbo_-1_turbine_hub",
+        "huayra_turbo_-1_shaft_housing",
+        "huayra_turbo_-1_intake_lip",
+        "huayra_turbo_-1_inlet_bore",
+        "huayra_turbo_-1_compressor_blades",
+        "huayra_turbo_-1_actuator_link",
+        "huayra_turbo_-1_actuator",
+        "huayra_exhaust_header_-1_-295.0",
+        "huayra_exhaust_header_-1_-177.0",
+        "huayra_exhaust_header_-1_-59.0",
+        "huayra_exhaust_header_-1_59.0",
+        "huayra_exhaust_header_-1_177.0",
+        "huayra_exhaust_header_-1_295.0",
+        "huayra_exhaust_downpipe_-1_225.0",
+        "huayra_turbo_1_compressor_volute",
+        "huayra_turbo_1_compressor_hub",
+        "huayra_turbo_1_hot_volute",
+        "huayra_turbo_1_turbine_hub",
+        "huayra_turbo_1_shaft_housing",
+        "huayra_turbo_1_intake_lip",
+        "huayra_turbo_1_inlet_bore",
+        "huayra_turbo_1_compressor_blades",
+        "huayra_turbo_1_actuator_link",
+        "huayra_turbo_1_actuator",
+        "huayra_exhaust_header_1_-295.0",
+        "huayra_exhaust_header_1_-177.0",
+        "huayra_exhaust_header_1_-59.0",
+        "huayra_exhaust_header_1_59.0",
+        "huayra_exhaust_header_1_177.0",
+        "huayra_exhaust_header_1_295.0",
+        "huayra_exhaust_downpipe_1_225.0"
+      ],
+      "position": [
+        0.185,
+        0.21,
+        0.395
+      ]
+    }
+  ],
+  "note": "按车型动力总成特征独立制作的外观教学模型；外壳、附件和管线尺度为示意，非原厂 CAD。",
+  "sources": [
+    "https://www.pagani.com/huayra/",
+    "https://www.pagani.com/app/uploads/2023/06/Pagani-25%C2%B0-Anniversario_Evento_Approndimenti_ITA.pdf"
+  ]
+}

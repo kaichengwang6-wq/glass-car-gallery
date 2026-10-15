@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111413">
+  <meta name="description" content="七辆超跑同时陈列在玻璃收藏柜。抽出任意车盒，亲手打开车门、探索机械之心与车型专属机构。">
+  <title>玻璃车库 · GLASS GARAGE</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./experience.css">
+  <link rel="stylesheet" href="./play.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+</head>
+<body data-mode="gallery">
+  <main id="stage" aria-label="玻璃车盒三维收藏柜"></main>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#" id="brand-home" aria-label="返回收藏柜"><svg width="30" height="34" viewBox="0 0 30 34" fill="none" aria-hidden="true"><path d="M15 2 28 9.5v15L15 32 2 24.5v-15L15 2Z M2 9.5 15 17l13-7.5M15 17v15M8.5 6l13 7.5" stroke="currentColor" stroke-width="1.1"/></svg><span>GLASS GARAGE<small>玻 璃 车 库</small></span></a>
+    <div class="collection-title">THE MINIATURE COLLECTION <span>VOL. 02</span></div>
+    <button id="about-button" class="text-button">关于车库 <span>↗</span></button>
+  </header>
+  <section class="intro" id="intro">
+    <p class="eyebrow"><span class="live-dot"></span> A COLLECTION YOU CAN TOUCH</p>
+    <h1>七份热爱，<span>一眼尽藏。</span></h1>
+    <p class="intro-copy">七款超跑，完整陈列。<br>选一只车盒，让机械之美来到眼前。</p>
+    <div class="intro-rule"></div>
+    <p class="collection-count"><b>07</b><span>款已入藏车模<br><small>手工构建 · 自由探索</small></span></p>
+  </section>
+  <div id="case-labels" class="case-labels" aria-label="选择收藏车盒">
+    <button class="case-label" data-car="f430" aria-label="拉出 Ferrari F430 车盒"><span class="case-number">01 / FERRARI</span><strong>F430</strong><span class="case-action">拉出车盒 <i>↗</i></span></button>
+    <button class="case-label" data-car="svj" aria-label="拉出 Aventador SVJ 车盒"><span class="case-number">02 / LAMBORGHINI</span><strong>Aventador SVJ</strong><span class="case-action">拉出车盒 <i>↗</i></span></button>
+  </div>
+  <nav class="mobile-picker" aria-label="快捷定位收藏车盒"><button data-browse="f430" class="selected">01 <span>F430</span></button><button data-browse="svj">02 <span>Aventador SVJ</span></button></nav>
+  <nav id="gallery-paging" class="gallery-paging" aria-label="选择收藏车盒" hidden><button id="page-prev" aria-label="上一辆">←</button><span id="mobile-car-name">F430</span><output id="page-status" aria-live="polite">01 / 07</output><button id="page-next" aria-label="下一辆">→</button></nav>
+  <button class="mobile-pull primary" id="mobile-pull">拉出这只车盒 <span>↗</span></button>
+  <section class="exhibit-heading" id="exhibit-heading" hidden>
+    <button id="return-button" class="return-button">← <span>放回车盒</span></button>
+    <p id="car-brand" class="eyebrow"></p><h2 id="car-title"></h2>
+    <p id="car-description"></p>
+    <dl class="car-facts" id="car-facts"></dl>
+  </section>
+  <section class="controls" id="controls" aria-label="车模交互" hidden>
+    <div class="controls-heading"><span>细节，值得亲手打开。</span><button id="reset-car" class="text-button">复位 ↺</button></div>
+    <div id="part-controls" class="part-controls"></div>
+    <details id="motion-details" class="motion-details"><summary>慢看机构 · 拖动与暂停</summary><div class="motion-select"><label for="motion-part">观察部件</label><select id="motion-part"></select><button id="motion-pause">暂停</button></div><label class="motion-progress" for="motion-progress">开合进度 <output id="motion-value">0%</output></label><input id="motion-progress" type="range" min="0" max="100" step="0.1" value="0" aria-label="所选部件开合进度"></details>
+    <div class="controls-row"><button id="light-toggle" aria-pressed="false">灯光 <span class="switch" aria-hidden="true"></span></button><button id="open-all">全部打开 ↗</button></div>
+    <div class="paint-row"><span>展示配色</span><div id="paint-controls"></div></div>
+  </section>
+  <div class="view-controls" id="view-controls" hidden><span>观察视角</span><button data-view="hero" class="selected" aria-pressed="true">全貌</button><button data-view="side" aria-pressed="false">侧面</button><button data-view="rear" aria-pressed="false">尾部</button><button data-view="engine" aria-pressed="false">发动机</button><button data-view="cabin" aria-pressed="false">座舱</button></div>
+  <nav id="experience-nav" class="experience-nav" aria-label="F430 探索方式" hidden>
+    <button data-section="car" aria-pressed="true">自由赏车</button><button data-section="history" aria-pressed="false">车型故事</button><button data-section="engine" aria-pressed="false">机械之心</button><button data-section="lab" aria-pressed="false">专属玩法</button>
+  </nav>
+  <section id="story-panel" class="topic-panel story-panel" aria-label="F430 车型故事" hidden>
+    <p class="eyebrow">THE F430 STORY</p>
+    <div id="story-tabs" class="story-tabs" aria-label="故事章节"></div>
+    <div class="story-meta"><span id="story-year"></span><span id="story-counter"></span></div>
+    <h3 id="story-title"></h3><p id="story-copy" class="topic-copy"></p>
+    <details id="story-aero" class="story-aero" data-aero-mode="drag" hidden>
+      <summary>亲手切换 ALA 气流</summary>
+      <div id="aero-controls" class="aero-controls" aria-label="ALA 概念工况">
+        <button data-aero="drag" aria-pressed="true">低阻</button><button data-aero="downforce" aria-pressed="false">下压力</button><button data-aero="corner" aria-pressed="false">弯道</button>
+      </div>
+      <svg id="aero-diagram" viewBox="0 0 280 160" role="img" aria-label="ALA 气路概念示意">
+        <defs><marker id="aero-arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L6 3L0 6" fill="currentColor"/></marker></defs>
+        <path class="aero-body" d="M45 54L76 43L126 43L159 48L213 47L237 57L237 96L213 106L159 105L126 111L76 111L45 100Z"/>
+        <path class="aero-glass" d="M104 49L150 52L168 65L168 89L150 102L104 105L92 91L92 62Z"/>
+        <path class="aero-wheel" d="M73 40H101M73 114H101M194 40H221M194 114H221"/>
+        <path class="aero-wing" d="M224 38V116M48 53V101"/>
+        <path class="aero-flow aero-front" d="M8 77H80" marker-end="url(#aero-arrow)"/>
+        <path class="aero-flow aero-left" d="M172 62H262" marker-end="url(#aero-arrow)"/>
+        <path class="aero-flow aero-right" d="M172 92H262" marker-end="url(#aero-arrow)"/>
+        <g class="aero-load aero-load-left"><circle cx="224" cy="25" r="7"/><path d="M220 25H228M224 21V29"/></g>
+        <g class="aero-load aero-load-right"><circle cx="224" cy="129" r="7"/><path d="M220 129H228M224 125V133"/></g>
+        <text x="42" y="154">车头</text><text x="170" y="154">尾翼左右气路</text>
+      </svg>
+      <p id="aero-state" class="aero-state"></p><h4 id="aero-title"></h4><p id="aero-copy" class="topic-copy"></p>
+      <p class="aero-note">俯视气路概念示意；金色 ⊕ 表示下压力作用增强。箭头不表示流速、压力或真实控制时序。尾翼主体保持固定。</p>
+    </details>
+    <div id="story-family" class="story-family" hidden></div>
+    <div class="story-bottom"><div id="story-sources" class="topic-sources"></div><button id="story-next" class="text-button">下一章 →</button></div>
+  </section>
+  <div id="engine-labels" class="engine-labels" aria-label="发动机部件热点" hidden></div>
+  <div id="engine-caption" class="engine-caption" hidden><span class="eyebrow">ENGINE STUDY / 01</span><p>旋转，靠近，认识它的每一次呼吸。</p></div>
+  <section id="engine-panel" class="topic-panel engine-panel" aria-label="F430 发动机专题" hidden>
+    <div class="engine-panel-title"><span class="eyebrow">THE MECHANICAL HEART</span><button id="engine-home-view" class="text-button">视角复位 ↺</button></div>
+    <div class="engine-mode-tabs" aria-label="发动机展示模式"><button data-engine-mode="exterior" aria-pressed="true">外观鉴赏</button><button data-engine-mode="internal" aria-pressed="false">V8 工作原理</button><button data-engine-mode="assembly" aria-pressed="false">拆装台</button></div>
+    <div id="engine-exterior-info">
+      <h3>一台发动机，逐件认识。</h3><div id="engine-hotspot-list" class="engine-hotspot-list"></div>
+      <h4 id="hotspot-title"></h4><p id="hotspot-copy" class="topic-copy"></p>
+      <p class="engine-specs">90° V8 <i>·</i> 4,308 cm³ <i>·</i> 自然吸气</p>
+    </div>
+    <div id="engine-internal-info" hidden>
+      <div class="engine-playback"><button id="engine-play" class="engine-play" aria-pressed="false">▶ 开始演示</button><label class="speed-label">演示速度<select id="engine-speed" aria-label="教学演示速度"><option value="normal">标准教学速度</option><option value="slow">慢速观察</option></select></label></div>
+      <div class="angle-heading"><label for="engine-angle">曲轴转角</label><output id="engine-angle-value" for="engine-angle">0° / 720°</output></div>
+      <input id="engine-angle" class="engine-angle" type="range" min="0" max="720" step="1" value="0" aria-label="曲轴转角，0 到 720 度">
+      <div class="cylinder-heading"><span>选择气缸</span><span>左列 / 右列</span></div><div id="cylinder-buttons" class="cylinder-buttons"></div>
+      <div id="cycle-status" class="cycle-status"><span id="cycle-dot"></span><strong id="cycle-title"></strong><span id="cycle-phase"></span></div>
+      <p id="cycle-copy" class="topic-copy"></p>
+      <div id="cycle-legend" class="cycle-legend"><span style="--stage-color:#f2aa54">做功</span><span style="--stage-color:#e36e70">排气</span><span style="--stage-color:#64b7ec">进气</span><span style="--stage-color:#a79aea">压缩</span></div>
+      <details class="engine-learning"><summary>读懂这台 V8</summary><p>两列气缸各四个，夹角为 90°。活塞的往复运动经连杆传给曲轴；平面曲轴的曲拐位于同一平面。曲轴转两圈，每个气缸完成一次四冲程，凸轮轴转一圈。</p><p>92 mm 缸径、81 mm 行程取自车型资料。连杆长度、气缸编号与点火顺序采用教学设定；配气使用简化理想时序，颜色表示工作过程。</p></details>
+      <p class="teaching-note">教学缸号与示例点火顺序 · 过程示意</p>
+    </div>
+    <div id="engine-assembly-info" hidden>
+      <div class="assembly-heading"><p class="eyebrow">BUILD / UNDERSTAND</p><button id="assembly-reset" class="text-button">全部复位 ↺</button></div>
+      <h3>亲手拆开，再装回去。</h3><p class="topic-copy">点选模块或三维部件，按结构顺序拆下，再逆序装回。</p>
+      <div class="assembly-progress"><span id="assembly-count">0 / 4 已拆下</span><span id="assembly-next"></span></div>
+      <div id="assembly-modules" class="assembly-modules" aria-label="拆装模块"></div>
+      <h4 id="assembly-title"></h4><p id="assembly-copy" class="topic-copy"></p>
+      <div class="assembly-actions"><button id="assembly-remove">拆下所选模块 ↗</button><button id="assembly-install">装回所选模块 ↙</button></div>
+      <p id="assembly-message" class="assembly-message" role="status" aria-live="polite"></p>
+      <div class="angle-heading"><label for="assembly-spread">展开预览 · 收拢后试转</label><output id="assembly-spread-value" for="assembly-spread">0%</output></div>
+      <input id="assembly-spread" class="engine-angle" type="range" min="0" max="100" step="1" value="0" aria-label="模块展开预览">
+      <button id="assembly-test" class="assembly-test">试转装配后的机构 →</button>
+      <p class="teaching-note">教学模块拆装，省略紧固件及实际维修工序。部件拆下时机构暂停，装回后可进入工作原理试转。</p>
+    </div>
+    <div id="engine-topic-error" class="topic-error" role="status" hidden><p>发动机资产暂时没有载入，请重试。</p><button id="engine-retry" class="primary">重新载入</button></div>
+    <div id="engine-topic-loading" class="topic-loading" role="status" hidden>正在准备发动机展台…</div>
+    <div class="topic-sources engine-sources"><a href="https://www.allcarcentral.com/Ferrari_pdf/Ferrari_f430-2009.pdf" target="_blank" rel="noopener">参数来源 ↗</a><a href="https://kurumacatalog.com/wp-content/uploads/2021/01/2005_Ferrari_F430_catalog.pdf" target="_blank" rel="noopener">技术资料 ↗</a></div>
+  </section>
+  <section id="lab-panel" class="topic-panel lab-panel" aria-label="车型专属实验" hidden>
+    <div class="lab-heading"><span id="lab-eyebrow" class="eyebrow">VEHICLE LAB</span><button id="lab-home-view" class="text-button">视角复位 ↺</button></div>
+    <h3 id="lab-title"></h3><p id="lab-intro" class="topic-copy"></p>
+    <div id="lab-topic-loading" class="topic-loading" role="status" hidden>正在准备互动机构…</div>
+    <div id="lab-topic-error" class="topic-error" role="status" hidden><p>实验模块暂时没有载入，请重试。</p><button id="lab-retry" class="primary">重新载入</button></div>
+    <div id="lab-ready" hidden>
+      <div id="lab-controls" class="lab-controls"></div>
+      <dl class="lab-readouts" id="lab-readouts" aria-label="实验反馈"></dl>
+      <h4 id="lab-result-title"></h4><p id="lab-result-copy" class="topic-copy"></p>
+      <div class="lab-actions"><button id="lab-play" class="engine-play" aria-pressed="false">▶ 观察运动</button><button id="lab-reset" class="text-button">实验复位 ↺</button></div>
+      <p id="lab-note" class="teaching-note"></p>
+      <div id="lab-sources" class="topic-sources engine-sources"></div>
+    </div>
+  </section>
+  <div id="lab-caption" class="engine-caption" hidden><span class="eyebrow">SCHEMATIC CHASSIS / STUDY</span><p>转动视角，观察你的每一次选择。</p></div>
+  <div class="pull-cue" id="pull-cue" hidden><span></span><p>向下拉出 · 松手打开</p></div>
+  <div class="loading" id="loading" role="status"><span class="loading-orbit"></span><span id="loading-text">正在陈列车盒</span><small id="loading-progress"></small></div>
+  <div class="notice" id="notice" role="status" aria-live="polite"></div>
+  <div class="scene-error" id="scene-error" hidden><h2>车模暂时没有载入</h2><p id="error-text"></p><button id="retry-button" class="primary">重新载入</button></div>
+  <footer class="bottom-bar"><span class="footer-index">CABINET 001 <i></i> <span id="footer-count">07 PIECES</span></span><span id="gesture-hint">点击车盒，或按住向前拉出</span><span class="edition">INDEPENDENT AUTOMOTIVE STUDIES</span></footer>
+  <dialog id="about-dialog"><button class="dialog-close" id="close-about" aria-label="关闭">×</button><p class="eyebrow">ABOUT THE COLLECTION</p><h2>把车库，缩小成一份珍藏。</h2><p>玻璃车库是一座独立制作的互动模型收藏室。七只车盒，每辆车都有自己的机械主题。选中车盒，抽出底座；每一次旋转、开门与机构演示，都由你掌握。</p><div class="about-steps"><span><b>01</b>挑选车盒</span><span><b>02</b>拉出与揭盖</span><span><b>03</b>探索与放回</span></div><p class="about-small">模型依公开比例独立构建，属于展示性近似，并非厂方工程模型。展示配色为观赏选项。未公开的机构尺寸、轨迹和控制标定采用教学示意；各专题提供原厂资料来源。</p><a href="./credits.html" class="text-link" target="_blank" rel="noopener">模型与资料说明 ↗</a></dialog>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

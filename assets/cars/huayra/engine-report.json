@@ -1,0 +1,733 @@
+{
+  "id": "huayra",
+  "revision": "engine-exterior-v1",
+  "units": "metres Y up, crankshaft X",
+  "meshCount": 140,
+  "triangles": 59644,
+  "bounds": {
+    "min": [
+      -0.436,
+      -0.004,
+      -0.523
+    ],
+    "max": [
+      0.44447659322003874,
+      0.59,
+      0.516108829050554
+    ]
+  },
+  "bytes": 1505536,
+  "sha256": "09b06f11fa0231ed287eb7190de9e34203e8b060b7617b4048d8c2417d3be77d",
+  "features": [
+    "long six-cylinder banks",
+    "twelve individual inlet branches",
+    "long twin intake plenums",
+    "two turbochargers"
+  ],
+  "sources": [
+    "https://www.pagani.com/huayra/",
+    "https://www.pagani.com/app/uploads/2023/06/Pagani-25%C2%B0-Anniversario_Evento_Approndimenti_ITA.pdf"
+  ],
+  "components": [
+    {
+      "name": "huayra_crankcase",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_sump_gasket",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_dry_sump_lower",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_case_web_-1_0",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_1_0",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_-1_1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_1_1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_-1_2",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_1_2",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_-1_3",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_1_3",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_-1_4",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_1_4",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_-1_5",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_1_5",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_-1_6",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_1_6",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_-1_7",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_case_web_1_7",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "huayra_bank_casting_-1",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_cylinder_head_-1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_cam_cover_-1",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_cover_gasket_-1",
+      "material": "rubber",
+      "triangles": 52
+    },
+    {
+      "name": "huayra_cover_fasteners_-1",
+      "material": "alloy",
+      "triangles": 180
+    },
+    {
+      "name": "huayra_coil_-1_0",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_lead_-1_0",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_coil_connector_-1_0",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_-1_1",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_lead_-1_1",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_coil_connector_-1_1",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_-1_2",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_lead_-1_2",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_coil_connector_-1_2",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_-1_3",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_lead_-1_3",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_coil_connector_-1_3",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_-1_4",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_lead_-1_4",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_coil_connector_-1_4",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_-1_5",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_lead_-1_5",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_coil_connector_-1_5",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_loom_-1",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_mount_boss_-1",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_mount_socket_-1",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "huayra_bank_casting_1",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_cylinder_head_1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_cam_cover_1",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_cover_gasket_1",
+      "material": "rubber",
+      "triangles": 52
+    },
+    {
+      "name": "huayra_cover_fasteners_1",
+      "material": "alloy",
+      "triangles": 180
+    },
+    {
+      "name": "huayra_coil_1_0",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_lead_1_0",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_coil_connector_1_0",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_1_1",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_lead_1_1",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_coil_connector_1_1",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_1_2",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_lead_1_2",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_coil_connector_1_2",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_1_3",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_lead_1_3",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_coil_connector_1_3",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_1_4",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_lead_1_4",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_coil_connector_1_4",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_1_5",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_coil_lead_1_5",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_coil_connector_1_5",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_loom_1",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_mount_boss_1",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_mount_socket_1",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "huayra_timing_case",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_crank_hub",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "huayra_crank_hub_rim",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "huayra_cam_drive_cap_-1",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "huayra_timing_case_bolts_-1",
+      "material": "alloy",
+      "triangles": 60
+    },
+    {
+      "name": "huayra_cam_drive_cap_1",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "huayra_timing_case_bolts_1",
+      "material": "alloy",
+      "triangles": 60
+    },
+    {
+      "name": "huayra_long_V12_plenum_-1",
+      "material": "carbon",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_plenum_silver_top_-1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_V12_inlet_runner_-1_0",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_V12_inlet_runner_-1_1",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_V12_inlet_runner_-1_2",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_V12_inlet_runner_-1_3",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_V12_inlet_runner_-1_4",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_V12_inlet_runner_-1_5",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_long_plenum_edge_-1",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_turbo_-1_compressor_volute",
+      "material": "alloy",
+      "triangles": 2304
+    },
+    {
+      "name": "huayra_turbo_-1_compressor_hub",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "huayra_turbo_-1_hot_volute",
+      "material": "bay_heat",
+      "triangles": 2304
+    },
+    {
+      "name": "huayra_turbo_-1_turbine_hub",
+      "material": "bay_heat",
+      "triangles": 124
+    },
+    {
+      "name": "huayra_turbo_-1_shaft_housing",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "huayra_turbo_-1_intake_lip",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "huayra_turbo_-1_inlet_bore",
+      "material": "black",
+      "triangles": 124
+    },
+    {
+      "name": "huayra_turbo_-1_compressor_blades",
+      "material": "alloy",
+      "triangles": 24
+    },
+    {
+      "name": "huayra_turbo_-1_actuator_link",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "huayra_turbo_-1_actuator",
+      "material": "dark_metal",
+      "triangles": 1224
+    },
+    {
+      "name": "huayra_exhaust_header_-1_-295.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "huayra_exhaust_header_-1_-177.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "huayra_exhaust_header_-1_-59.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "huayra_exhaust_header_-1_59.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "huayra_exhaust_header_-1_177.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "huayra_exhaust_header_-1_295.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "huayra_exhaust_downpipe_-1_225.0",
+      "material": "bay_heat",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_turbo_charge_pipe_-1",
+      "material": "alloy",
+      "triangles": 696
+    },
+    {
+      "name": "huayra_charge_pipe_collar_-1_0",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "huayra_charge_pipe_collar_-1_1",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "huayra_charge_pipe_collar_-1_2",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "huayra_long_V12_plenum_1",
+      "material": "carbon",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_plenum_silver_top_1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_V12_inlet_runner_1_0",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_V12_inlet_runner_1_1",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_V12_inlet_runner_1_2",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_V12_inlet_runner_1_3",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_V12_inlet_runner_1_4",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_V12_inlet_runner_1_5",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_long_plenum_edge_1",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_turbo_1_compressor_volute",
+      "material": "alloy",
+      "triangles": 2304
+    },
+    {
+      "name": "huayra_turbo_1_compressor_hub",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "huayra_turbo_1_hot_volute",
+      "material": "bay_heat",
+      "triangles": 2304
+    },
+    {
+      "name": "huayra_turbo_1_turbine_hub",
+      "material": "bay_heat",
+      "triangles": 124
+    },
+    {
+      "name": "huayra_turbo_1_shaft_housing",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "huayra_turbo_1_intake_lip",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "huayra_turbo_1_inlet_bore",
+      "material": "black",
+      "triangles": 124
+    },
+    {
+      "name": "huayra_turbo_1_compressor_blades",
+      "material": "alloy",
+      "triangles": 24
+    },
+    {
+      "name": "huayra_turbo_1_actuator_link",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "huayra_turbo_1_actuator",
+      "material": "dark_metal",
+      "triangles": 1224
+    },
+    {
+      "name": "huayra_exhaust_header_1_-295.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "huayra_exhaust_header_1_-177.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "huayra_exhaust_header_1_-59.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "huayra_exhaust_header_1_59.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "huayra_exhaust_header_1_177.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "huayra_exhaust_header_1_295.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "huayra_exhaust_downpipe_1_225.0",
+      "material": "bay_heat",
+      "triangles": 472
+    },
+    {
+      "name": "huayra_turbo_charge_pipe_1",
+      "material": "alloy",
+      "triangles": 696
+    },
+    {
+      "name": "huayra_charge_pipe_collar_1_0",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "huayra_charge_pipe_collar_1_1",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "huayra_charge_pipe_collar_1_2",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "huayra_central_silver_spine",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "huayra_handbuilt_engine_plate",
+      "material": "bronze",
+      "triangles": 336
+    }
+  ]
+}

@@ -1,0 +1,1013 @@
+{
+  "id": "chiron",
+  "revision": "engine-exterior-v1",
+  "units": "metres Y up, crankshaft X",
+  "meshCount": 196,
+  "triangles": 100380,
+  "bounds": {
+    "min": [
+      -0.456,
+      -0.004,
+      -0.558
+    ],
+    "max": [
+      0.41,
+      0.6299236041884544,
+      0.5492986142347611
+    ]
+  },
+  "bytes": 2398484,
+  "sha256": "2ae652aaf12b562d2578268684db188217fc4afd41820044b7183fe08bc7de32",
+  "features": [
+    "four staggered cylinder rows under two broad heads",
+    "two large upper intake assemblies",
+    "sixteen inlet branches",
+    "four equal-size turbochargers"
+  ],
+  "sources": [
+    "https://newsroom.bugatti.com/press-releases/bugatti-w16-engine-the-last-of-its-kind",
+    "https://newsroom.bugatti.com/en/press-releases/15-years-of-bugatti-veyron-how-it-all-began"
+  ],
+  "components": [
+    {
+      "name": "chiron_crankcase",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_sump_gasket",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_dry_sump_lower",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_case_web_-1_0",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_1_0",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_-1_1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_1_1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_-1_2",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_1_2",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_-1_3",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_1_3",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_-1_4",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_1_4",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_-1_5",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_1_5",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_-1_6",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_1_6",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_-1_7",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_case_web_1_7",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "chiron_bank_casting_-1",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_cylinder_head_-1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_cam_cover_-1",
+      "material": "carbon",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_cover_gasket_-1",
+      "material": "rubber",
+      "triangles": 52
+    },
+    {
+      "name": "chiron_cover_fasteners_-1",
+      "material": "alloy",
+      "triangles": 180
+    },
+    {
+      "name": "chiron_coil_-1_0",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_-1_0",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_-1_0",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_-1_1",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_-1_1",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_-1_1",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_-1_2",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_-1_2",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_-1_2",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_-1_3",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_-1_3",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_-1_3",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_-1_4",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_-1_4",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_-1_4",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_-1_5",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_-1_5",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_-1_5",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_-1_6",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_-1_6",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_-1_6",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_-1_7",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_-1_7",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_-1_7",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_loom_-1",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_mount_boss_-1",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_mount_socket_-1",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_bank_casting_1",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_cylinder_head_1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_cam_cover_1",
+      "material": "carbon",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_cover_gasket_1",
+      "material": "rubber",
+      "triangles": 52
+    },
+    {
+      "name": "chiron_cover_fasteners_1",
+      "material": "alloy",
+      "triangles": 180
+    },
+    {
+      "name": "chiron_coil_1_0",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_1_0",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_1_0",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_1_1",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_1_1",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_1_1",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_1_2",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_1_2",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_1_2",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_1_3",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_1_3",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_1_3",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_1_4",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_1_4",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_1_4",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_1_5",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_1_5",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_1_5",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_1_6",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_1_6",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_1_6",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_1_7",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_coil_lead_1_7",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_coil_connector_1_7",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_loom_1",
+      "material": "rubber",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_mount_boss_1",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_mount_socket_1",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_timing_case",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_crank_hub",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_crank_hub_rim",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "chiron_cam_drive_cap_-1",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_timing_case_bolts_-1",
+      "material": "alloy",
+      "triangles": 60
+    },
+    {
+      "name": "chiron_cam_drive_cap_1",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_timing_case_bolts_1",
+      "material": "alloy",
+      "triangles": 60
+    },
+    {
+      "name": "chiron_W16_carbon_plenum_-1",
+      "material": "carbon",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_W16_silver_upper_cover_-1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_W16_runner_-1_0",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_runner_-1_1",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_runner_-1_2",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_runner_-1_3",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_runner_-1_4",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_runner_-1_5",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_runner_-1_6",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_runner_-1_7",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_cover_inset_-1",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_plenum_spine_-1",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "chiron_turbo_-1_0_compressor_volute",
+      "material": "alloy",
+      "triangles": 2304
+    },
+    {
+      "name": "chiron_turbo_-1_0_compressor_hub",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_-1_0_hot_volute",
+      "material": "bay_heat",
+      "triangles": 2304
+    },
+    {
+      "name": "chiron_turbo_-1_0_turbine_hub",
+      "material": "bay_heat",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_-1_0_shaft_housing",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_-1_0_intake_lip",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "chiron_turbo_-1_0_inlet_bore",
+      "material": "black",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_-1_0_compressor_blades",
+      "material": "alloy",
+      "triangles": 24
+    },
+    {
+      "name": "chiron_turbo_-1_0_actuator_link",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "chiron_turbo_-1_0_actuator",
+      "material": "dark_metal",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_exhaust_header_-1_-315.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_header_-1_-225.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_header_-1_-135.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_header_-1_-45.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_downpipe_-1_-225.0",
+      "material": "bay_heat",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_charge_pipe_-1_0",
+      "material": "alloy",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_turbo_-1_1_compressor_volute",
+      "material": "alloy",
+      "triangles": 2304
+    },
+    {
+      "name": "chiron_turbo_-1_1_compressor_hub",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_-1_1_hot_volute",
+      "material": "bay_heat",
+      "triangles": 2304
+    },
+    {
+      "name": "chiron_turbo_-1_1_turbine_hub",
+      "material": "bay_heat",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_-1_1_shaft_housing",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_-1_1_intake_lip",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "chiron_turbo_-1_1_inlet_bore",
+      "material": "black",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_-1_1_compressor_blades",
+      "material": "alloy",
+      "triangles": 24
+    },
+    {
+      "name": "chiron_turbo_-1_1_actuator_link",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "chiron_turbo_-1_1_actuator",
+      "material": "dark_metal",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_exhaust_header_-1_45.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_header_-1_135.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_header_-1_225.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_header_-1_315.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_downpipe_-1_190.0",
+      "material": "bay_heat",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_charge_pipe_-1_1",
+      "material": "alloy",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_charge_cooling_module_-1",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_W16_carbon_plenum_1",
+      "material": "carbon",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_W16_silver_upper_cover_1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_W16_runner_1_0",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_runner_1_1",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_runner_1_2",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_runner_1_3",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_runner_1_4",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_runner_1_5",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_runner_1_6",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_runner_1_7",
+      "material": "carbon",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_cover_inset_1",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_plenum_spine_1",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "chiron_turbo_1_0_compressor_volute",
+      "material": "alloy",
+      "triangles": 2304
+    },
+    {
+      "name": "chiron_turbo_1_0_compressor_hub",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_1_0_hot_volute",
+      "material": "bay_heat",
+      "triangles": 2304
+    },
+    {
+      "name": "chiron_turbo_1_0_turbine_hub",
+      "material": "bay_heat",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_1_0_shaft_housing",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_1_0_intake_lip",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "chiron_turbo_1_0_inlet_bore",
+      "material": "black",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_1_0_compressor_blades",
+      "material": "alloy",
+      "triangles": 24
+    },
+    {
+      "name": "chiron_turbo_1_0_actuator_link",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "chiron_turbo_1_0_actuator",
+      "material": "dark_metal",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_exhaust_header_1_-315.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_header_1_-225.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_header_1_-135.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_header_1_-45.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_downpipe_1_-225.0",
+      "material": "bay_heat",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_charge_pipe_1_0",
+      "material": "alloy",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_turbo_1_1_compressor_volute",
+      "material": "alloy",
+      "triangles": 2304
+    },
+    {
+      "name": "chiron_turbo_1_1_compressor_hub",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_1_1_hot_volute",
+      "material": "bay_heat",
+      "triangles": 2304
+    },
+    {
+      "name": "chiron_turbo_1_1_turbine_hub",
+      "material": "bay_heat",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_1_1_shaft_housing",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_1_1_intake_lip",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "chiron_turbo_1_1_inlet_bore",
+      "material": "black",
+      "triangles": 124
+    },
+    {
+      "name": "chiron_turbo_1_1_compressor_blades",
+      "material": "alloy",
+      "triangles": 24
+    },
+    {
+      "name": "chiron_turbo_1_1_actuator_link",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "chiron_turbo_1_1_actuator",
+      "material": "dark_metal",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_exhaust_header_1_45.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_header_1_135.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_header_1_225.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_header_1_315.0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_exhaust_downpipe_1_190.0",
+      "material": "bay_heat",
+      "triangles": 472
+    },
+    {
+      "name": "chiron_W16_charge_pipe_1_1",
+      "material": "alloy",
+      "triangles": 696
+    },
+    {
+      "name": "chiron_charge_cooling_module_1",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "chiron_W16_row_0_cylinder_casting_0",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_0_cylinder_casting_1",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_0_cylinder_casting_2",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_0_cylinder_casting_3",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_1_cylinder_casting_0",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_1_cylinder_casting_1",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_1_cylinder_casting_2",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_1_cylinder_casting_3",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_2_cylinder_casting_0",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_2_cylinder_casting_1",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_2_cylinder_casting_2",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_2_cylinder_casting_3",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_3_cylinder_casting_0",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_3_cylinder_casting_1",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_3_cylinder_casting_2",
+      "material": "bay_cast",
+      "triangles": 1224
+    },
+    {
+      "name": "chiron_W16_row_3_cylinder_casting_3",
+      "material": "bay_cast",
+      "triangles": 1224
+    }
+  ]
+}

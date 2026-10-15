@@ -1,0 +1,278 @@
+{
+  "version": 1,
+  "modelRevision": "batch2-phase1-authored-v1",
+  "units": "meters",
+  "parts": [
+    {
+      "id": "driver_door",
+      "label": "驾驶侧车门",
+      "hinge": [
+        -0.25,
+        1.147,
+        0.12
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": -1.22,
+      "meshes": [
+        "huayra_door_outer_skin_-1",
+        "huayra_door_folded_edge_-1",
+        "huayra_door_inner_carbon_shell_-1",
+        "huayra_door_leather_trim_-1",
+        "huayra_door_window_bottom_trim_-1",
+        "huayra_door_armrest_-1",
+        "huayra_door_interior_pull_-1",
+        "huayra_door_speaker_trim_-1",
+        "huayra_door_speaker_mesh_-1",
+        "huayra_door_exterior_flush_handle_-1",
+        "huayra_mirror_stalk_-1",
+        "huayra_mirror_shell_-1",
+        "huayra_mirror_reflective_face_-1",
+        "huayra_door_stitch_-1_0",
+        "huayra_door_stitch_-1_1",
+        "huayra_door_stitch_-1_2",
+        "huayra_door_stitch_-1_3",
+        "huayra_door_stitch_-1_4",
+        "huayra_door_stitch_-1_5",
+        "huayra_door_stitch_-1_6",
+        "huayra_door_stitch_-1_7",
+        "huayra_door_stitch_-1_8",
+        "huayra_door_stitch_-1_9",
+        "huayra_door_stitch_-1_10",
+        "huayra_door_stitch_-1_11",
+        "huayra_door_stitch_-1_12",
+        "huayra_door_stitch_-1_13",
+        "huayra_door_stitch_-1_14",
+        "huayra_door_stitch_-1_15",
+        "huayra_door_stitch_-1_16",
+        "huayra_door_stitch_-1_17",
+        "huayra_door_stitch_-1_18",
+        "huayra_door_stitch_-1_19",
+        "huayra_rounded_side_door_glass_-1",
+        "huayra_rounded_door_window_frame_-1",
+        "huayra_curved_canopy_roof_0",
+        "huayra_curved_canopy_headliner_0",
+        "huayra_curved_roof_side_rail_-1"
+      ],
+      "hotspot": [
+        -0.1,
+        0.7,
+        0.95
+      ]
+    },
+    {
+      "id": "passenger_door",
+      "label": "乘客侧车门",
+      "hinge": [
+        -0.25,
+        1.147,
+        -0.12
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 1.22,
+      "meshes": [
+        "huayra_door_outer_skin_1",
+        "huayra_door_folded_edge_1",
+        "huayra_door_inner_carbon_shell_1",
+        "huayra_door_leather_trim_1",
+        "huayra_door_window_bottom_trim_1",
+        "huayra_door_armrest_1",
+        "huayra_door_interior_pull_1",
+        "huayra_door_speaker_trim_1",
+        "huayra_door_speaker_mesh_1",
+        "huayra_door_exterior_flush_handle_1",
+        "huayra_mirror_stalk_1",
+        "huayra_mirror_shell_1",
+        "huayra_mirror_reflective_face_1",
+        "huayra_door_stitch_1_0",
+        "huayra_door_stitch_1_1",
+        "huayra_door_stitch_1_2",
+        "huayra_door_stitch_1_3",
+        "huayra_door_stitch_1_4",
+        "huayra_door_stitch_1_5",
+        "huayra_door_stitch_1_6",
+        "huayra_door_stitch_1_7",
+        "huayra_door_stitch_1_8",
+        "huayra_door_stitch_1_9",
+        "huayra_door_stitch_1_10",
+        "huayra_door_stitch_1_11",
+        "huayra_door_stitch_1_12",
+        "huayra_door_stitch_1_13",
+        "huayra_door_stitch_1_14",
+        "huayra_door_stitch_1_15",
+        "huayra_door_stitch_1_16",
+        "huayra_door_stitch_1_17",
+        "huayra_door_stitch_1_18",
+        "huayra_door_stitch_1_19",
+        "huayra_rounded_side_door_glass_1",
+        "huayra_rounded_door_window_frame_1",
+        "huayra_curved_canopy_roof_2",
+        "huayra_curved_canopy_headliner_2",
+        "huayra_curved_roof_side_rail_1"
+      ],
+      "hotspot": [
+        -0.1,
+        0.7,
+        -0.95
+      ]
+    },
+    {
+      "id": "front_left",
+      "label": "左前襟翼",
+      "labOnly": true,
+      "meshes": [
+        "huayra_active_flap_skin_front_left",
+        "huayra_active_flap_inner_front_left",
+        "huayra_Huayra_flap_shaft_bracket_front_left_-1",
+        "huayra_Huayra_flap_shaft_bracket_front_left_1"
+      ],
+      "hinge": [
+        -1.4725,
+        0.7161416134891648,
+        0.41
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.52,
+      "hotspot": [
+        -1.5925,
+        0.7161416134891648,
+        0.41
+      ],
+      "motionNote": "手动机构示意；角度为教学显示范围，不代表原厂控制标定。"
+    },
+    {
+      "id": "rear_left",
+      "label": "左后襟翼",
+      "labOnly": true,
+      "meshes": [
+        "huayra_active_flap_skin_rear_left",
+        "huayra_active_flap_inner_rear_left",
+        "huayra_Huayra_flap_shaft_bracket_rear_left_-1",
+        "huayra_Huayra_flap_shaft_bracket_rear_left_1"
+      ],
+      "hinge": [
+        1.9725,
+        0.8114671656069714,
+        0.52
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.52,
+      "hotspot": [
+        1.8525,
+        0.8114671656069714,
+        0.52
+      ],
+      "motionNote": "手动机构示意；角度为教学显示范围，不代表原厂控制标定。"
+    },
+    {
+      "id": "front_right",
+      "label": "右前襟翼",
+      "labOnly": true,
+      "meshes": [
+        "huayra_active_flap_skin_front_right",
+        "huayra_active_flap_inner_front_right",
+        "huayra_Huayra_flap_shaft_bracket_front_right_-1",
+        "huayra_Huayra_flap_shaft_bracket_front_right_1"
+      ],
+      "hinge": [
+        -1.4725,
+        0.7161416134891648,
+        -0.41
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.52,
+      "hotspot": [
+        -1.5925,
+        0.7161416134891648,
+        -0.41
+      ],
+      "motionNote": "手动机构示意；角度为教学显示范围，不代表原厂控制标定。"
+    },
+    {
+      "id": "rear_right",
+      "label": "右后襟翼",
+      "labOnly": true,
+      "meshes": [
+        "huayra_active_flap_skin_rear_right",
+        "huayra_active_flap_inner_rear_right",
+        "huayra_Huayra_flap_shaft_bracket_rear_right_-1",
+        "huayra_Huayra_flap_shaft_bracket_rear_right_1"
+      ],
+      "hinge": [
+        1.9725,
+        0.8114671656069714,
+        -0.52
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -0.52,
+      "hotspot": [
+        1.8525,
+        0.8114671656069714,
+        -0.52
+      ],
+      "motionNote": "手动机构示意；角度为教学显示范围，不代表原厂控制标定。"
+    }
+  ],
+  "lights": {
+    "head": [
+      "huayra_Huayra_round_projector_-1_0",
+      "huayra_Huayra_round_projector_-1_1",
+      "huayra_Huayra_round_projector_-1_2",
+      "huayra_Huayra_round_projector_-1_3",
+      "huayra_Huayra_round_projector_1_0",
+      "huayra_Huayra_round_projector_1_1",
+      "huayra_Huayra_round_projector_1_2",
+      "huayra_Huayra_round_projector_1_3"
+    ],
+    "tail": [
+      "huayra_rear_round_lamp_ring_-1_0",
+      "huayra_rear_round_lamp_inner_-1_0",
+      "huayra_rear_round_lamp_ring_-1_1",
+      "huayra_rear_round_lamp_inner_-1_1",
+      "huayra_rear_round_lamp_ring_-1_2",
+      "huayra_rear_round_lamp_inner_-1_2",
+      "huayra_rear_round_lamp_ring_1_0",
+      "huayra_rear_round_lamp_inner_1_0",
+      "huayra_rear_round_lamp_ring_1_1",
+      "huayra_rear_round_lamp_inner_1_1",
+      "huayra_rear_round_lamp_ring_1_2",
+      "huayra_rear_round_lamp_inner_1_2"
+    ]
+  },
+  "inspectionMeshes": [],
+  "stays": [],
+  "description": "指定量产版本的独立展示模型，未公开铰链尺寸和运动轨迹以教学示意表达。",
+  "sources": [
+    [
+      "帕加尼 Huayra 原厂车型资料",
+      "https://www.pagani.com/huayra/"
+    ],
+    [
+      "原厂 2012 Monterey 技术介绍",
+      "https://www.pagani.com/news/pagani-automobili-at-the-monterey-car-week-2012/"
+    ]
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "bounds": {
+    "min": [
+      0.8199999928474426,
+      0.2800000011920929,
+      -0.503000020980835
+    ],
+    "max": [
+      1.9320000410079956,
+      0.917137861251831,
+      0.503000020980835
+    ]
+  },
+  "hotspots": [
+    {
+      "id": "intake",
+      "meshes": [
+        "SVJ_REAR_intake_plenum",
+        "SVJ_REAR_plenum_spine",
+        "SVJ_REAR_intake_runner_-1_0",
+        "SVJ_REAR_intake_runner_-1_1",
+        "SVJ_REAR_intake_runner_-1_2",
+        "SVJ_REAR_intake_runner_-1_3",
+        "SVJ_REAR_intake_runner_-1_4",
+        "SVJ_REAR_intake_runner_-1_5",
+        "SVJ_REAR_intake_runner_1_0",
+        "SVJ_REAR_intake_runner_1_1",
+        "SVJ_REAR_intake_runner_1_2",
+        "SVJ_REAR_intake_runner_1_3",
+        "SVJ_REAR_intake_runner_1_4",
+        "SVJ_REAR_intake_runner_1_5",
+        "SVJ_REAR_intake_ribbing",
+        "SVJ_REAR_cast_letters",
+        "SVJ_REAR_plenum_stripes",
+        "SVJ_REAR_airbox_-1",
+        "SVJ_REAR_airbox_1",
+        "SVJ_REAR_induction_elbow_-1",
+        "SVJ_REAR_induction_elbow_1",
+        "SVJ_REAR_induction_bellows"
+      ],
+      "position": [
+        1.3999999999999997,
+        0.8349999785423279,
+        0.05999999999999995
+      ]
+    },
+    {
+      "id": "block",
+      "meshes": [
+        "SVJ_REAR_crankcase",
+        "SVJ_REAR_dry_sump_pan",
+        "SVJ_REAR_engine_bank_-1",
+        "SVJ_REAR_engine_bank_1",
+        "SVJ_REAR_exhaust_headers",
+        "SVJ_REAR_collector_heat_shield_-1",
+        "SVJ_REAR_collector_heat_shield_1"
+      ],
+      "position": [
+        0.9062825394542541,
+        0.5399997731908368,
+        0.2600011937323124
+      ]
+    },
+    {
+      "id": "covers",
+      "meshes": [
+        "SVJ_REAR_valve_cover_-1",
+        "SVJ_REAR_valve_cover_1",
+        "SVJ_REAR_oil_fill_neck",
+        "SVJ_REAR_oil_fill_cap"
+      ],
+      "position": [
+        1.35,
+        0.7039999961853027,
+        0.36500000000000016
+      ]
+    },
+    {
+      "id": "ignition",
+      "meshes": [
+        "SVJ_REAR_ignition_coils",
+        "SVJ_REAR_coil_plugs",
+        "SVJ_REAR_ignition_wires"
+      ],
+      "position": [
+        1.697,
+        0.7235000133514404,
+        0.3310000002384186
+      ]
+    }
+  ]
+}

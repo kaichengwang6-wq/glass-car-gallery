@@ -1,0 +1,83 @@
+{
+  "bounds": {
+    "min": [
+      0.8370000123977661,
+      0.34599998593330383,
+      -0.5
+    ],
+    "max": [
+      1.5793790817260742,
+      0.7928541302680969,
+      0.5
+    ]
+  },
+  "hotspots": [
+    {
+      "id": "intake",
+      "meshes": [
+        "D_BAY_central_intake_plenum",
+        "D_BAY_plenum_spine",
+        "D_BAY_eight_intake_runners",
+        "D_BAY_runner_flanges",
+        "D_BAY_intake_hose_-1",
+        "D_BAY_intake_hose_1",
+        "D_BAY_intake_hose_bellows",
+        "D_BAY_hose_clamps",
+        "D_BAY_airbox_-1",
+        "D_BAY_airbox_1",
+        "D_BAY_airbox_lid_-1",
+        "D_BAY_airbox_lid_1",
+        "D_BAY_airbox_ribbing"
+      ],
+      "position": [
+        1.205,
+        0.786,
+        0.0
+      ]
+    },
+    {
+      "id": "block",
+      "meshes": [
+        "D_BAY_crankcase",
+        "D_BAY_upper_V8_casting",
+        "D_BAY_cylinder_bank_-1",
+        "D_BAY_cylinder_bank_1"
+      ],
+      "position": [
+        1.19,
+        0.449,
+        0.297
+      ]
+    },
+    {
+      "id": "covers",
+      "meshes": [
+        "D_BAY_red_cam_cover_-1",
+        "D_BAY_red_cam_cover_1",
+        "D_BAY_cam_gasket_-1",
+        "D_BAY_cam_gasket_1",
+        "D_BAY_cam_cover_ribs",
+        "D_BAY_cam_cover_plaques"
+      ],
+      "position": [
+        1.205,
+        0.689,
+        0.246
+      ]
+    },
+    {
+      "id": "ignition",
+      "meshes": [
+        "D_BAY_ignition_coil_covers",
+        "D_BAY_coil_wiring",
+        "D_BAY_wiring_loom_-1",
+        "D_BAY_wiring_loom_1"
+      ],
+      "position": [
+        1.29,
+        0.611,
+        0.371
+      ]
+    }
+  ]
+}

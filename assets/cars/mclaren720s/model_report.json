@@ -1,0 +1,2338 @@
+{
+  "id": "mclaren720s",
+  "modelRevision": "batch2-phase1-authored-v1",
+  "units": "metres",
+  "orientation": "Y up; nose -X",
+  "nominal_mm": [
+    4543,
+    1930,
+    1196
+  ],
+  "wheelbase_mm": 2670,
+  "parts": 458,
+  "triangles": 410254,
+  "invalid_meshes": [],
+  "bounds_m": [
+    [
+      -2.2715,
+      0.0,
+      -1.1175955810546876
+    ],
+    [
+      2.2715,
+      1.196,
+      1.1175955810546876
+    ]
+  ],
+  "glb_bytes": 12188356,
+  "preview_bytes": 3528492,
+  "interactive_meshes": {
+    "driver_door": 38,
+    "passenger_door": 38,
+    "hood": 5,
+    "roof": 8
+  },
+  "note": "独立构建的展示模型；轮廓和标志性细节参考指定原厂版本，非原厂工程 CAD。未公开内部尺寸和动作轨迹为可视化示意。",
+  "sources": [
+    [
+      "迈凯伦 720S Spider 原厂车型页",
+      "https://www.mclaren.com/cars/gl_en/legacy/720s-spider"
+    ],
+    [
+      "720S Spider 原厂宣传册存档",
+      "https://kurumacatalog.com/wp-content/uploads/2021/01/2019_McLaren_720S_Spider_catalog.pdf"
+    ]
+  ],
+  "components": [
+    {
+      "name": "mclaren720s_front_luggage_lid",
+      "triangles": 2632,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_front_lid_carbon_liner",
+      "triangles": 1512,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_front_lid_return",
+      "triangles": 144,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_front_lid_weather_seal",
+      "triangles": 1152,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_front_lid_stiffener_-1",
+      "triangles": 44,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_front_lid_stiffener_1",
+      "triangles": 44,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_front_luggage_floor",
+      "triangles": 336,
+      "material": "carpet"
+    },
+    {
+      "name": "mclaren720s_front_luggage_bag",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_front_luggage_bag_handle",
+      "triangles": 60,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_side_sculpted_skin_-1",
+      "triangles": 12421,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_side_carbon_sill_-1",
+      "triangles": 16,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_front_arch_fold_-1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_front_arch_liner_-1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_rear_arch_fold_-1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_rear_arch_liner_-1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_door_fixed_jamb_-1",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_door_aperture_seal_-1",
+      "triangles": 652,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_lower_skin_fold_-1_0",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_lower_skin_fold_-1_1",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_lower_skin_fold_-1_2",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_side_sculpted_skin_1",
+      "triangles": 12421,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_side_carbon_sill_1",
+      "triangles": 16,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_front_arch_fold_1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_front_arch_liner_1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_rear_arch_fold_1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_rear_arch_liner_1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_door_fixed_jamb_1",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_door_aperture_seal_1",
+      "triangles": 652,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_lower_skin_fold_1_0",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_lower_skin_fold_1_1",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_lower_skin_fold_1_2",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_rear_haunch_skin_-1",
+      "triangles": 7424,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_rear_haunch_skin_1",
+      "triangles": 7424,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_rear_centre_deck_skin",
+      "triangles": 2460,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_underfloor_carbon_pan",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_door_outer_skin_-1",
+      "triangles": 2572,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_door_folded_edge_-1",
+      "triangles": 144,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_door_inner_carbon_shell_-1",
+      "triangles": 1736,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_door_leather_trim_-1",
+      "triangles": 700,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_door_side_glass_-1",
+      "triangles": 1470,
+      "material": "glass"
+    },
+    {
+      "name": "mclaren720s_door_window_surround_-1",
+      "triangles": 768,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_door_window_bottom_trim_-1",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_door_armrest_-1",
+      "triangles": 28,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_door_interior_pull_-1",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "mclaren720s_door_speaker_trim_-1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "mclaren720s_door_speaker_mesh_-1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_door_exterior_flush_handle_-1",
+      "triangles": 28,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_mirror_stalk_-1",
+      "triangles": 268,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_mirror_shell_-1",
+      "triangles": 832,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_mirror_reflective_face_-1",
+      "triangles": 528,
+      "material": "mirror"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_7",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_8",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_9",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_10",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_11",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_12",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_13",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_14",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_15",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_16",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_17",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_18",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_-1_19",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_outer_skin_1",
+      "triangles": 2572,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_door_folded_edge_1",
+      "triangles": 144,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_door_inner_carbon_shell_1",
+      "triangles": 1736,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_door_leather_trim_1",
+      "triangles": 700,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_door_side_glass_1",
+      "triangles": 1470,
+      "material": "glass"
+    },
+    {
+      "name": "mclaren720s_door_window_surround_1",
+      "triangles": 768,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_door_window_bottom_trim_1",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_door_armrest_1",
+      "triangles": 28,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_door_interior_pull_1",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "mclaren720s_door_speaker_trim_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "mclaren720s_door_speaker_mesh_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_door_exterior_flush_handle_1",
+      "triangles": 28,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_mirror_stalk_1",
+      "triangles": 268,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_mirror_shell_1",
+      "triangles": 832,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_mirror_reflective_face_1",
+      "triangles": 528,
+      "material": "mirror"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_7",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_8",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_9",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_10",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_11",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_12",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_13",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_14",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_15",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_16",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_17",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_18",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_door_stitch_1_19",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_cockpit_floor",
+      "triangles": 12,
+      "material": "carpet"
+    },
+    {
+      "name": "mclaren720s_rear_firewall",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_dashboard_upper",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_dashboard_lower",
+      "triangles": 336,
+      "material": "interior"
+    },
+    {
+      "name": "mclaren720s_seat_carbon_shell_-1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_seat_squab_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_seat_back_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_seat_back_carbon_-1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_seat_headrest_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_seat_hip_bolster_-1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_seat_shoulder_bolster_-1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_seat_hip_bolster_-1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_seat_shoulder_bolster_-1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_seat_stitch_squab_-1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_seat_stitch_squab_-1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_seat_stitch_squab_-1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_seat_stitch_squab_-1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_seat_stitch_squab_-1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_seat_stitch_squab_-1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_seat_stitch_squab_-1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_seat_belt_-1",
+      "triangles": 32,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_seat_buckle_-1",
+      "triangles": 336,
+      "material": "tail"
+    },
+    {
+      "name": "mclaren720s_floor_mat_-1",
+      "triangles": 336,
+      "material": "carpet"
+    },
+    {
+      "name": "mclaren720s_seat_carbon_shell_1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_seat_squab_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_seat_back_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_seat_back_carbon_1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_seat_headrest_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_seat_hip_bolster_1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_seat_shoulder_bolster_1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_seat_hip_bolster_1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_seat_shoulder_bolster_1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_seat_stitch_squab_1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_seat_stitch_squab_1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_seat_stitch_squab_1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_seat_stitch_squab_1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_seat_stitch_squab_1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_seat_stitch_squab_1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_seat_stitch_squab_1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "mclaren720s_seat_belt_1",
+      "triangles": 32,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_seat_buckle_1",
+      "triangles": 336,
+      "material": "tail"
+    },
+    {
+      "name": "mclaren720s_floor_mat_1",
+      "triangles": 336,
+      "material": "carpet"
+    },
+    {
+      "name": "mclaren720s_steering_wheel_rim",
+      "triangles": 1440,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_steering_wheel_hub",
+      "triangles": 528,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_steering_spoke_0",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_steering_spoke_3.141592653589793",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_steering_spoke_4.71238898038469",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_steering_column",
+      "triangles": 68,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_steering_shift_paddle_-1",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_steering_shift_paddle_1",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_instrument_binnacle",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_driver_display",
+      "triangles": 336,
+      "material": "screen"
+    },
+    {
+      "name": "mclaren720s_driver_display_rpm_0",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "mclaren720s_driver_display_rpm_1",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "mclaren720s_driver_display_rpm_2",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "mclaren720s_driver_display_rpm_3",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "mclaren720s_driver_display_rpm_4",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "mclaren720s_driver_display_rpm_5",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "mclaren720s_driver_display_rpm_6",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "mclaren720s_driver_display_rpm_7",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "mclaren720s_driver_display_rpm_8",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "mclaren720s_driver_display_rpm_9",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "mclaren720s_driver_display_rpm_10",
+      "triangles": 12,
+      "material": "indicator"
+    },
+    {
+      "name": "mclaren720s_centre_console",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_centre_touchscreen",
+      "triangles": 336,
+      "material": "screen"
+    },
+    {
+      "name": "mclaren720s_console_side_trim_-1",
+      "triangles": 44,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_dash_vent_ring_-1_0",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "mclaren720s_dash_vent_shadow_-1_0",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_-1_0_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_-1_0_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_-1_0_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_ring_-1_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "mclaren720s_dash_vent_shadow_-1_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_-1_1_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_-1_1_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_-1_1_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_ring_-1_2",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "mclaren720s_dash_vent_shadow_-1_2",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_-1_2_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_-1_2_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_-1_2_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_console_side_trim_1",
+      "triangles": 44,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_dash_vent_ring_1_0",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "mclaren720s_dash_vent_shadow_1_0",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_1_0_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_1_0_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_1_0_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_ring_1_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "mclaren720s_dash_vent_shadow_1_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_1_1_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_1_1_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_1_1_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_ring_1_2",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "mclaren720s_dash_vent_shadow_1_2",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_1_2_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_1_2_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_dash_vent_blade_1_2_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_console_rotary_control_0",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "mclaren720s_console_rotary_indicator_0",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "mclaren720s_console_rotary_control_1",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "mclaren720s_console_rotary_indicator_1",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "mclaren720s_console_rotary_control_2",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "mclaren720s_console_rotary_indicator_2",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "mclaren720s_console_rotary_control_3",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "mclaren720s_console_rotary_indicator_3",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "mclaren720s_console_armrest",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "mclaren720s_pedal_0",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_pedal_1",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_pedal_2",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_front_windshield",
+      "triangles": 5544,
+      "material": "glass"
+    },
+    {
+      "name": "mclaren720s_A_pillar_-1",
+      "triangles": 796,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_windshield_seal_-1",
+      "triangles": 636,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_A_pillar_1",
+      "triangles": 796,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_windshield_seal_1",
+      "triangles": 636,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_windshield_header",
+      "triangles": 876,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_windshield_cowl",
+      "triangles": 700,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_windscreen_wiper_arm",
+      "triangles": 44,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_windscreen_wiper_blade",
+      "triangles": 44,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_roof_panel_skin_0",
+      "triangles": 5040,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_roof_headliner_0",
+      "triangles": 1496,
+      "material": "alcantara"
+    },
+    {
+      "name": "mclaren720s_roof_edge_-1",
+      "triangles": 700,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_roof_edge_1",
+      "triangles": 700,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_front_right_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_front_right_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_front_right_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_front_right_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_front_right_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_front_right_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_front_right_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_front_right_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_front_right_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "mclaren720s_front_right_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_front_right_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_front_right_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_front_right_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "mclaren720s_front_right_caliper_cast_piston_housings",
+      "triangles": 336,
+      "material": "caliper"
+    },
+    {
+      "name": "mclaren720s_front_right_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_front_right_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "mclaren720s_front_right_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_front_right_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_front_signature_spokes_-1",
+      "triangles": 360,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_front_left_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_front_left_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_front_left_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_front_left_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_front_left_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_front_left_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_front_left_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_front_left_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_front_left_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "mclaren720s_front_left_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_front_left_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_front_left_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_front_left_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "mclaren720s_front_left_caliper_cast_piston_housings",
+      "triangles": 336,
+      "material": "caliper"
+    },
+    {
+      "name": "mclaren720s_front_left_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_front_left_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "mclaren720s_front_left_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_front_left_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_front_signature_spokes_1",
+      "triangles": 360,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_rear_right_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_rear_right_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_rear_right_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_right_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_rear_right_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_right_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_rear_right_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_rear_right_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_rear_right_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "mclaren720s_rear_right_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_right_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_right_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_rear_right_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "mclaren720s_rear_right_caliper_cast_piston_housings",
+      "triangles": 224,
+      "material": "caliper"
+    },
+    {
+      "name": "mclaren720s_rear_right_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_right_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "mclaren720s_rear_right_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_rear_right_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_signature_spokes_-1",
+      "triangles": 360,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_rear_left_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_rear_left_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_rear_left_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_left_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_rear_left_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_left_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_rear_left_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_rear_left_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_rear_left_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "mclaren720s_rear_left_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_left_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_left_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_rear_left_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "mclaren720s_rear_left_caliper_cast_piston_housings",
+      "triangles": 224,
+      "material": "caliper"
+    },
+    {
+      "name": "mclaren720s_rear_left_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_left_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "mclaren720s_rear_left_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "mclaren720s_rear_left_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_signature_spokes_1",
+      "triangles": 360,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_rear_grille_shadow",
+      "triangles": 36,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_rear_engine_vent_mesh",
+      "triangles": 1136,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_diffuser_ramp",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_rear_diffuser_strake_0",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_rear_diffuser_strake_1",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_rear_diffuser_strake_2",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_rear_diffuser_strake_3",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_rear_diffuser_strake_4",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_rear_diffuser_strake_5",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_rear_diffuser_strake_6",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_nose_emblem",
+      "triangles": 432,
+      "material": "badge"
+    },
+    {
+      "name": "mclaren720s_720S_rounded_front_bumper",
+      "triangles": 9304,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_720S_rounded_front_bumper_rolled_cheek_-1",
+      "triangles": 1512,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_720S_rounded_front_bumper_splitter_-1",
+      "triangles": 2304,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_rounded_front_bumper_rolled_cheek_1",
+      "triangles": 1512,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_720S_rounded_front_bumper_splitter_1",
+      "triangles": 2304,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_lower_channel_-1_throat",
+      "triangles": 320,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_lower_channel_-1_radiator_shadow",
+      "triangles": 1440,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_720S_lower_channel_-1_rolled_lip",
+      "triangles": 2880,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_lower_channel_-1_mesh",
+      "triangles": 560,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_720S_nose_floating_blade_-1",
+      "triangles": 740,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_720S_lower_splitter_edge_-1",
+      "triangles": 50,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_lower_channel_1_throat",
+      "triangles": 320,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_lower_channel_1_radiator_shadow",
+      "triangles": 1440,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_720S_lower_channel_1_rolled_lip",
+      "triangles": 2880,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_lower_channel_1_mesh",
+      "triangles": 560,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_720S_nose_floating_blade_1",
+      "triangles": 740,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_720S_lower_splitter_edge_1",
+      "triangles": 50,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_centre_low_intake_throat",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_centre_low_intake_radiator_shadow",
+      "triangles": 360,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_720S_centre_low_intake_rolled_lip",
+      "triangles": 720,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_centre_low_intake_mesh",
+      "triangles": 336,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_block_visible",
+      "triangles": 336,
+      "material": "bay_cast"
+    },
+    {
+      "name": "mclaren720s_engine_bank_cover_-1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_engine_air_duct_-1",
+      "triangles": 92,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_engine_bay_brace_-1",
+      "triangles": 36,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_-1_0",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_-1_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_-1_2",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_-1_3",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_-1_4",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_-1_5",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_-1_6",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_-1_7",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_suspension_upper_link_-1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_suspension_second_link_-1",
+      "triangles": 28,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_engine_bank_cover_1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_engine_air_duct_1",
+      "triangles": 92,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_engine_bay_brace_1",
+      "triangles": 36,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_1_0",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_1_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_1_2",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_1_3",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_1_4",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_1_5",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_1_6",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_engine_cover_rib_1_7",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_suspension_upper_link_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_suspension_second_link_1",
+      "triangles": 28,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_-1_0",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_-1_1",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_-1_2",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_-1_3",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_-1_4",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_-1_5",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_-1_6",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_-1_7",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_-1_8",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_-1_9",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_1_0",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_1_1",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_1_2",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_1_3",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_1_4",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_1_5",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_1_6",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_1_7",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_1_8",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_engine_deck_vent_1_9",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_rear_LED_blade_-1",
+      "triangles": 56,
+      "material": "tail"
+    },
+    {
+      "name": "mclaren720s_rear_lamp_black_surround_-1",
+      "triangles": 44,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_rear_exhaust_rolled_lip_-1",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_rear_exhaust_bore_-1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_side_lower_air_channel_-1",
+      "triangles": 700,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_rear_LED_blade_1",
+      "triangles": 56,
+      "material": "tail"
+    },
+    {
+      "name": "mclaren720s_rear_lamp_black_surround_1",
+      "triangles": 44,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_rear_exhaust_rolled_lip_1",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_rear_exhaust_bore_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_side_lower_air_channel_1",
+      "triangles": 700,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_roof_storage_tonneau_skin",
+      "triangles": 1806,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_roof_storage_tonneau_liner",
+      "triangles": 1302,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_roof_storage_tray",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_roof_storage_sidewall_-1",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_roof_storage_guide_-1",
+      "triangles": 44,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_roof_electric_actuator_-1",
+      "triangles": 336,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_roof_actuator_cable_-1",
+      "triangles": 44,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_roof_storage_sidewall_1",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_roof_storage_guide_1",
+      "triangles": 44,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_roof_electric_actuator_1",
+      "triangles": 336,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_roof_actuator_cable_1",
+      "triangles": 44,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_roof_stay_body_-1",
+      "triangles": 60,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_roof_stay_rod_-1",
+      "triangles": 44,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_roof_stay_collar_-1",
+      "triangles": 44,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_roof_stay_lower_ball_-1",
+      "triangles": 224,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_roof_stay_upper_ball_-1",
+      "triangles": 224,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_roof_stay_lower_bracket_-1",
+      "triangles": 44,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_roof_stay_body_1",
+      "triangles": 60,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_roof_stay_rod_1",
+      "triangles": 44,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_roof_stay_collar_1",
+      "triangles": 44,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_roof_stay_lower_ball_1",
+      "triangles": 224,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_roof_stay_upper_ball_1",
+      "triangles": 224,
+      "material": "alloy"
+    },
+    {
+      "name": "mclaren720s_roof_stay_lower_bracket_1",
+      "triangles": 44,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_rear_active_spoiler_static",
+      "triangles": 1440,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_front_quarter_skin",
+      "triangles": 14068,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_720S_eye_socket_deep_wall_-1",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_eye_socket_black_recess_-1",
+      "triangles": 1080,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_720S_eye_socket_soft_rim_-1",
+      "triangles": 720,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_eye_LED_brow_-1",
+      "triangles": 736,
+      "material": "light"
+    },
+    {
+      "name": "mclaren720s_720S_eye_projector_-1_0",
+      "triangles": 832,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_720S_eye_projector_lens_-1_0",
+      "triangles": 832,
+      "material": "light"
+    },
+    {
+      "name": "mclaren720s_720S_eye_projector_-1_1",
+      "triangles": 832,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_720S_eye_projector_lens_-1_1",
+      "triangles": 832,
+      "material": "light"
+    },
+    {
+      "name": "mclaren720s_720S_eye_lower_cooling_throat_-1",
+      "triangles": 108,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_eye_lower_cooling_shadow_-1",
+      "triangles": 1458,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_720S_eye_lower_inner_blade_-1",
+      "triangles": 56,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_eye_socket_deep_wall_1",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_eye_socket_black_recess_1",
+      "triangles": 1080,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_720S_eye_socket_soft_rim_1",
+      "triangles": 720,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_eye_LED_brow_1",
+      "triangles": 736,
+      "material": "light"
+    },
+    {
+      "name": "mclaren720s_720S_eye_projector_1_0",
+      "triangles": 832,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_720S_eye_projector_lens_1_0",
+      "triangles": 832,
+      "material": "light"
+    },
+    {
+      "name": "mclaren720s_720S_eye_projector_1_1",
+      "triangles": 832,
+      "material": "dark_metal"
+    },
+    {
+      "name": "mclaren720s_720S_eye_projector_lens_1_1",
+      "triangles": 832,
+      "material": "light"
+    },
+    {
+      "name": "mclaren720s_720S_eye_lower_cooling_throat_1",
+      "triangles": 108,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_eye_lower_cooling_shadow_1",
+      "triangles": 1458,
+      "material": "black"
+    },
+    {
+      "name": "mclaren720s_720S_eye_lower_inner_blade_1",
+      "triangles": 56,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_door_double_skin_channel_-1",
+      "triangles": 1960,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_door_channel_return_-1",
+      "triangles": 128,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_door_aero_blade_-1",
+      "triangles": 884,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_720S_buttress_upper_rolled_rail_-1",
+      "triangles": 736,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_720S_glazed_buttress_curved_-1",
+      "triangles": 2640,
+      "material": "glass"
+    },
+    {
+      "name": "mclaren720s_720S_door_double_skin_channel_1",
+      "triangles": 1960,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_door_channel_return_1",
+      "triangles": 128,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_720S_door_aero_blade_1",
+      "triangles": 884,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_720S_buttress_upper_rolled_rail_1",
+      "triangles": 736,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_720S_glazed_buttress_curved_1",
+      "triangles": 2640,
+      "material": "glass"
+    },
+    {
+      "name": "mclaren720s_720S_rear_cabin_window",
+      "triangles": 2496,
+      "material": "glass"
+    },
+    {
+      "name": "mclaren720s_720S_fixed_rear_roof_header",
+      "triangles": 1196,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_front_luggage_wall_-1",
+      "triangles": 788,
+      "material": "carpet"
+    },
+    {
+      "name": "mclaren720s_front_luggage_wall_1",
+      "triangles": 788,
+      "material": "carpet"
+    },
+    {
+      "name": "mclaren720s_front_luggage_crosswall_-1931.5",
+      "triangles": 668,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_front_luggage_crosswall_-915",
+      "triangles": 668,
+      "material": "carbon"
+    },
+    {
+      "name": "mclaren720s_rear_rolled_corner_-1",
+      "triangles": 1848,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_rear_rolled_corner_1",
+      "triangles": 1848,
+      "material": "paint"
+    },
+    {
+      "name": "mclaren720s_rear_bumper_skin",
+      "triangles": 3024,
+      "material": "paint"
+    }
+  ]
+}

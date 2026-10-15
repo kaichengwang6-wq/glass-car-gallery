@@ -1,0 +1,2337 @@
+{
+  "id": "porsche918",
+  "modelRevision": "batch2-phase1-authored-v1",
+  "units": "metres",
+  "orientation": "Y up; nose -X",
+  "nominal_mm": [
+    4643,
+    1940,
+    1167
+  ],
+  "wheelbase_mm": 2730,
+  "parts": 458,
+  "triangles": 433086,
+  "invalid_meshes": [],
+  "bounds_m": [
+    [
+      -2.3215,
+      0.0,
+      -1.103613037109375
+    ],
+    [
+      2.3215,
+      1.147351806640625,
+      1.103613037109375
+    ]
+  ],
+  "glb_bytes": 12923820,
+  "preview_bytes": 3559076,
+  "interactive_meshes": {
+    "driver_door": 36,
+    "passenger_door": 36,
+    "hood": 5
+  },
+  "note": "独立构建的展示模型；轮廓和标志性细节参考指定原厂版本，非原厂工程 CAD。未公开内部尺寸和动作轨迹为可视化示意。",
+  "sources": [
+    [
+      "保时捷 918 十周年原厂资料",
+      "https://newsroom.porsche.eu/en/press-kits/Media-Drive-Cayenne-E-Performance/10-Jahre-Porsche-918-Spyder.html"
+    ],
+    [
+      "918 Spyder 原厂技术参数存档",
+      "https://www.motorshow.me/uploadImages/GalleryDocs/Doc5853.pdf"
+    ]
+  ],
+  "components": [
+    {
+      "name": "porsche918_front_luggage_lid",
+      "triangles": 2632,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_front_lid_carbon_liner",
+      "triangles": 1512,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_front_lid_return",
+      "triangles": 144,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_front_lid_weather_seal",
+      "triangles": 1152,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_front_lid_stiffener_-1",
+      "triangles": 44,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_front_lid_stiffener_1",
+      "triangles": 44,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_front_luggage_floor",
+      "triangles": 336,
+      "material": "carpet"
+    },
+    {
+      "name": "porsche918_front_luggage_bag",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_front_luggage_bag_handle",
+      "triangles": 60,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_side_sculpted_skin_-1",
+      "triangles": 12770,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_side_intake_tunnel_-1",
+      "triangles": 10,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_side_intake_shadow_-1",
+      "triangles": 45,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_side_intake_carbon_lip_-1",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_side_intake_vane_-1_0",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_side_intake_vane_-1_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_side_intake_vane_-1_2",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_side_intake_vane_-1_3",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_side_intake_vane_-1_4",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_side_carbon_sill_-1",
+      "triangles": 16,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_front_arch_fold_-1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_front_arch_liner_-1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_rear_arch_fold_-1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_rear_arch_liner_-1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_door_fixed_jamb_-1",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_door_aperture_seal_-1",
+      "triangles": 652,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_lower_skin_fold_-1_0",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_lower_skin_fold_-1_1",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_lower_skin_fold_-1_2",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_side_sculpted_skin_1",
+      "triangles": 12770,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_side_intake_tunnel_1",
+      "triangles": 10,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_side_intake_shadow_1",
+      "triangles": 45,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_side_intake_carbon_lip_1",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_side_intake_vane_1_0",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_side_intake_vane_1_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_side_intake_vane_1_2",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_side_intake_vane_1_3",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_side_intake_vane_1_4",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_side_carbon_sill_1",
+      "triangles": 16,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_front_arch_fold_1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_front_arch_liner_1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_rear_arch_fold_1",
+      "triangles": 1796,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_rear_arch_liner_1",
+      "triangles": 198,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_door_fixed_jamb_1",
+      "triangles": 80,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_door_aperture_seal_1",
+      "triangles": 652,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_lower_skin_fold_1_0",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_lower_skin_fold_1_1",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_lower_skin_fold_1_2",
+      "triangles": 98,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_rear_haunch_skin_-1",
+      "triangles": 7424,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_rear_haunch_skin_1",
+      "triangles": 7424,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_rear_centre_deck_skin",
+      "triangles": 8400,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_underfloor_carbon_pan",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_door_outer_skin_-1",
+      "triangles": 2856,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_door_folded_edge_-1",
+      "triangles": 144,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_door_inner_carbon_shell_-1",
+      "triangles": 1736,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_door_leather_trim_-1",
+      "triangles": 700,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_door_side_glass_-1",
+      "triangles": 1470,
+      "material": "glass"
+    },
+    {
+      "name": "porsche918_door_window_surround_-1",
+      "triangles": 768,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_door_window_bottom_trim_-1",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_door_armrest_-1",
+      "triangles": 28,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_door_interior_pull_-1",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_door_speaker_trim_-1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_door_speaker_mesh_-1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_door_exterior_flush_handle_-1",
+      "triangles": 28,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_mirror_stalk_-1",
+      "triangles": 268,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_mirror_shell_-1",
+      "triangles": 832,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_mirror_reflective_face_-1",
+      "triangles": 528,
+      "material": "mirror"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_7",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_8",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_9",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_10",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_11",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_12",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_13",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_14",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_15",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_16",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_17",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_18",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_-1_19",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_outer_skin_1",
+      "triangles": 2856,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_door_folded_edge_1",
+      "triangles": 144,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_door_inner_carbon_shell_1",
+      "triangles": 1736,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_door_leather_trim_1",
+      "triangles": 700,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_door_side_glass_1",
+      "triangles": 1470,
+      "material": "glass"
+    },
+    {
+      "name": "porsche918_door_window_surround_1",
+      "triangles": 768,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_door_window_bottom_trim_1",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_door_armrest_1",
+      "triangles": 28,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_door_interior_pull_1",
+      "triangles": 28,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_door_speaker_trim_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_door_speaker_mesh_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_door_exterior_flush_handle_1",
+      "triangles": 28,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_mirror_stalk_1",
+      "triangles": 268,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_mirror_shell_1",
+      "triangles": 832,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_mirror_reflective_face_1",
+      "triangles": 528,
+      "material": "mirror"
+    },
+    {
+      "name": "porsche918_door_stitch_1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_7",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_8",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_9",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_10",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_11",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_12",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_13",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_14",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_15",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_16",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_17",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_18",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_door_stitch_1_19",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_cockpit_floor",
+      "triangles": 12,
+      "material": "carpet"
+    },
+    {
+      "name": "porsche918_rear_firewall",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_dashboard_upper",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_dashboard_lower",
+      "triangles": 336,
+      "material": "interior"
+    },
+    {
+      "name": "porsche918_seat_carbon_shell_-1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_seat_squab_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_seat_back_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_seat_back_carbon_-1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_seat_headrest_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_seat_hip_bolster_-1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_seat_shoulder_bolster_-1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_seat_hip_bolster_-1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_seat_shoulder_bolster_-1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_seat_stitch_squab_-1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_seat_stitch_squab_-1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_seat_stitch_squab_-1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_seat_stitch_squab_-1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_seat_stitch_squab_-1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_seat_stitch_squab_-1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_seat_stitch_squab_-1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_seat_belt_-1",
+      "triangles": 32,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_seat_buckle_-1",
+      "triangles": 336,
+      "material": "tail"
+    },
+    {
+      "name": "porsche918_floor_mat_-1",
+      "triangles": 336,
+      "material": "carpet"
+    },
+    {
+      "name": "porsche918_seat_carbon_shell_1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_seat_squab_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_seat_back_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_seat_back_carbon_1",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_seat_headrest_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_seat_hip_bolster_1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_seat_shoulder_bolster_1_-1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_seat_hip_bolster_1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_seat_shoulder_bolster_1_1",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_seat_stitch_squab_1_0",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_seat_stitch_squab_1_1",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_seat_stitch_squab_1_2",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_seat_stitch_squab_1_3",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_seat_stitch_squab_1_4",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_seat_stitch_squab_1_5",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_seat_stitch_squab_1_6",
+      "triangles": 16,
+      "material": "stitch"
+    },
+    {
+      "name": "porsche918_seat_belt_1",
+      "triangles": 32,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_seat_buckle_1",
+      "triangles": 336,
+      "material": "tail"
+    },
+    {
+      "name": "porsche918_floor_mat_1",
+      "triangles": 336,
+      "material": "carpet"
+    },
+    {
+      "name": "porsche918_steering_wheel_rim",
+      "triangles": 1440,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_steering_wheel_hub",
+      "triangles": 528,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_steering_spoke_0",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_steering_spoke_3.141592653589793",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_steering_spoke_4.71238898038469",
+      "triangles": 28,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_steering_column",
+      "triangles": 68,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_steering_shift_paddle_-1",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_steering_shift_paddle_1",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_instrument_binnacle",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_gauge_bezel_0",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_gauge_face_0",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_gauge_needle_0",
+      "triangles": 16,
+      "material": "tail"
+    },
+    {
+      "name": "porsche918_gauge_tick_0",
+      "triangles": 304,
+      "material": "white"
+    },
+    {
+      "name": "porsche918_gauge_bezel_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_gauge_face_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_gauge_needle_1",
+      "triangles": 16,
+      "material": "tail"
+    },
+    {
+      "name": "porsche918_gauge_tick_1",
+      "triangles": 304,
+      "material": "white"
+    },
+    {
+      "name": "porsche918_gauge_bezel_2",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_gauge_face_2",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_gauge_needle_2",
+      "triangles": 16,
+      "material": "tail"
+    },
+    {
+      "name": "porsche918_gauge_tick_2",
+      "triangles": 304,
+      "material": "white"
+    },
+    {
+      "name": "porsche918_centre_console",
+      "triangles": 336,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_centre_touchscreen",
+      "triangles": 336,
+      "material": "screen"
+    },
+    {
+      "name": "porsche918_console_side_trim_-1",
+      "triangles": 44,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_dash_vent_ring_-1_0",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_dash_vent_shadow_-1_0",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_-1_0_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_-1_0_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_-1_0_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_ring_-1_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_dash_vent_shadow_-1_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_-1_1_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_-1_1_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_-1_1_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_ring_-1_2",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_dash_vent_shadow_-1_2",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_-1_2_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_-1_2_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_-1_2_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_console_side_trim_1",
+      "triangles": 44,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_dash_vent_ring_1_0",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_dash_vent_shadow_1_0",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_1_0_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_1_0_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_1_0_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_ring_1_1",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_dash_vent_shadow_1_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_1_1_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_1_1_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_1_1_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_ring_1_2",
+      "triangles": 768,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_dash_vent_shadow_1_2",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_1_2_-12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_1_2_0",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_dash_vent_blade_1_2_12",
+      "triangles": 16,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_console_rotary_control_0",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_console_rotary_indicator_0",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "porsche918_console_rotary_control_1",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_console_rotary_indicator_1",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "porsche918_console_rotary_control_2",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_console_rotary_indicator_2",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "porsche918_console_rotary_control_3",
+      "triangles": 432,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_console_rotary_indicator_3",
+      "triangles": 16,
+      "material": "white"
+    },
+    {
+      "name": "porsche918_console_armrest",
+      "triangles": 336,
+      "material": "leather"
+    },
+    {
+      "name": "porsche918_pedal_0",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_pedal_1",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_pedal_2",
+      "triangles": 336,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_front_windshield",
+      "triangles": 5544,
+      "material": "glass"
+    },
+    {
+      "name": "porsche918_A_pillar_-1",
+      "triangles": 796,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_windshield_seal_-1",
+      "triangles": 636,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_A_pillar_1",
+      "triangles": 796,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_windshield_seal_1",
+      "triangles": 636,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_windshield_header",
+      "triangles": 876,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_windshield_cowl",
+      "triangles": 700,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_windscreen_wiper_arm",
+      "triangles": 44,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_windscreen_wiper_blade",
+      "triangles": 44,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_front_right_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_front_right_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_front_right_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_front_right_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_front_right_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_front_right_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_front_right_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_front_right_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_front_right_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "porsche918_front_right_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_front_right_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_front_right_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_front_right_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "porsche918_front_right_caliper_cast_piston_housings",
+      "triangles": 336,
+      "material": "caliper"
+    },
+    {
+      "name": "porsche918_front_right_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_front_right_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "porsche918_front_right_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_front_right_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_front_signature_spokes_-1",
+      "triangles": 360,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_front_left_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_front_left_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_front_left_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_front_left_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_front_left_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_front_left_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_front_left_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_front_left_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_front_left_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "porsche918_front_left_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_front_left_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_front_left_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_front_left_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "porsche918_front_left_caliper_cast_piston_housings",
+      "triangles": 336,
+      "material": "caliper"
+    },
+    {
+      "name": "porsche918_front_left_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_front_left_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "porsche918_front_left_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_front_left_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_front_signature_spokes_1",
+      "triangles": 360,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_rear_right_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_rear_right_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_rear_right_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_right_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_rear_right_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_right_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_rear_right_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_rear_right_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_rear_right_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "porsche918_rear_right_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_right_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_right_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_rear_right_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "porsche918_rear_right_caliper_cast_piston_housings",
+      "triangles": 224,
+      "material": "caliper"
+    },
+    {
+      "name": "porsche918_rear_right_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_right_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "porsche918_rear_right_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_rear_right_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_signature_spokes_-1",
+      "triangles": 360,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_rear_left_tire",
+      "triangles": 18944,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_rear_left_rim",
+      "triangles": 4096,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_rear_left_inner_barrel",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_left_hub",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_rear_left_center_cap_rim",
+      "triangles": 224,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_left_center_cap",
+      "triangles": 224,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_rear_left_lug_recesses",
+      "triangles": 400,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_rear_left_lug_bolts",
+      "triangles": 120,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_rear_left_brake_rotor",
+      "triangles": 12960,
+      "material": "brake"
+    },
+    {
+      "name": "porsche918_rear_left_rotor_36_ventilation_vanes",
+      "triangles": 432,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_left_brake_hat",
+      "triangles": 960,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_left_brake_hat_hardware",
+      "triangles": 240,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_rear_left_brake_caliper",
+      "triangles": 338,
+      "material": "caliper"
+    },
+    {
+      "name": "porsche918_rear_left_caliper_cast_piston_housings",
+      "triangles": 224,
+      "material": "caliper"
+    },
+    {
+      "name": "porsche918_rear_left_caliper_fasteners",
+      "triangles": 96,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_left_sidewall_moulding",
+      "triangles": 6144,
+      "material": "tire_detail"
+    },
+    {
+      "name": "porsche918_rear_left_valve_stem",
+      "triangles": 64,
+      "material": "rubber"
+    },
+    {
+      "name": "porsche918_rear_left_valve_cap",
+      "triangles": 48,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_signature_spokes_1",
+      "triangles": 360,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_rear_grille_shadow",
+      "triangles": 36,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_rear_engine_vent_mesh",
+      "triangles": 1136,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_diffuser_ramp",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_rear_diffuser_strake_0",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_rear_diffuser_strake_1",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_rear_diffuser_strake_2",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_rear_diffuser_strake_3",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_rear_diffuser_strake_4",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_rear_diffuser_strake_5",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_rear_diffuser_strake_6",
+      "triangles": 12,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_nose_emblem",
+      "triangles": 432,
+      "material": "badge"
+    },
+    {
+      "name": "porsche918_918_round_front_apron",
+      "triangles": 10789,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_918_round_front_apron_rolled_cheek_-1",
+      "triangles": 1512,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_918_round_front_apron_splitter_-1",
+      "triangles": 2304,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_918_round_front_apron_rolled_cheek_1",
+      "triangles": 1512,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_918_round_front_apron_splitter_1",
+      "triangles": 2304,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_918_oval_front_intake_-1_throat",
+      "triangles": 1024,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_918_oval_front_intake_-1_radiator_shadow",
+      "triangles": 4608,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_918_oval_front_intake_-1_rolled_lip",
+      "triangles": 9216,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_918_oval_front_intake_-1_mesh",
+      "triangles": 480,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_918_front_bumper_DRL_-1",
+      "triangles": 482,
+      "material": "light"
+    },
+    {
+      "name": "porsche918_918_oval_front_intake_1_throat",
+      "triangles": 1024,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_918_oval_front_intake_1_radiator_shadow",
+      "triangles": 4608,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_918_oval_front_intake_1_rolled_lip",
+      "triangles": 9216,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_918_oval_front_intake_1_mesh",
+      "triangles": 480,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_918_front_bumper_DRL_1",
+      "triangles": 482,
+      "material": "light"
+    },
+    {
+      "name": "porsche918_918_centre_lower_intake_throat",
+      "triangles": 96,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_918_centre_lower_intake_radiator_shadow",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_918_centre_lower_intake_rolled_lip",
+      "triangles": 864,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_918_centre_lower_intake_mesh",
+      "triangles": 464,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_block_visible",
+      "triangles": 336,
+      "material": "bay_cast"
+    },
+    {
+      "name": "porsche918_engine_bank_cover_-1",
+      "triangles": 336,
+      "material": "bay_cast"
+    },
+    {
+      "name": "porsche918_engine_air_duct_-1",
+      "triangles": 92,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_engine_bay_brace_-1",
+      "triangles": 36,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_-1_0",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_-1_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_-1_2",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_-1_3",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_-1_4",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_-1_5",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_-1_6",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_-1_7",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_suspension_upper_link_-1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_suspension_second_link_-1",
+      "triangles": 28,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_engine_bank_cover_1",
+      "triangles": 336,
+      "material": "bay_cast"
+    },
+    {
+      "name": "porsche918_engine_air_duct_1",
+      "triangles": 92,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_engine_bay_brace_1",
+      "triangles": 36,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_1_0",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_1_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_1_2",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_1_3",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_1_4",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_1_5",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_1_6",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_rib_1_7",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_suspension_upper_link_1",
+      "triangles": 28,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_suspension_second_link_1",
+      "triangles": 28,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_-1_0",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_-1_1",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_-1_2",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_-1_3",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_-1_4",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_-1_5",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_-1_6",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_-1_7",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_-1_8",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_-1_9",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_1_0",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_1_1",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_1_2",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_1_3",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_1_4",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_1_5",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_1_6",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_1_7",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_1_8",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_engine_deck_vent_1_9",
+      "triangles": 20,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_top_exhaust_titanium_neck_-1",
+      "triangles": 124,
+      "material": "bay_heat"
+    },
+    {
+      "name": "porsche918_top_exhaust_rolled_rim_-1",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_top_exhaust_dark_bore_-1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_rear_tail_light_outline_-1",
+      "triangles": 56,
+      "material": "tail"
+    },
+    {
+      "name": "porsche918_rear_tail_light_lower_-1",
+      "triangles": 44,
+      "material": "tail"
+    },
+    {
+      "name": "porsche918_top_exhaust_titanium_neck_1",
+      "triangles": 124,
+      "material": "bay_heat"
+    },
+    {
+      "name": "porsche918_top_exhaust_rolled_rim_1",
+      "triangles": 960,
+      "material": "alloy"
+    },
+    {
+      "name": "porsche918_top_exhaust_dark_bore_1",
+      "triangles": 432,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_rear_tail_light_outline_1",
+      "triangles": 56,
+      "material": "tail"
+    },
+    {
+      "name": "porsche918_rear_tail_light_lower_1",
+      "triangles": 44,
+      "material": "tail"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_0",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_1",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_2",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_3",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_4",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_5",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_6",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_7",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_8",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_9",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_10",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_11",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_12",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_13",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_14",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_15",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_16",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_engine_cover_mesh_crossbar_17",
+      "triangles": 20,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_rear_engine_cover_centre_spine",
+      "triangles": 56,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_rear_spoiler_static",
+      "triangles": 1440,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_hybrid_battery_display_housing",
+      "triangles": 12,
+      "material": "battery"
+    },
+    {
+      "name": "porsche918_hybrid_high_voltage_cable",
+      "triangles": 56,
+      "material": "amber"
+    },
+    {
+      "name": "porsche918_front_quarter_skin",
+      "triangles": 17231,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_918_oval_headlamp_deep_housing_-1",
+      "triangles": 2800,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_918_oval_headlamp_chrome_edge_-1",
+      "triangles": 1600,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_918_oval_clear_lamp_cover_-1",
+      "triangles": 3120,
+      "material": "lamp_lens"
+    },
+    {
+      "name": "porsche918_918_four_point_LED_-1_0",
+      "triangles": 528,
+      "material": "light"
+    },
+    {
+      "name": "porsche918_918_four_point_LED_-1_1",
+      "triangles": 528,
+      "material": "light"
+    },
+    {
+      "name": "porsche918_918_four_point_LED_-1_2",
+      "triangles": 528,
+      "material": "light"
+    },
+    {
+      "name": "porsche918_918_four_point_LED_-1_3",
+      "triangles": 528,
+      "material": "light"
+    },
+    {
+      "name": "porsche918_918_main_projector_reflector_-1",
+      "triangles": 960,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_918_main_projector_lens_-1",
+      "triangles": 960,
+      "material": "light"
+    },
+    {
+      "name": "porsche918_918_oval_headlamp_deep_housing_1",
+      "triangles": 2800,
+      "material": "black"
+    },
+    {
+      "name": "porsche918_918_oval_headlamp_chrome_edge_1",
+      "triangles": 1600,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_918_oval_clear_lamp_cover_1",
+      "triangles": 3120,
+      "material": "lamp_lens"
+    },
+    {
+      "name": "porsche918_918_four_point_LED_1_0",
+      "triangles": 528,
+      "material": "light"
+    },
+    {
+      "name": "porsche918_918_four_point_LED_1_1",
+      "triangles": 528,
+      "material": "light"
+    },
+    {
+      "name": "porsche918_918_four_point_LED_1_2",
+      "triangles": 528,
+      "material": "light"
+    },
+    {
+      "name": "porsche918_918_four_point_LED_1_3",
+      "triangles": 528,
+      "material": "light"
+    },
+    {
+      "name": "porsche918_918_main_projector_reflector_1",
+      "triangles": 960,
+      "material": "chrome"
+    },
+    {
+      "name": "porsche918_918_main_projector_lens_1",
+      "triangles": 960,
+      "material": "light"
+    },
+    {
+      "name": "porsche918_918_rollover_fairing_sculpted_-1",
+      "triangles": 4000,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_918_rollover_hoop_-1",
+      "triangles": 116,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_918_rear_open_cockpit_trim_-1",
+      "triangles": 44,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_918_door_rounded_shoulder_-1",
+      "triangles": 492,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_918_rollover_fairing_sculpted_1",
+      "triangles": 4000,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_918_rollover_hoop_1",
+      "triangles": 116,
+      "material": "dark_metal"
+    },
+    {
+      "name": "porsche918_918_rear_open_cockpit_trim_1",
+      "triangles": 44,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_918_door_rounded_shoulder_1",
+      "triangles": 492,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_front_luggage_wall_-1",
+      "triangles": 776,
+      "material": "carpet"
+    },
+    {
+      "name": "porsche918_front_luggage_wall_1",
+      "triangles": 776,
+      "material": "carpet"
+    },
+    {
+      "name": "porsche918_front_luggage_crosswall_-1981.5",
+      "triangles": 668,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_front_luggage_crosswall_-970",
+      "triangles": 668,
+      "material": "carbon"
+    },
+    {
+      "name": "porsche918_rear_rolled_corner_-1",
+      "triangles": 1848,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_rear_rolled_corner_1",
+      "triangles": 1848,
+      "material": "paint"
+    },
+    {
+      "name": "porsche918_rear_bumper_skin",
+      "triangles": 2372,
+      "material": "paint"
+    }
+  ]
+}

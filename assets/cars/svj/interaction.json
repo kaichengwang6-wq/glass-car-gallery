@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "modelRevision": "svj-detail-v1",
+  "units": "meters",
+  "stays": [
+    {
+      "id": "hood_-1",
+      "part": "hood",
+      "fixed": [
+        -0.875,
+        0.44,
+        0.4
+      ],
+      "attached": [
+        -1.4,
+        0.6621113333333334,
+        0.385
+      ],
+      "body": "SVJ_stay_body_hood_-1",
+      "rod": "SVJ_stay_rod_hood_-1",
+      "collar": "SVJ_stay_seal_hood_-1",
+      "bodyLength": 0.55,
+      "rodLength": 0.5
+    },
+    {
+      "id": "driver_door",
+      "part": "driver_door",
+      "fixed": [
+        -0.69,
+        0.29,
+        0.83
+      ],
+      "attached": [
+        -0.24,
+        0.46,
+        0.87
+      ],
+      "body": "SVJ_stay_body_driver_door",
+      "rod": "SVJ_stay_rod_driver_door",
+      "collar": "SVJ_stay_seal_driver_door",
+      "bodyLength": 0.42,
+      "rodLength": 0.4
+    },
+    {
+      "id": "hood_1",
+      "part": "hood",
+      "fixed": [
+        -0.875,
+        0.44,
+        -0.4
+      ],
+      "attached": [
+        -1.4,
+        0.6621113333333334,
+        -0.385
+      ],
+      "body": "SVJ_stay_body_hood_1",
+      "rod": "SVJ_stay_rod_hood_1",
+      "collar": "SVJ_stay_seal_hood_1",
+      "bodyLength": 0.55,
+      "rodLength": 0.5
+    },
+    {
+      "id": "passenger_door",
+      "part": "passenger_door",
+      "fixed": [
+        -0.69,
+        0.29,
+        -0.83
+      ],
+      "attached": [
+        -0.24,
+        0.46,
+        -0.87
+      ],
+      "body": "SVJ_stay_body_passenger_door",
+      "rod": "SVJ_stay_rod_passenger_door",
+      "collar": "SVJ_stay_seal_passenger_door",
+      "bodyLength": 0.42,
+      "rodLength": 0.4
+    }
+  ],
+  "parts": [
+    {
+      "id": "driver_door",
+      "label": "驾驶侧剪刀门",
+      "hinge": [
+        -0.74,
+        0.52,
+        0.87
+      ],
+      "axis": [
+        0,
+        -0.2,
+        1
+      ],
+      "angle": 1.03,
+      "meshes": [
+        "move_driver_door__SVJ_door_exterior_-1",
+        "move_driver_door__SVJ_door_folded_flange_-1",
+        "move_driver_door__SVJ_door_diagonal_crease_-1",
+        "move_driver_door__SVJ_door_lower_carbon_arrow_-1",
+        "move_driver_door__SVJ_door_glass_-1",
+        "move_driver_door__SVJ_door_glass_bottom_rail_-1",
+        "move_driver_door__SVJ_door_window_upper_rubber_-1",
+        "move_driver_door__SVJ_door_handle_recess_-1",
+        "move_driver_door__SVJ_door_handle_-1",
+        "move_driver_door__SVJ_mirror_stalk_-1",
+        "move_driver_door__SVJ_mirror_housing_-1",
+        "move_driver_door__SVJ_mirror_bottom_-1",
+        "move_driver_door__SVJ_mirror_reflective_face_-1",
+        "move_driver_door__SVJ_CAB_door_driver_carbon_card_carbon",
+        "move_driver_door__SVJ_CAB_door_driver_alcantara_inlay_alcantara",
+        "move_driver_door__SVJ_CAB_door_driver_green_seam_cabin_stitch",
+        "move_driver_door__SVJ_CAB_door_driver_armrest_base_carbon",
+        "move_driver_door__SVJ_CAB_door_driver_armrest_soft_grip_alcantara",
+        "move_driver_door__SVJ_CAB_door_driver_armrest_stitch_cabin_stitch",
+        "move_driver_door__SVJ_CAB_door_driver_grab_handle_carbon",
+        "move_driver_door__SVJ_CAB_door_driver_grab_grip_alcantara",
+        "move_driver_door__SVJ_CAB_door_driver_latch_recess_black",
+        "move_driver_door__SVJ_CAB_door_driver_release_cabin_alloy",
+        "move_driver_door__SVJ_CAB_door_driver_window_switch_dark_metal",
+        "move_driver_door__SVJ_CAB_door_driver_window_switch_icon_light",
+        "move_driver_door__SVJ_CAB_door_driver_pocket_black",
+        "move_driver_door__SVJ_CAB_door_driver_pocket_lip_leather",
+        "move_driver_door__SVJ_CAB_door_driver_speaker_recess_black",
+        "move_driver_door__SVJ_CAB_door_driver_speaker_bezel_dark_metal",
+        "move_driver_door__SVJ_CAB_door_driver_speaker_perforations_carbon",
+        "move_driver_door__SVJ_CAB_door_driver_fasteners_dark_metal",
+        "move_driver_door__SVJ_CAB_door_driver_courtesy_light_light",
+        "move_driver_door__SVJ_stay_upper_ball_driver_door"
+      ],
+      "hotspot": [
+        0,
+        0.6,
+        0.943
+      ]
+    },
+    {
+      "id": "passenger_door",
+      "label": "乘客侧剪刀门",
+      "hinge": [
+        -0.74,
+        0.52,
+        -0.87
+      ],
+      "axis": [
+        0,
+        0.2,
+        1
+      ],
+      "angle": 1.03,
+      "meshes": [
+        "move_passenger_door__SVJ_door_exterior_1",
+        "move_passenger_door__SVJ_door_folded_flange_1",
+        "move_passenger_door__SVJ_door_diagonal_crease_1",
+        "move_passenger_door__SVJ_door_lower_carbon_arrow_1",
+        "move_passenger_door__SVJ_door_glass_1",
+        "move_passenger_door__SVJ_door_glass_bottom_rail_1",
+        "move_passenger_door__SVJ_door_window_upper_rubber_1",
+        "move_passenger_door__SVJ_door_handle_recess_1",
+        "move_passenger_door__SVJ_door_handle_1",
+        "move_passenger_door__SVJ_mirror_stalk_1",
+        "move_passenger_door__SVJ_mirror_housing_1",
+        "move_passenger_door__SVJ_mirror_bottom_1",
+        "move_passenger_door__SVJ_mirror_reflective_face_1",
+        "move_passenger_door__SVJ_CAB_door_passenger_carbon_card_carbon",
+        "move_passenger_door__SVJ_CAB_door_passenger_alcantara_inlay_alcantara",
+        "move_passenger_door__SVJ_CAB_door_passenger_green_seam_cabin_stitch",
+        "move_passenger_door__SVJ_CAB_door_passenger_armrest_base_carbon",
+        "move_passenger_door__SVJ_CAB_door_passenger_armrest_soft_grip_alcantara",
+        "move_passenger_door__SVJ_CAB_door_passenger_armrest_stitch_cabin_stitch",
+        "move_passenger_door__SVJ_CAB_door_passenger_grab_handle_carbon",
+        "move_passenger_door__SVJ_CAB_door_passenger_grab_grip_alcantara",
+        "move_passenger_door__SVJ_CAB_door_passenger_latch_recess_black",
+        "move_passenger_door__SVJ_CAB_door_passenger_release_cabin_alloy",
+        "move_passenger_door__SVJ_CAB_door_passenger_window_switch_dark_metal",
+        "move_passenger_door__SVJ_CAB_door_passenger_window_switch_icon_light",
+        "move_passenger_door__SVJ_CAB_door_passenger_pocket_black",
+        "move_passenger_door__SVJ_CAB_door_passenger_pocket_lip_leather",
+        "move_passenger_door__SVJ_CAB_door_passenger_speaker_recess_black",
+        "move_passenger_door__SVJ_CAB_door_passenger_speaker_bezel_dark_metal",
+        "move_passenger_door__SVJ_CAB_door_passenger_speaker_perforations_carbon",
+        "move_passenger_door__SVJ_CAB_door_passenger_fasteners_dark_metal",
+        "move_passenger_door__SVJ_CAB_door_passenger_courtesy_light_light",
+        "move_passenger_door__SVJ_stay_upper_ball_passenger_door"
+      ],
+      "hotspot": [
+        0,
+        0.6,
+        -0.943
+      ]
+    },
+    {
+      "id": "hood",
+      "label": "前行李舱盖",
+      "hinge": [
+        -0.81,
+        0.756,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": -1.06,
+      "meshes": [
+        "move_hood__SVJ_bonnet_skin",
+        "move_hood__SVJ_bonnet_folded_edge",
+        "move_hood__SVJ_bonnet_carbon_liner",
+        "move_hood__SVJ_bonnet_inner_rib_-1",
+        "move_hood__SVJ_bonnet_inner_rib_1",
+        "move_hood__SVJ_hood_inner_liner",
+        "move_hood__SVJ_hood_inner_frame",
+        "move_hood__SVJ_hood_diagonal_rib_-1",
+        "move_hood__SVJ_hood_diagonal_rib_1",
+        "move_hood__SVJ_hood_cross_rib_-1780",
+        "move_hood__SVJ_hood_cross_rib_-1230",
+        "move_hood__SVJ_hood_latch_loop",
+        "move_hood__SVJ_stay_upper_ball_hood_-1",
+        "move_hood__SVJ_stay_upper_ball_hood_1"
+      ],
+      "hotspot": [
+        -1.43,
+        0.7,
+        0
+      ]
+    },
+    {
+      "id": "engine_lid",
+      "label": "快拆发动机盖",
+      "hinge": [
+        0.75,
+        1.04,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "angle": 0,
+      "meshes": [
+        "move_engine_lid__SVJ_REAR_removable_cover_frame",
+        "move_engine_lid__SVJ_REAR_engine_window_frame",
+        "move_engine_lid__SVJ_REAR_engine_viewing_window",
+        "move_engine_lid__SVJ_REAR_cover_louvre_-1_0",
+        "move_engine_lid__SVJ_REAR_louvre_edge_-1_0",
+        "move_engine_lid__SVJ_REAR_cover_louvre_-1_1",
+        "move_engine_lid__SVJ_REAR_louvre_edge_-1_1",
+        "move_engine_lid__SVJ_REAR_cover_louvre_-1_2",
+        "move_engine_lid__SVJ_REAR_louvre_edge_-1_2",
+        "move_engine_lid__SVJ_REAR_cover_louvre_-1_3",
+        "move_engine_lid__SVJ_REAR_louvre_edge_-1_3",
+        "move_engine_lid__SVJ_REAR_cover_louvre_-1_4",
+        "move_engine_lid__SVJ_REAR_louvre_edge_-1_4",
+        "move_engine_lid__SVJ_REAR_cover_louvre_-1_5",
+        "move_engine_lid__SVJ_REAR_louvre_edge_-1_5",
+        "move_engine_lid__SVJ_REAR_cover_inner_stringer_-1",
+        "move_engine_lid__SVJ_REAR_quarter_turn_catch_-1_818",
+        "move_engine_lid__SVJ_REAR_quarter_turn_slot_-1_818",
+        "move_engine_lid__SVJ_REAR_quarter_turn_catch_-1_2010",
+        "move_engine_lid__SVJ_REAR_quarter_turn_slot_-1_2010",
+        "move_engine_lid__SVJ_REAR_cover_louvre_1_0",
+        "move_engine_lid__SVJ_REAR_louvre_edge_1_0",
+        "move_engine_lid__SVJ_REAR_cover_louvre_1_1",
+        "move_engine_lid__SVJ_REAR_louvre_edge_1_1",
+        "move_engine_lid__SVJ_REAR_cover_louvre_1_2",
+        "move_engine_lid__SVJ_REAR_louvre_edge_1_2",
+        "move_engine_lid__SVJ_REAR_cover_louvre_1_3",
+        "move_engine_lid__SVJ_REAR_louvre_edge_1_3",
+        "move_engine_lid__SVJ_REAR_cover_louvre_1_4",
+        "move_engine_lid__SVJ_REAR_louvre_edge_1_4",
+        "move_engine_lid__SVJ_REAR_cover_louvre_1_5",
+        "move_engine_lid__SVJ_REAR_louvre_edge_1_5",
+        "move_engine_lid__SVJ_REAR_cover_inner_stringer_1",
+        "move_engine_lid__SVJ_REAR_quarter_turn_catch_1_818",
+        "move_engine_lid__SVJ_REAR_quarter_turn_slot_1_818",
+        "move_engine_lid__SVJ_REAR_quarter_turn_catch_1_2010",
+        "move_engine_lid__SVJ_REAR_quarter_turn_slot_1_2010"
+      ],
+      "hotspot": [
+        1.3,
+        0.95,
+        0
+      ],
+      "translation": [
+        0.78,
+        0.78,
+        0
+      ],
+      "motionNote": "Quick-release cover; two-stage floating service display, not a hinge simulation."
+    }
+  ]
+}
