@@ -1,5 +1,6 @@
 import { svjContent } from './svj-content.js';
 import { batchProfiles } from './batch-content.js';
+import { f40Content } from './f40-content.js';
 
 const brochure = 'https://kurumacatalog.com/wp-content/uploads/2021/01/2005_Ferrari_F430_catalog.pdf';
 const archive = 'https://www.ferrari.com/en-MG/history/garage/2004/f430';
@@ -27,6 +28,7 @@ export const vehicleProfiles = {
   svj: {
     ...svjContent, id: 'svj', capabilities: ['car', 'history', 'engine', 'lab'], engineEntryPart: 'engine_lid', cylinderCount: 12, engineName: 'V12', module: './engine-v12.js', exportName: 'V12Engine', exteriorScale: 2.2, internalScale: 3.6, internalHeight: .92
   },
-  ...batchProfiles
+  ...batchProfiles,
+  f40: f40Content
 };
 vehicleProfiles.f430.chapters[1].parts = ['engine_lid'];

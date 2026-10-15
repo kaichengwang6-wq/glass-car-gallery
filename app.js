@@ -4,8 +4,9 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { CarRig } from './rig.js';
 import { VehicleExperience } from './vehicle-experience.js';
-import { catalog, vehicleIds, galleryLayout } from './vehicle-catalog.js';
+import { catalog, vehicleIds, galleryRows, galleryLayout } from './vehicle-catalog.js';
 import { isCompactLayout, initMobileUI } from './mobile-ui.js';
+import { renderPerformance, performanceSummaryHTML } from './vehicle-performance.js';
 
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
@@ -79,8 +80,8 @@ function measureRigEnvelopes(carRig, drawerPosition) {
   rigEnvelopes.set(carRig, envelopes);
   return envelopes;
 }
-function fitCamera(preset, objectOrBounds, { padding = 1.16, target: focalTarget } = {}) {
-  if (!mobile()) return preset;
+function fitCamera(preset, objectOrBounds, { padding = 1.16, target: focalTarget, force = false } = {}) {
+  if (!mobile() && !force) return preset;
   const bounds = objectOrBounds?.isBox3 ? objectOrBounds.clone() : objectOrBounds ? objectBounds(objectOrBounds) : exhibitBounds();
   if (bounds.isEmpty()) return preset;
   const target = focalTarget?.clone() || bounds.getCenter(new THREE.Vector3());
@@ -90,10 +91,12 @@ function fitCamera(preset, objectOrBounds, { padding = 1.16, target: focalTarget
   if (!right.lengthSq()) right.set(1, 0, 0);
   const up = new THREE.Vector3().crossVectors(direction, right).normalize();
   const size = stageSize(), tanY = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)), tanX = tanY * size.width / size.height;
+  const horizontalRoom = mobile() ? 1 : Math.max(.30, (size.width - 780) / size.width);
+  const verticalRoom = mobile() ? 1 : Math.max(.60, (size.height - 230) / size.height);
   let distance = 1.35;
   for (const x of [bounds.min.x, bounds.max.x]) for (const y of [bounds.min.y, bounds.max.y]) for (const z of [bounds.min.z, bounds.max.z]) {
     const offset = vec([x, y, z]).sub(target), depth = offset.dot(direction);
-    distance = Math.max(distance, depth + Math.abs(offset.dot(right)) * padding / tanX, depth + Math.abs(offset.dot(up)) * padding / tanY, depth + camera.near + .05);
+    distance = Math.max(distance, depth + Math.abs(offset.dot(right)) * padding / (tanX * horizontalRoom), depth + Math.abs(offset.dot(up)) * padding / (tanY * verticalRoom), depth + camera.near + .05);
   }
   return { position: target.clone().addScaledVector(direction, distance), target };
 }
@@ -102,7 +105,7 @@ function buildGalleryUI() {
   $('#case-labels').replaceChildren(...vehicleIds.map((id, i) => {
     const b = document.createElement('button'), car = catalog[id];
     b.className = 'case-label'; b.dataset.car = id; b.setAttribute('aria-label', `拉出 ${car.brand} ${car.name} 车盒`);
-    b.innerHTML = `<span class="case-number">${String(i + 1).padStart(2, '0')} / ${car.brand}</span><strong>${car.name}</strong><span class="case-action">拉出车盒 <i>↗</i></span>`;
+    b.innerHTML = `<span class="case-number">${String(i + 1).padStart(2, '0')} / ${car.brand}</span><strong>${car.name}</strong>${performanceSummaryHTML(id)}<span class="case-action">拉出车盒 <i>↗</i></span>`;
     return b;
   }));
   $('.mobile-picker').replaceChildren(...vehicleIds.map((id, i) => {
@@ -110,6 +113,8 @@ function buildGalleryUI() {
     b.innerHTML = `${String(i + 1).padStart(2, '0')} <span>${catalog[id].name}</span>`;
     return b;
   }));
+  $('#footer-count').textContent = `${String(vehicleIds.length).padStart(2, '0')} PIECES`;
+  $('.collection-count b').textContent = String(vehicleIds.length).padStart(2, '0');
 }
 function layoutCases() {
   for (const [id, entry] of cases) {
@@ -123,7 +128,7 @@ function syncGalleryUI() {
   $$('[data-car]').forEach(b => { b.hidden = !ids.includes(b.dataset.car); b.disabled = !ready; b.classList.toggle('located', b.dataset.car === browseId); });
   $$('[data-browse]').forEach(b => { const active = b.dataset.browse === browseId; b.classList.toggle('selected', active); b.setAttribute('aria-pressed', String(active)); });
   $('#gallery-paging').hidden = !mobile();
-  $('#page-status').textContent = `${String(vehicleIds.indexOf(browseId) + 1).padStart(2, '0')} / 07`;
+  $('#page-status').textContent = `${String(vehicleIds.indexOf(browseId) + 1).padStart(2, '0')} / ${String(vehicleIds.length).padStart(2, '0')}`;
   $('#page-prev').disabled = browseId === vehicleIds[0];
   $('#page-next').disabled = browseId === vehicleIds.at(-1);
   $('#mobile-car-name').textContent = catalog[browseId].name;
@@ -167,7 +172,7 @@ function notice(text) {
 }
 function setMode(value) {
   mode = value;
-  orbit.maxDistance = value === 'exhibit' ? 14 : 32;
+  orbit.maxDistance = 64;
   document.body.dataset.mode = value;
   $('#intro').inert = value !== 'gallery';
   $('#case-labels').inert = value !== 'gallery';
@@ -189,12 +194,14 @@ function createCabinet() {
   cabinet = new THREE.Group(); scene.add(cabinet);
   const shelfMat = new THREE.MeshStandardMaterial({ color: '#171f1b', metalness: .58, roughness: .34 });
   const trimMat = new THREE.MeshStandardMaterial({ color: '#7d7865', metalness: .78, roughness: .35 });
-  for (const [width, y, z] of [[13.0, 3.03, -.12], [17.05, -.13, 0]]) {
+  for (const [index, row] of galleryRows.entries()) {
+    const width = (row.length - 1) * 4.2 + 4.45, y = galleryLayout[row[0]].y - .12, z = galleryLayout[row[0]].z;
     box(width, .10, 2.2, shelfMat, cabinet, 0, y, z).receiveShadow = true;
     box(width, .018, .025, trimMat, cabinet, 0, y + .015, z + 1.105);
   }
-  for (const x of [-6.35, 6.35]) {
-    box(.065, 3.17, .07, trimMat, cabinet, x, 1.45, -1.11);
+  const support = (Math.max(...galleryRows.map(row => row.length)) - 1) * 2.1 + .05;
+  for (const x of [-support, support]) {
+    box(.065, 4.72, .07, trimMat, cabinet, x, 2.23, -1.11);
   }
 }
 function createCase(id, x) {
@@ -263,7 +270,7 @@ function galleryCamera() {
     return fitCamera({ position: vec([-4.1, 2.48, 6.7]).add(target), target }, bounds, { padding: 1.14 });
   }
   const { width, height } = stageSize();
-  const target = vec([0, 2.35, 0]), direction = vec([-.035, .30, 1]).normalize();
+  const target = vec([0, 3.0, 0]), direction = vec([-.035, .30, 1]).normalize();
   const probe = new THREE.PerspectiveCamera(camera.fov, width / height, .05, 80);
   const points = vehicleIds.flatMap(id => {
     const home = galleryLayout[id];
@@ -272,8 +279,17 @@ function galleryCamera() {
   // Fit the complete cabinet into the space between the introduction and shortcuts.
   // Using the projected case corners also handles wide and compact desktop windows.
   let distance = 14;
-  const top = Math.min(215, height * .28), bottom = height - 174;
-  for (let i = 0; i < 160; i++, distance += .1) {
+  const top = Math.min(200, height * .26), bottom = height - 245;
+  const midpoint = (top + bottom) / 2, tanFov = Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2);
+  for (let i = 0; i < 350; i++, distance += .1) {
+    target.set(0, 3.0, 0);
+    // Center the cabinet in its available viewport, leaving room below each shelf for data.
+    for (let align = 0; align < 4; align++) {
+      probe.position.copy(target).addScaledVector(direction, distance); probe.lookAt(target); probe.updateMatrixWorld(true);
+      const ys = points.map(point => (-point.clone().project(probe).y * .5 + .5) * height);
+      const shift = (midpoint - (Math.min(...ys) + Math.max(...ys)) / 2) * 2 * distance * tanFov / height;
+      target.addScaledVector(new THREE.Vector3().setFromMatrixColumn(probe.matrixWorld, 1), shift);
+    }
     probe.position.copy(target).addScaledVector(direction, distance); probe.lookAt(target); probe.updateMatrixWorld(true);
     if (points.every(point => {
       const p = point.clone().project(probe), x = (p.x * .5 + .5) * width, y = (-p.y * .5 + .5) * height;
@@ -293,7 +309,7 @@ function exhibitCamera(view = 'hero') {
   };
   const spec = presets[view];
   const target = vec(spec.t).add(center), position = vec(spec.p).add(center);
-  if (mobile()) return fitCamera({ position, target }, exhibitBounds(), { padding: 1.18 });
+  if (mobile() || !experience || experience.section === 'car') return fitCamera({ position, target }, exhibitBounds(), { padding: 1.18, force: true });
   target.x += .34; position.x += .34;
   return { position, target };
 }
@@ -308,6 +324,8 @@ function fillHeading(id) {
   $('#car-title').textContent = car.name;
   $('#car-description').textContent = car.subtitle;
   $('#car-facts').innerHTML = `<div><dt>引擎布局</dt><dd>${car.engine}</dd></div><div><dt>原车长度 / mm</dt><dd>${car.length}</dd></div><div><dt>车门形式</dt><dd>${car.opening}</dd></div>`;
+  renderPerformance(id, $('#vehicle-performance'));
+  $('#controls').scrollTop = 0;
   $('#paint-controls').replaceChildren(...car.colors.map(([name, color]) => {
     const button = document.createElement('button'); button.className = 'paint-swatch'; button.style.setProperty('--paint', color); button.style.backgroundColor = color;
     button.title = name; button.setAttribute('aria-label', name); button.setAttribute('aria-pressed', String(cases.get(id).color === color));
@@ -329,13 +347,13 @@ function syncPartUI() {
   invalidate();
 }
 function syncCarFraming() {
-  if (!rig || !mobile() || mode !== 'exhibit' || experience?.section !== 'car' || orbitGesture) return;
+  if (!rig || mode !== 'exhibit' || experience?.section !== 'car' || orbitGesture) return;
   const key = [...rig.parts].filter(([, part]) => part.target > 0 || part.progress > 0).map(([id]) => id).join(',');
   if (key === carFramingKey) return;
   carFramingKey = key;
   // Preserve the chosen angle; slider movement inside the same envelope is inert.
   const preset = { position: cameraMove?.to || camera.position, target: cameraMove?.toTarget || orbit.target };
-  moveCamera(fitCamera(preset, exhibitBounds(), { padding: 1.18 }), 360);
+  moveCamera(fitCamera(preset, exhibitBounds(), { padding: 1.18, force: true }), 360);
 }
 function syncMotionUI() {
   const part = rig?.parts.get($('#motion-part').value); if (!part) return;
@@ -715,7 +733,7 @@ function init() {
   camera = new THREE.PerspectiveCamera(37, width / height, .05, 80);
   orbit = new OrbitControls(camera, renderer.domElement); orbit.enabled = false; orbit.enableDamping = false; orbit.enablePan = !mobile();
   orbit.touches.ONE = THREE.TOUCH.ROTATE; orbit.touches.TWO = THREE.TOUCH.DOLLY_PAN;
-  orbit.minDistance = 1.35; orbit.maxDistance = 32; orbit.maxPolarAngle = Math.PI / 2 - .025;
+  orbit.minDistance = 1.35; orbit.maxDistance = 64; orbit.maxPolarAngle = Math.PI / 2 - .025;
   orbit.addEventListener('change', invalidate);
   orbit.addEventListener('start', () => { orbitGesture = true; cameraMove = null; });
   orbit.addEventListener('end', () => { orbitGesture = false; invalidate(); });
@@ -736,7 +754,7 @@ function init() {
   renderer.domElement.addEventListener('webglcontextlost', event => { event.preventDefault(); loading(false); $('#scene-error').hidden = false; $('#error-text').textContent = '图形环境暂时中断，请重新载入页面。'; $('#retry-button').onclick = () => location.reload(); });
   window.galleryApp = {
     open: openCar, close: returnCar, browse: browseCar, page: turnPage, view: setView, experience: section => experience.show(section),
-    getState: () => ({ mode, selected, browseId, page: 0, pageIds: visibleIds(), galleryLayout: mobile() ? 'single' : 'all-seven', ready, progress, reducedMotion: reduced(), rig: rig?.getState() || null, experience: experience.getState(), camera: { position: camera.position.toArray(), target: orbit.target.toArray() }, renderer: { frames: renderFrames, calls: renderer.info.render.calls, triangles: renderer.info.render.triangles, geometries: renderer.info.memory.geometries, textures: renderer.info.memory.textures, pixelRatio: renderer.getPixelRatio(), width: renderer.domElement.width, height: renderer.domElement.height, viewport: { left: viewport().left, top: viewport().top, width: viewport().width, height: viewport().height } }, cases: [...cases.values()].map(c => ({ id: c.id, position: c.drawer.position.toArray(), home: c.home.position.toArray(), world: c.drawer.getWorldPosition(new THREE.Vector3()).toArray(), row: galleryLayout[c.id].row, visible: c.home.visible, preview: c.preview?.visible ?? false, color: c.color, modelCount: c.carrier.children.length, visibleModelCount: c.carrier.children.filter(m => m.visible).length })) }),
+    getState: () => ({ mode, selected, browseId, page: 0, pageIds: visibleIds(), galleryLayout: mobile() ? 'single' : 'all', vehicleCount: vehicleIds.length, ready, progress, reducedMotion: reduced(), rig: rig?.getState() || null, experience: experience.getState(), camera: { position: camera.position.toArray(), target: orbit.target.toArray() }, renderer: { frames: renderFrames, calls: renderer.info.render.calls, triangles: renderer.info.render.triangles, geometries: renderer.info.memory.geometries, textures: renderer.info.memory.textures, pixelRatio: renderer.getPixelRatio(), width: renderer.domElement.width, height: renderer.domElement.height, viewport: { left: viewport().left, top: viewport().top, width: viewport().width, height: viewport().height } }, cases: [...cases.values()].map(c => ({ id: c.id, position: c.drawer.position.toArray(), home: c.home.position.toArray(), world: c.drawer.getWorldPosition(new THREE.Vector3()).toArray(), row: galleryLayout[c.id].row, visible: c.home.visible, preview: c.preview?.visible ?? false, color: c.color, modelCount: c.carrier.children.length, visibleModelCount: c.carrier.children.filter(m => m.visible).length })) }),
     projectCase: id => projectPoint(cases.get(id).drawer.localToWorld(new THREE.Vector3(0, .6, .2))),
     projectCaseBounds: id => {
       const c = cases.get(id), points = [-1.79, 1.79].flatMap(x => [-.05, 1.37].flatMap(y => [-1.02, 1.02].map(z => projectPoint(c.drawer.localToWorld(new THREE.Vector3(x, y, z))))));

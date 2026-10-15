@@ -1,0 +1,57 @@
+/* Data stays readable in the free-view panel, without obscuring the model. */
+.vehicle-performance { width:100%; pointer-events:auto; margin-top:12px; color:var(--paper); }
+.performance-card { position:relative; border:1px solid var(--line); border-radius:4px; padding:10px 11px 0; background:rgba(18,25,21,.84); backdrop-filter:blur(16px); }
+.performance-card>header { display:flex; align-items:baseline; justify-content:space-between; gap:8px; padding-bottom:9px; }
+.performance-card>header strong { flex:none; font-size:10px; color:var(--gold); font-weight:500; letter-spacing:.8px; }
+.performance-card>header>span { font-size:8px; color:var(--quiet); line-height:1.5; text-align:right; }
+.performance-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; margin:0; }
+.performance-metric { min-width:0; padding:9px 5px 8px; border-top:1px solid var(--line); }
+.performance-metric:nth-child(3n+1) { padding-left:0; }
+.performance-metric dt { margin:0 0 5px; color:var(--muted); font-size:9px; line-height:1.4; letter-spacing:0; }
+.performance-metric dd { display:flex; flex-wrap:wrap; align-items:baseline; gap:3px; margin:0; min-height:25px; font-variant-numeric:tabular-nums; }
+.performance-metric dd b { font:400 21px/1.1 Arial,sans-serif; letter-spacing:-.7px; }
+.performance-metric dd>span { color:var(--gold); font:10px/1.3 Arial,sans-serif; }
+.performance-metric>small { display:block; font-size:8px; color:var(--quiet); line-height:1.65; overflow-wrap:anywhere; }
+.performance-metric--compact dd b { font:400 13px/1.5 Arial,"Microsoft YaHei",sans-serif; letter-spacing:0; }
+.performance-fuel { margin:0; padding:7px 0; border-top:1px solid var(--line); color:var(--muted); font-size:9px; line-height:1.6; }
+.performance-fuel b { color:var(--gold); font-weight:400; }
+.performance-notes { position:relative; border-top:1px solid var(--line); }
+.performance-notes summary { display:flex; justify-content:space-between; align-items:center; min-height:32px; cursor:pointer; list-style:none; color:var(--muted); font-size:9px; }
+.performance-notes summary::-webkit-details-marker { display:none; }
+.performance-notes summary span { color:var(--gold); font-size:13px; }
+.performance-notes[open] summary span { transform:rotate(45deg); }
+.performance-notes summary:focus-visible { outline:1px solid var(--gold); outline-offset:2px; }
+.performance-notes-body { position:absolute; z-index:20; top:100%; left:-12px; width:calc(100% + 24px); max-height:240px; overflow:auto; padding:10px 12px 13px; border:1px solid var(--line); border-radius:0 0 4px 4px; background:#172019; box-shadow:0 14px 30px #0006; overscroll-behavior:contain; }
+.performance-notes-body p { margin:0 0 9px; color:var(--muted); font-size:10px; line-height:1.8; }
+.performance-notes-body ul { list-style:none; margin:0; padding:0; }
+.performance-notes-body a { display:block; padding:7px 0; color:var(--gold); font-size:10px; line-height:1.6; overflow-wrap:anywhere; }
+.performance-notes-body>small { display:block; margin-top:8px; font-size:8px; color:var(--quiet); line-height:1.8; }
+.performance-summary { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:6px 7px; margin:9px 0 0; }
+.performance-summary>span { display:block; min-width:0; }
+.performance-summary small { display:block; font-size:8px; color:var(--quiet); letter-spacing:0; line-height:1.6; }
+.performance-summary b { display:block; font:400 12px/1.35 Arial,"Microsoft YaHei",sans-serif; color:var(--paper); letter-spacing:0; white-space:nowrap; }
+.performance-summary i { font:normal 8px/1.35 Arial,sans-serif; color:var(--muted); }
+body:is([data-section="history"],[data-section="engine"],[data-section="lab"]) .vehicle-performance { display:none; }
+@media (min-width:901px) {
+  body[data-compact="false"]:not(:is([data-section="history"],[data-section="engine"],[data-section="lab"])) .exhibit-heading { top:102px; width:328px; max-width:30vw; }
+  body[data-compact="false"]:not(:is([data-section="history"],[data-section="engine"],[data-section="lab"])) .exhibit-heading .return-button { margin-bottom:12px; }
+  body[data-compact="false"]:not(:is([data-section="history"],[data-section="engine"],[data-section="lab"])) .exhibit-heading h2 { font-size:32px; letter-spacing:-.7px; margin:7px 0 0; }
+  body[data-compact="false"]:not(:is([data-section="history"],[data-section="engine"],[data-section="lab"])) #car-description,
+  body[data-compact="false"]:not(:is([data-section="history"],[data-section="engine"],[data-section="lab"])) .car-facts { display:none; }
+}
+@media (max-width:900px), (max-width:1100px) and (pointer:coarse) {
+  #controls .vehicle-performance { width:100%; margin:0 0 12px; }
+  #controls .performance-card { padding:8px 8px 0; background:rgba(14,20,16,.3); backdrop-filter:none; }
+  #controls .performance-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  #controls .performance-metric { padding-top:8px; padding-bottom:8px; }
+  #controls .performance-metric dt { font-size:10px; }
+  #controls .performance-metric dd b { font-size:21px; }
+  #controls .performance-metric--compact dd b { font-size:13px; }
+  #controls .performance-metric>small { font-size:9px; }
+  #controls .performance-card>header>span { font-size:9px; }
+  #controls .performance-notes summary { min-height:44px; font-size:11px; }
+  #controls .performance-notes-body { position:static; width:auto; max-height:none; padding:6px 0 12px; border:0; box-shadow:none; background:transparent; }
+  #controls .performance-notes-body p { font-size:11px; }
+  #controls .performance-notes-body a { min-height:44px; display:flex; align-items:center; font-size:11px; }
+  #controls .performance-fuel { font-size:10px; }
+}

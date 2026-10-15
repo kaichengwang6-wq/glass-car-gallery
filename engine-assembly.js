@@ -51,7 +51,7 @@ export class EngineAssembly {
     this._originalVisibility = new Map(this._workingVolumes.map(mesh => [mesh, mesh.visible]));
     this._guides = new THREE.Group();
     this._guides.name = 'assembly_installation_guides';
-    this._modules = specs.map(spec => ({ ...spec, axis: new THREE.Vector3(...spec.axis), nodes: [], meshes: [], wrappers: [], amount: 0, from: 0, target: 0, elapsed: 0, removed: false }));
+    this._modules = specs.map(spec => ({ ...spec, axis: new THREE.Vector3(...spec.axis), nodes: [...(spec.nodes || [])], meshes: [], wrappers: [], amount: 0, from: 0, target: 0, elapsed: 0, removed: false }));
     this._byId = new Map(this._modules.map(module => [module.id, module]));
 
     // Discover all groups before changing any hierarchy. Names refer to stable
@@ -70,6 +70,11 @@ export class EngineAssembly {
     this._byId.get('crankshaft').nodes = [engine.crank];
     if (this._modules.some(module => module.nodes.length === 0 || module.nodes.some(node => !node?.parent))) {
       throw new Error('发动机模块层级不完整，无法开始拆装');
+    }
+    // Optional model-specific exterior modules are visible only at the assembly
+    // table. Their prior visibility is restored with the rest of the overlay.
+    for (const module of this._modules) if (module.assemblyOnly) for (const node of module.nodes) {
+      this._originalVisibility.set(node, node.visible); node.visible = true;
     }
     ACTIVE_ENGINES.add(engine);
     this._pauseAndFreeze();

@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#111413">
-  <meta name="description" content="七辆超跑同时陈列在玻璃收藏柜。抽出任意车盒，亲手打开车门、探索机械之心与车型专属机构。">
+  <meta name="description" content="八辆超跑同时陈列在玻璃收藏柜。抽出任意车盒，亲手打开车门、探索机械之心与车型专属机构。">
   <title>玻璃车库 · GLASS GARAGE</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./experience.css">
   <link rel="stylesheet" href="./play.css">
   <link rel="stylesheet" href="./mobile.css">
   <link rel="stylesheet" href="./mobile-topics.css">
+  <link rel="stylesheet" href="./performance.css">
   <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
 </head>
 <body data-mode="gallery">
@@ -17,22 +18,22 @@
   <div class="grain" aria-hidden="true"></div>
   <header class="topbar">
     <a class="brand" href="#" id="brand-home" aria-label="返回收藏柜"><svg width="30" height="34" viewBox="0 0 30 34" fill="none" aria-hidden="true"><path d="M15 2 28 9.5v15L15 32 2 24.5v-15L15 2Z M2 9.5 15 17l13-7.5M15 17v15M8.5 6l13 7.5" stroke="currentColor" stroke-width="1.1"/></svg><span>GLASS GARAGE<small>玻 璃 车 库</small></span></a>
-    <div class="collection-title">THE MINIATURE COLLECTION <span>VOL. 02</span></div>
+    <div class="collection-title">THE MINIATURE COLLECTION <span>VOL. 03</span></div>
     <button id="about-button" class="text-button">关于车库 <span>↗</span></button>
   </header>
   <section class="intro" id="intro">
     <p class="eyebrow"><span class="live-dot"></span> A COLLECTION YOU CAN TOUCH</p>
-    <h1>七份热爱，<span>一眼尽藏。</span></h1>
-    <p class="intro-copy">七款超跑，完整陈列。<br>选一只车盒，让机械之美来到眼前。</p>
+    <h1>八份热爱，<span>一眼尽藏。</span></h1>
+    <p class="intro-copy">八款超跑，完整陈列。<br>选一只车盒，让机械之美来到眼前。</p>
     <div class="intro-rule"></div>
-    <p class="collection-count"><b>07</b><span>款已入藏车模<br><small>手工构建 · 自由探索</small></span></p>
+    <p class="collection-count"><b>08</b><span>款已入藏车模<br><small>手工构建 · 自由探索</small></span></p>
   </section>
   <div id="case-labels" class="case-labels" aria-label="选择收藏车盒">
     <button class="case-label" data-car="f430" aria-label="拉出 Ferrari F430 车盒"><span class="case-number">01 / FERRARI</span><strong>F430</strong><span class="case-action">拉出车盒 <i>↗</i></span></button>
     <button class="case-label" data-car="svj" aria-label="拉出 Aventador SVJ 车盒"><span class="case-number">02 / LAMBORGHINI</span><strong>Aventador SVJ</strong><span class="case-action">拉出车盒 <i>↗</i></span></button>
   </div>
   <nav class="mobile-picker" aria-label="快捷定位收藏车盒"><button data-browse="f430" class="selected">01 <span>F430</span></button><button data-browse="svj">02 <span>Aventador SVJ</span></button></nav>
-  <nav id="gallery-paging" class="gallery-paging" aria-label="选择收藏车盒" hidden><button id="page-prev" aria-label="上一辆">←</button><span id="mobile-car-name">F430</span><output id="page-status" aria-live="polite">01 / 07</output><button id="page-next" aria-label="下一辆">→</button></nav>
+  <nav id="gallery-paging" class="gallery-paging" aria-label="选择收藏车盒" hidden><button id="page-prev" aria-label="上一辆">←</button><span id="mobile-car-name">F430</span><output id="page-status" aria-live="polite">01 / 08</output><button id="page-next" aria-label="下一辆">→</button></nav>
   <button class="mobile-pull primary" id="mobile-pull">拉出这只车盒 <span>↗</span></button>
   <p id="mobile-gesture-hint" class="mobile-gesture-hint" hidden>左右滑动切换 · 轻点拉出车盒</p>
   <button id="mobile-panel-toggle" class="mobile-panel-toggle" aria-expanded="true" aria-controls="controls" hidden><span>收起操作区</span><span aria-hidden="true">⌄</span></button>
@@ -41,6 +42,7 @@
     <p id="car-brand" class="eyebrow"></p><h2 id="car-title"></h2>
     <p id="car-description"></p>
     <dl class="car-facts" id="car-facts"></dl>
+    <section id="vehicle-performance" class="vehicle-performance" aria-label="车型性能参数"></section>
   </section>
   <section class="controls" id="controls" aria-label="车模交互" hidden>
     <div class="controls-heading"><span>细节，值得亲手打开。</span><button id="reset-car" class="text-button">复位 ↺</button></div>
@@ -139,8 +141,8 @@
   <div class="loading" id="loading" role="status"><span class="loading-orbit"></span><span id="loading-text">正在陈列车盒</span><small id="loading-progress"></small></div>
   <div class="notice" id="notice" role="status" aria-live="polite"></div>
   <div class="scene-error" id="scene-error" hidden><h2>车模暂时没有载入</h2><p id="error-text"></p><button id="retry-button" class="primary">重新载入</button></div>
-  <footer class="bottom-bar"><span class="footer-index">CABINET 001 <i></i> <span id="footer-count">07 PIECES</span></span><span id="gesture-hint">点击车盒，或按住向前拉出</span><span class="edition">INDEPENDENT AUTOMOTIVE STUDIES</span></footer>
-  <dialog id="about-dialog"><button class="dialog-close" id="close-about" aria-label="关闭">×</button><p class="eyebrow">ABOUT THE COLLECTION</p><h2>把车库，缩小成一份珍藏。</h2><p>玻璃车库是一座独立制作的互动模型收藏室。七只车盒，每辆车都有自己的机械主题。选中车盒，抽出底座；每一次旋转、开门与机构演示，都由你掌握。</p><div class="about-steps"><span><b>01</b>挑选车盒</span><span><b>02</b>拉出与揭盖</span><span><b>03</b>探索与放回</span></div><p class="about-small">模型依公开比例独立构建，属于展示性近似，并非厂方工程模型。展示配色为观赏选项。未公开的机构尺寸、轨迹和控制标定采用教学示意；各专题提供原厂资料来源。</p><a href="./credits.html" class="text-link" target="_blank" rel="noopener">模型与资料说明 ↗</a></dialog>
+  <footer class="bottom-bar"><span class="footer-index">CABINET 001 <i></i> <span id="footer-count">08 PIECES</span></span><span id="gesture-hint">点击车盒，或按住向前拉出</span><span class="edition">INDEPENDENT AUTOMOTIVE STUDIES</span></footer>
+  <dialog id="about-dialog"><button class="dialog-close" id="close-about" aria-label="关闭">×</button><p class="eyebrow">ABOUT THE COLLECTION</p><h2>把车库，缩小成一份珍藏。</h2><p>玻璃车库是一座独立制作的互动模型收藏室。八只车盒，每辆车都有自己的机械主题。选中车盒，抽出底座；每一次旋转、开门与机构演示，都由你掌握。</p><div class="about-steps"><span><b>01</b>挑选车盒</span><span><b>02</b>拉出与揭盖</span><span><b>03</b>探索与放回</span></div><p class="about-small">模型依公开比例独立构建，属于展示性近似，并非厂方工程模型。展示配色为观赏选项。未公开的机构尺寸、轨迹和控制标定采用教学示意；各专题提供原厂资料来源。</p><a href="./credits.html" class="text-link" target="_blank" rel="noopener">模型与资料说明 ↗</a></dialog>
   <script type="module" src="./app.js"></script>
 </body>
 </html>

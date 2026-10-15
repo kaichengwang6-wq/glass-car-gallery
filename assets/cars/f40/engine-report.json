@@ -1,0 +1,1022 @@
+{
+  "id": "f40",
+  "revision": "engine-exterior-v1",
+  "units": "metres Y up, crankshaft X",
+  "meshCount": 197,
+  "triangles": 65600,
+  "bounds": {
+    "min": [
+      -0.3973701808158399,
+      0.0225,
+      -0.546
+    ],
+    "max": [
+      0.4345313028556114,
+      0.5716492783675569,
+      0.5398228058847092
+    ]
+  },
+  "bytes": 1341904,
+  "sha256": "c9fefe12037f435d2705165c688c60af6fb0463a4539e8e35af640cd793b3d4a",
+  "features": [
+    "two separate cast-alloy intake plenums",
+    "eight intake runners and eight high-voltage leads",
+    "two red cam covers",
+    "two finned intercoolers with separate charge circuits",
+    "two IHI-style turbo teaching housings",
+    "front timing-belt teaching detail"
+  ],
+  "sources": [
+    "https://www.ferrari.com/en-EC/history/garage/1987/f40",
+    "https://www.ferrari.com/en-HU/history/moments/1987/enzos-dream/more",
+    "https://www.ferrari.com/ko-KR/magazine/articles/the-ferrari-f40-revisited",
+    "https://manualzz.com/doc/5834907/ferrari-f40-sports-car-technical-manual"
+  ],
+  "components": [
+    {
+      "name": "f40_alloy_crankcase",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "f40_dry_sump_pan",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "f40_sump_seal",
+      "material": "black",
+      "triangles": 336
+    },
+    {
+      "name": "f40_crankcase_rib_m210p0_m1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_m210p0_1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_m150p0_m1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_m150p0_1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_m90p0_m1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_m90p0_1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_m30p0_m1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_m30p0_1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_30p0_m1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_30p0_1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_90p0_m1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_90p0_1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_150p0_m1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_150p0_1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_210p0_m1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_crankcase_rib_210p0_1",
+      "material": "bay_cast",
+      "triangles": 44
+    },
+    {
+      "name": "f40_bank_casting_m1",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "f40_alloy_head_m1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "f40_wrinkle_red_cover_m1",
+      "material": "f40_red",
+      "triangles": 336
+    },
+    {
+      "name": "f40_cover_long_rib_m1_m1",
+      "material": "alloy",
+      "triangles": 28
+    },
+    {
+      "name": "f40_cover_long_rib_m1_0",
+      "material": "alloy",
+      "triangles": 28
+    },
+    {
+      "name": "f40_cover_long_rib_m1_1",
+      "material": "alloy",
+      "triangles": 28
+    },
+    {
+      "name": "f40_cover_bolts_m1",
+      "material": "alloy",
+      "triangles": 140
+    },
+    {
+      "name": "f40_cover_lower_gasket_m1",
+      "material": "black",
+      "triangles": 52
+    },
+    {
+      "name": "f40_alloy_plenum_m1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "f40_plenum_name_plinth_m1",
+      "material": "f40_red",
+      "triangles": 336
+    },
+    {
+      "name": "f40_plenum_alloy_rib_m1_m1",
+      "material": "bay_cast",
+      "triangles": 52
+    },
+    {
+      "name": "f40_plenum_alloy_rib_m1_0",
+      "material": "bay_cast",
+      "triangles": 52
+    },
+    {
+      "name": "f40_plenum_alloy_rib_m1_1",
+      "material": "bay_cast",
+      "triangles": 52
+    },
+    {
+      "name": "f40_intake_runner_m1_0",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "f40_runner_joint_m1_0",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "f40_spark_boot_m1_0",
+      "material": "black",
+      "triangles": 76
+    },
+    {
+      "name": "f40_high_voltage_lead_m1_0",
+      "material": "black",
+      "triangles": 696
+    },
+    {
+      "name": "f40_lead_keeper_m1_0",
+      "material": "f40_red",
+      "triangles": 768
+    },
+    {
+      "name": "f40_intake_runner_m1_1",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "f40_runner_joint_m1_1",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "f40_spark_boot_m1_1",
+      "material": "black",
+      "triangles": 76
+    },
+    {
+      "name": "f40_high_voltage_lead_m1_1",
+      "material": "black",
+      "triangles": 696
+    },
+    {
+      "name": "f40_lead_keeper_m1_1",
+      "material": "f40_red",
+      "triangles": 768
+    },
+    {
+      "name": "f40_intake_runner_m1_2",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "f40_runner_joint_m1_2",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "f40_spark_boot_m1_2",
+      "material": "black",
+      "triangles": 76
+    },
+    {
+      "name": "f40_high_voltage_lead_m1_2",
+      "material": "black",
+      "triangles": 696
+    },
+    {
+      "name": "f40_lead_keeper_m1_2",
+      "material": "f40_red",
+      "triangles": 768
+    },
+    {
+      "name": "f40_intake_runner_m1_3",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "f40_runner_joint_m1_3",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "f40_spark_boot_m1_3",
+      "material": "black",
+      "triangles": 76
+    },
+    {
+      "name": "f40_high_voltage_lead_m1_3",
+      "material": "black",
+      "triangles": 696
+    },
+    {
+      "name": "f40_lead_keeper_m1_3",
+      "material": "f40_red",
+      "triangles": 768
+    },
+    {
+      "name": "f40_ignition_cap_m1",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "f40_intercooler_core_m1",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_0",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_1",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_2",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_3",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_4",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_5",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_6",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_7",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_8",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_9",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_10",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_11",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_12",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_13",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_14",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_15",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_16",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_m1_17",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_endtank_m1_m1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "f40_intercooler_endtank_m1_1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "f40_cooled_charge_pipe_m1",
+      "material": "alloy",
+      "triangles": 696
+    },
+    {
+      "name": "f40_plenum_charge_clamp_m1",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "f40_turbo_left_compressor_volute",
+      "material": "alloy",
+      "triangles": 2304
+    },
+    {
+      "name": "f40_turbo_left_compressor_hub",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "f40_turbo_left_hot_volute",
+      "material": "bay_heat",
+      "triangles": 2304
+    },
+    {
+      "name": "f40_turbo_left_turbine_hub",
+      "material": "bay_heat",
+      "triangles": 124
+    },
+    {
+      "name": "f40_turbo_left_shaft_housing",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "f40_turbo_left_intake_lip",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "f40_turbo_left_inlet_bore",
+      "material": "black",
+      "triangles": 124
+    },
+    {
+      "name": "f40_turbo_left_compressor_blades",
+      "material": "alloy",
+      "triangles": 24
+    },
+    {
+      "name": "f40_turbo_left_actuator_link",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "f40_turbo_left_actuator",
+      "material": "dark_metal",
+      "triangles": 1224
+    },
+    {
+      "name": "f40_exhaust_header_m1_m170p0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "f40_exhaust_header_m1_m56p7",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "f40_exhaust_header_m1_56p7",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "f40_exhaust_header_m1_170p0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "f40_exhaust_downpipe_m1_215p0",
+      "material": "bay_heat",
+      "triangles": 472
+    },
+    {
+      "name": "f40_hot_charge_pipe_m1",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "f40_turbo_oil_return_m1",
+      "material": "bronze",
+      "triangles": 472
+    },
+    {
+      "name": "f40_timing_pulley_m1_0",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "f40_pulley_rim_m1_0",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "f40_pulley_hub_m1_0",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_timing_pulley_m1_1",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "f40_pulley_rim_m1_1",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "f40_pulley_hub_m1_1",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_timing_pulley_m1_2",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "f40_pulley_rim_m1_2",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "f40_pulley_hub_m1_2",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_timing_belt_teaching_m1",
+      "material": "black",
+      "triangles": 108
+    },
+    {
+      "name": "f40_mount_leg_m1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "f40_rubber_mount_m1",
+      "material": "black",
+      "triangles": 124
+    },
+    {
+      "name": "f40_bank_casting_1",
+      "material": "bay_cast",
+      "triangles": 336
+    },
+    {
+      "name": "f40_alloy_head_1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "f40_wrinkle_red_cover_1",
+      "material": "f40_red",
+      "triangles": 336
+    },
+    {
+      "name": "f40_cover_long_rib_1_m1",
+      "material": "alloy",
+      "triangles": 28
+    },
+    {
+      "name": "f40_cover_long_rib_1_0",
+      "material": "alloy",
+      "triangles": 28
+    },
+    {
+      "name": "f40_cover_long_rib_1_1",
+      "material": "alloy",
+      "triangles": 28
+    },
+    {
+      "name": "f40_cover_bolts_1",
+      "material": "alloy",
+      "triangles": 140
+    },
+    {
+      "name": "f40_cover_lower_gasket_1",
+      "material": "black",
+      "triangles": 52
+    },
+    {
+      "name": "f40_alloy_plenum_1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "f40_plenum_name_plinth_1",
+      "material": "f40_red",
+      "triangles": 336
+    },
+    {
+      "name": "f40_plenum_alloy_rib_1_m1",
+      "material": "bay_cast",
+      "triangles": 52
+    },
+    {
+      "name": "f40_plenum_alloy_rib_1_0",
+      "material": "bay_cast",
+      "triangles": 52
+    },
+    {
+      "name": "f40_plenum_alloy_rib_1_1",
+      "material": "bay_cast",
+      "triangles": 52
+    },
+    {
+      "name": "f40_intake_runner_1_0",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "f40_runner_joint_1_0",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "f40_spark_boot_1_0",
+      "material": "black",
+      "triangles": 76
+    },
+    {
+      "name": "f40_high_voltage_lead_1_0",
+      "material": "black",
+      "triangles": 696
+    },
+    {
+      "name": "f40_lead_keeper_1_0",
+      "material": "f40_red",
+      "triangles": 768
+    },
+    {
+      "name": "f40_intake_runner_1_1",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "f40_runner_joint_1_1",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "f40_spark_boot_1_1",
+      "material": "black",
+      "triangles": 76
+    },
+    {
+      "name": "f40_high_voltage_lead_1_1",
+      "material": "black",
+      "triangles": 696
+    },
+    {
+      "name": "f40_lead_keeper_1_1",
+      "material": "f40_red",
+      "triangles": 768
+    },
+    {
+      "name": "f40_intake_runner_1_2",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "f40_runner_joint_1_2",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "f40_spark_boot_1_2",
+      "material": "black",
+      "triangles": 76
+    },
+    {
+      "name": "f40_high_voltage_lead_1_2",
+      "material": "black",
+      "triangles": 696
+    },
+    {
+      "name": "f40_lead_keeper_1_2",
+      "material": "f40_red",
+      "triangles": 768
+    },
+    {
+      "name": "f40_intake_runner_1_3",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "f40_runner_joint_1_3",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "f40_spark_boot_1_3",
+      "material": "black",
+      "triangles": 76
+    },
+    {
+      "name": "f40_high_voltage_lead_1_3",
+      "material": "black",
+      "triangles": 696
+    },
+    {
+      "name": "f40_lead_keeper_1_3",
+      "material": "f40_red",
+      "triangles": 768
+    },
+    {
+      "name": "f40_ignition_cap_1",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "f40_intercooler_core_1",
+      "material": "dark_metal",
+      "triangles": 336
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_0",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_1",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_2",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_3",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_4",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_5",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_6",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_7",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_8",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_9",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_10",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_11",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_12",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_13",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_14",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_15",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_16",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_top_fin_1_17",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_intercooler_endtank_1_m1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "f40_intercooler_endtank_1_1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "f40_cooled_charge_pipe_1",
+      "material": "alloy",
+      "triangles": 696
+    },
+    {
+      "name": "f40_plenum_charge_clamp_1",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "f40_turbo_right_compressor_volute",
+      "material": "alloy",
+      "triangles": 2304
+    },
+    {
+      "name": "f40_turbo_right_compressor_hub",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "f40_turbo_right_hot_volute",
+      "material": "bay_heat",
+      "triangles": 2304
+    },
+    {
+      "name": "f40_turbo_right_turbine_hub",
+      "material": "bay_heat",
+      "triangles": 124
+    },
+    {
+      "name": "f40_turbo_right_shaft_housing",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "f40_turbo_right_intake_lip",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "f40_turbo_right_inlet_bore",
+      "material": "black",
+      "triangles": 124
+    },
+    {
+      "name": "f40_turbo_right_compressor_blades",
+      "material": "alloy",
+      "triangles": 24
+    },
+    {
+      "name": "f40_turbo_right_actuator_link",
+      "material": "alloy",
+      "triangles": 52
+    },
+    {
+      "name": "f40_turbo_right_actuator",
+      "material": "dark_metal",
+      "triangles": 1224
+    },
+    {
+      "name": "f40_exhaust_header_1_m170p0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "f40_exhaust_header_1_m56p7",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "f40_exhaust_header_1_56p7",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "f40_exhaust_header_1_170p0",
+      "material": "bay_heat",
+      "triangles": 696
+    },
+    {
+      "name": "f40_exhaust_downpipe_1_215p0",
+      "material": "bay_heat",
+      "triangles": 472
+    },
+    {
+      "name": "f40_hot_charge_pipe_1",
+      "material": "alloy",
+      "triangles": 472
+    },
+    {
+      "name": "f40_turbo_oil_return_1",
+      "material": "bronze",
+      "triangles": 472
+    },
+    {
+      "name": "f40_timing_pulley_1_0",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "f40_pulley_rim_1_0",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "f40_pulley_hub_1_0",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_timing_pulley_1_1",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "f40_pulley_rim_1_1",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "f40_pulley_hub_1_1",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_timing_pulley_1_2",
+      "material": "dark_metal",
+      "triangles": 124
+    },
+    {
+      "name": "f40_pulley_rim_1_2",
+      "material": "alloy",
+      "triangles": 768
+    },
+    {
+      "name": "f40_pulley_hub_1_2",
+      "material": "alloy",
+      "triangles": 20
+    },
+    {
+      "name": "f40_timing_belt_teaching_1",
+      "material": "black",
+      "triangles": 108
+    },
+    {
+      "name": "f40_mount_leg_1",
+      "material": "alloy",
+      "triangles": 336
+    },
+    {
+      "name": "f40_rubber_mount_1",
+      "material": "black",
+      "triangles": 124
+    },
+    {
+      "name": "f40_front_crank_hub",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "f40_front_crank_damper",
+      "material": "dark_metal",
+      "triangles": 768
+    },
+    {
+      "name": "f40_flywheel_bellhousing",
+      "material": "bay_cast",
+      "triangles": 252
+    },
+    {
+      "name": "f40_output_flange",
+      "material": "alloy",
+      "triangles": 124
+    },
+    {
+      "name": "f40_oil_filter_body",
+      "material": "black",
+      "triangles": 124
+    },
+    {
+      "name": "f40_oil_filter_seam",
+      "material": "alloy",
+      "triangles": 768
+    }
+  ]
+}

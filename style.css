@@ -298,7 +298,7 @@ body:not([data-mode="gallery"]) .gallery-paging { opacity:0; visibility:hidden; 
   .mobile-pull { bottom:73px; }
 }
 
-/* The desktop collection is one cabinet: three upper cases, four lower cases. */
+/* The desktop collection is one cabinet with two complete rows. */
 @media (min-width: 761px) {
   .intro { top: 108px; width: 93vw; }
   .intro h1 { margin: 12px 0 0; font-size: clamp(30px, 2.45vw, 42px); line-height: 1.35; letter-spacing: 1.8px; }

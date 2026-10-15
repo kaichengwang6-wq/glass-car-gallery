@@ -16,6 +16,7 @@ const STAGES = [
 ];
 
 export const batchEngineParameters = Object.freeze({
+  f40: { name: 'F40 双涡轮 V8', layout: 'V8', bore: .082, stroke: .0695, rod: .137, pitch: .098, bankAngle: 90, valves: 4, camsPerRow: 2 },
   mclaren720s: { name: 'M840T 双涡轮 V8', layout: 'V8', bore: .093, stroke: .0735, rod: .145, pitch: .110, bankAngle: 90, valves: 4, camsPerRow: 2 },
   porsche918: { name: '918 自然吸气 V8', layout: 'V8', bore: .095, stroke: .081, rod: .145, pitch: .112, bankAngle: 90, valves: 4, camsPerRow: 2 },
   huayra: { name: 'M158 双涡轮 V12', layout: 'V12', bore: .0826, stroke: .093, rod: .155, pitch: .107, bankAngle: 60, valves: 3, camsPerRow: 1 },
@@ -310,3 +311,52 @@ export class Porsche918Engine extends BatchEngine { constructor() { super('porsc
 export class HuayraEngine extends BatchEngine { constructor() { super('huayra'); } }
 export class ChironEngine extends BatchEngine { constructor() { super('chiron'); } }
 export class JeskoEngine extends BatchEngine { constructor() { super('jesko'); } }
+export class F40Engine extends BatchEngine {
+  constructor() { super('f40'); this._assemblyExteriorConfigured = false; }
+
+  /** Reuse the authored exterior in the disassembly table. Geometry/materials
+   * are independently owned; texture images remain owned by the exterior host.
+   * These groups stay hidden in the internal running view. */
+  configureAssemblyExterior(exterior, manifest) {
+    if (this._disposed || this._assemblyExteriorConfigured || !exterior?.isObject3D || !Array.isArray(manifest?.hotspots)) return false;
+    const byName = new Map(); exterior.traverse(mesh => { if (mesh.isMesh) byName.set(mesh.name, mesh); });
+    const intake = manifest.hotspots.find(h => h.id === 'intake')?.meshes || [];
+    const turbo = manifest.hotspots.find(h => h.id === 'turbo')?.meshes || [];
+    const definitions = [
+      { id: 'intake', label: '双进气腔与支管', color: '#c5dce5', axis: [0, .23, -.08], names: intake.filter(name => !/intercooler/.test(name)), description: '从独立外观展台提取同一组进气腔、八条支管和增压连接管，上移后露出配气机构。管路断开位置和模块位移为教学分组。' },
+      { id: 'intercoolers', label: '双中冷器', color: '#80c6ed', axis: [-.16, .12, .12], names: intake.filter(name => /intercooler/.test(name)), description: '两组有散热翅片的中冷器移出，显示压气机与进气腔之间的冷却环节。这些是真实外观模型的同一组网格，散热效率不在此计算。' },
+      { id: 'turbos', label: '双涡轮与排气管', color: '#dfac7c', axis: [.21, .04, -.12], names: turbo, description: '两颗涡轮、压气端与排气汇流管作为一个教学总成移开；热端与新鲜空气通道彼此独立。省略油路、紧固件和实际拆卸工序。' },
+    ];
+    if (definitions.some(def => !def.names.length || def.names.some(name => !byName.has(name)))) return false;
+    exterior.updateWorldMatrix(true, true);
+    const inverse = exterior.matrixWorld.clone().invert();
+    // Align the exterior's illustrative crank centre with the shared mechanism.
+    const align = new THREE.Matrix4().makeScale(.9, .9, .9).multiply(new THREE.Matrix4().makeTranslation(0, -.165, 0));
+    const additions = [];
+    for (const def of definitions) {
+      const root = new THREE.Group(); root.name = `f40_assembly_only_${def.id}`; root.visible = false; this.root.add(root);
+      const materialCache = new Map();
+      for (const name of def.names) {
+        const source = byName.get(name), matrix = new THREE.Matrix4().multiplyMatrices(align, new THREE.Matrix4().multiplyMatrices(inverse, source.matrixWorld));
+        const geometry = source.geometry.clone().applyMatrix4(matrix);
+        const cloneMaterial = original => {
+          if (!materialCache.has(original)) {
+            const copy = original.clone();
+            // F40 exterior assets are non-emissive. The host may currently be
+            // highlighting an exterior hotspot; do not bake that selection into
+            // another view's resting materials.
+            if (copy.emissive) { copy.emissive.set(0x000000); copy.emissiveIntensity = 0; }
+            materialCache.set(original, copy);
+          }
+          return materialCache.get(original);
+        };
+        const material = Array.isArray(source.material) ? source.material.map(cloneMaterial) : cloneMaterial(source.material);
+        this._mesh(geometry, material, root, `f40_assembly_exterior_${name}`);
+      }
+      const { names, ...spec } = def; additions.push({ ...spec, nodes: [root], assemblyOnly: true });
+    }
+    this.assemblyModules = [...additions, ...this.assemblyModules];
+    this._assemblyExteriorConfigured = true; this.root.updateMatrixWorld(true); this._dirty = true;
+    return true;
+  }
+}

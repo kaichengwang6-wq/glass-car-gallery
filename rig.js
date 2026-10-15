@@ -85,6 +85,20 @@ export class CarRig {
       return tracked ? { ...definition, angle: 0, tracks: definition.tracks.map(track => ({ ...track, meshes: resolveMeshes(track.meshes) })) }
         : { ...definition, meshes: resolveMeshes(definition.meshes) };
     });
+    // A lamp assembly can move within a clamshell which also opens. Resolve the
+    // hierarchy before mutating the scene, and reject broken or cyclic parents.
+    const byId = new Map(definitions.map(definition => [definition.id, definition]));
+    for (const definition of definitions) {
+      const visited = new Set([definition.id]);
+      let ancestor = definition;
+      while (ancestor.parentPart) {
+        const parent = byId.get(ancestor.parentPart);
+        if (!parent || visited.has(parent.id) || (ancestor.parentTrack && !parent.tracks?.some(track => track.id === ancestor.parentTrack))) {
+          throw new Error(`车辆部件父级无效：${definition.id}`);
+        }
+        visited.add(parent.id); ancestor = parent;
+      }
+    }
     for (const stay of manifest.stays || []) {
       if (!ids.has(stay.part) || !vector3(stay.fixed) || !vector3(stay.attached) ||
           !Number.isFinite(stay.bodyLength) || !Number.isFinite(stay.rodLength) ||
@@ -118,6 +132,26 @@ export class CarRig {
         target: 0, progress: 0, from: 0, started: 0, duration: 800
       });
     }
+
+    model.updateWorldMatrix(true, true);
+    const attached = new Set();
+    const attachToParent = part => {
+      if (attached.has(part.definition.id)) return;
+      const parentId = part.definition.parentPart;
+      if (parentId) {
+        const parent = this.parts.get(parentId); attachToParent(parent);
+        const carrier = part.definition.parentTrack ? parent.tracks.find(track => track.definition.id === part.definition.parentTrack).pivot : parent.pivot;
+        for (const track of part.tracks || [part]) {
+          carrier.attach(track.pivot);
+          track.initialPosition.copy(track.pivot.position);
+          track.initialQuaternion.copy(track.pivot.quaternion);
+        }
+        part.initialPosition.copy(part.pivot.position);
+        part.initialQuaternion.copy(part.pivot.quaternion);
+      }
+      attached.add(part.definition.id);
+    };
+    for (const part of this.parts.values()) attachToParent(part);
 
     model.updateWorldMatrix(true, true);
     this._inverseModel.copy(model.matrixWorld).invert();

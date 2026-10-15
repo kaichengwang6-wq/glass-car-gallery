@@ -229,8 +229,9 @@ export class VehicleExperience {
     const position = preset?.position ? new THREE.Vector3(...preset.position) : this.engineMode === 'internal' ? new THREE.Vector3(-3.0, 3.1, 6.0) : new THREE.Vector3(-3.5, 3.2, 6.3);
     if (!preset && this.engineMode === 'assembly') position.sub(target).multiplyScalar(1.18).add(target);
     const camera = { position, target };
-    const bounds = this.host.mobile() ? this.engineFramingBounds() : null;
-    return bounds ? this.host.fitCamera?.(camera, bounds, { padding: this.engineMode === 'exterior' ? 1.22 : 1.16 }) || camera : camera;
+    const fitDesktop = this.profile.id === 'f40';
+    const bounds = this.host.mobile() || fitDesktop ? this.engineFramingBounds() : null;
+    return bounds ? this.host.fitCamera?.(camera, bounds, { padding: this.engineMode === 'exterior' ? 1.22 : 1.16, force: fitDesktop }) || camera : camera;
   }
   async loadExterior() {
     if (!this.capabilities.includes('engine') || this.section !== 'engine') return;
@@ -299,7 +300,7 @@ export class VehicleExperience {
           const EngineClass = this.classes.get(profile.id) || (await import(retry ? `${profile.module}?retry=${Date.now()}` : profile.module))[profile.exportName];
           this.classes.set(profile.id, EngineClass);
           if (!current()) return;
-          this.engine = new EngineClass(); this.engine.root.scale.setScalar(profile.internalScale); this.engine.root.position.y = profile.internalHeight;
+          this.engine = new EngineClass(); this.engine.configureAssemblyExterior?.(this.exterior, this.manifest); this.engine.root.scale.setScalar(profile.internalScale); this.engine.root.position.y = profile.internalHeight;
           this.stage.add(this.engine.root); this.engine.setPlaying(false); this.engine.setSpeed($('#engine-speed').value);
           this.buildCylinderButtons();
         }
@@ -352,6 +353,8 @@ export class VehicleExperience {
   labCamera() {
     if (this.vehicleLab) {
       const preset = this.host.exhibitCamera(this.profile.id === 'huayra' ? 'hero' : 'side');
+      const bounds = this.lab?.getFramingBounds?.();
+      if (bounds) return this.host.fitCamera?.(preset, bounds, { padding: 1.14, force: true }) || preset;
       return this.host.mobile() ? this.host.fitCamera?.(preset) || preset : preset;
     }
     const target = new THREE.Vector3(.15, .60, 1.8), position = new THREE.Vector3(-3.5, 4.5, 6.2);
