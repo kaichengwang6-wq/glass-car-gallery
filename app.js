@@ -7,6 +7,7 @@ import { VehicleExperience } from './vehicle-experience.js';
 import { catalog, vehicleIds, galleryRows, galleryLayout } from './vehicle-catalog.js';
 import { isCompactLayout, initMobileUI } from './mobile-ui.js';
 import { renderPerformance, performanceSummaryHTML } from './vehicle-performance.js';
+import { initWorkbenchInput } from './workbench-input.js';
 
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
@@ -17,6 +18,7 @@ const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
 const partNames = { driver_door: '驾驶侧车门', passenger_door: '副驾侧车门', hood: '前行李舱', engine_cover: '发动机舱盖' };
 let mode = 'gallery', selected = null, browseId = 'f430', progress = 0, transition = null, cameraMove = null;
 let rig = null, fullModel = null, experience = null, loadEpoch = 0, ready = false, renderer, scene, camera, orbit;
+let workbenchInput = null;
 let dirty = true, framePending = false, renderFrames = 0, noticeTimer, hovered = null, pointer = null, currentView = 'hero';
 let previewEpoch = 0, layoutMobile = isCompactLayout(), cabinet, keyLight, resizeFrame = 0, lastScrolledBrowse = null, carFramingKey = '', orbitGesture = false;
 const cases = new Map();
@@ -440,6 +442,7 @@ async function openCar(id) {
   cameraMove = null; loadDetailed(id); invalidate();
 }
 function returnCar() {
+  workbenchInput?.cancel();
   if (!selected || mode === 'closing') return;
   experience?.reset();
   ++loadEpoch; loading(false); $('#scene-error').hidden = true; $('#notice').classList.remove('visible');
@@ -534,6 +537,7 @@ function frame(now) {
   if (rig?.update(now)) { dirty = true; if ($('#motion-details').open) syncMotionUI(); }
   syncCarFraming();
   if (rig?.isAnimating) active = true;
+  workbenchInput?.sync();
   if (experience?.update(now)) dirty = true;
   if (experience?.isAnimating) active = true;
   if (orbit.update()) dirty = true;
@@ -745,8 +749,12 @@ function init() {
   const fill = new THREE.DirectionalLight('#e3efd4', .6); fill.position.set(-6, 2, -1); scene.add(fill);
   const floor = new THREE.Mesh(new THREE.PlaneGeometry(200, 200), new THREE.MeshStandardMaterial({ color: '#111812', roughness: 1, metalness: 0, envMapIntensity: .04 })); floor.rotation.x = -Math.PI / 2; floor.position.y = -.09; floor.receiveShadow = true; scene.add(floor);
   createCabinet(); vehicleIds.forEach(id => createCase(id, 0)); layoutCases(); buildGalleryUI(); syncGalleryUI();
-  experience = new VehicleExperience({ scene, camera, orbit, getMode: () => mode, getSelected: () => selected, getRig: () => rig, mobile, reduced, invalidate, moveCamera, applyCamera, exhibitCamera, fitCamera, viewport, disposeModel });
+  experience = new VehicleExperience({ scene, camera, orbit, getMode: () => mode, getSelected: () => selected, getRig: () => rig, mobile, reduced, invalidate, moveCamera, applyCamera, exhibitCamera, fitCamera, viewport, disposeModel, cancelWorkbenchInteraction: () => workbenchInput?.cancel() });
   applyCamera(galleryCamera()); bindUI(); initPointers();
+  workbenchInput = initWorkbenchInput({ canvas: renderer.domElement, camera, orbit, projectPoint, setRay, raycaster, invalidate,
+    getWorkbench: () => experience.workbench, canOrbit: () => mode === 'exhibit', sync: () => experience.syncAssembly(),
+    cancelCamera: () => { cameraMove = null; orbitGesture = false; }
+  });
   new ResizeObserver(scheduleResize).observe($('#stage'));
   addEventListener('resize', scheduleResize);
   addEventListener('orientationchange', scheduleResize);
@@ -754,6 +762,7 @@ function init() {
   renderer.domElement.addEventListener('webglcontextlost', event => { event.preventDefault(); loading(false); $('#scene-error').hidden = false; $('#error-text').textContent = '图形环境暂时中断，请重新载入页面。'; $('#retry-button').onclick = () => location.reload(); });
   window.galleryApp = {
     open: openCar, close: returnCar, browse: browseCar, page: turnPage, view: setView, experience: section => experience.show(section),
+    workbenchPoints: () => workbenchInput?.points(), workbenchInputState: () => workbenchInput?.getState(),
     getState: () => ({ mode, selected, browseId, page: 0, pageIds: visibleIds(), galleryLayout: mobile() ? 'single' : 'all', vehicleCount: vehicleIds.length, ready, progress, reducedMotion: reduced(), rig: rig?.getState() || null, experience: experience.getState(), camera: { position: camera.position.toArray(), target: orbit.target.toArray() }, renderer: { frames: renderFrames, calls: renderer.info.render.calls, triangles: renderer.info.render.triangles, geometries: renderer.info.memory.geometries, textures: renderer.info.memory.textures, pixelRatio: renderer.getPixelRatio(), width: renderer.domElement.width, height: renderer.domElement.height, viewport: { left: viewport().left, top: viewport().top, width: viewport().width, height: viewport().height } }, cases: [...cases.values()].map(c => ({ id: c.id, position: c.drawer.position.toArray(), home: c.home.position.toArray(), world: c.drawer.getWorldPosition(new THREE.Vector3()).toArray(), row: galleryLayout[c.id].row, visible: c.home.visible, preview: c.preview?.visible ?? false, color: c.color, modelCount: c.carrier.children.length, visibleModelCount: c.carrier.children.filter(m => m.visible).length })) }),
     projectCase: id => projectPoint(cases.get(id).drawer.localToWorld(new THREE.Vector3(0, .6, .2))),
     projectCaseBounds: id => {

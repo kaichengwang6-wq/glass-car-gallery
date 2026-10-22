@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./mobile.css">
   <link rel="stylesheet" href="./mobile-topics.css">
   <link rel="stylesheet" href="./performance.css">
+  <link rel="stylesheet" href="./workbench.css">
   <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
 </head>
 <body data-mode="gallery">
@@ -85,6 +86,10 @@
     <div class="story-bottom"><div id="story-sources" class="topic-sources"></div><button id="story-next" class="text-button">下一章 →</button></div>
   </section>
   <div id="engine-labels" class="engine-labels" aria-label="发动机部件热点" hidden></div>
+  <div id="workbench-handles" hidden>
+    <button id="workbench-drag-handle" class="workbench-handle" aria-label="沿箭头拖动所选总成" hidden><span aria-hidden="true">↔</span><small>沿箭头拖动</small></button>
+    <button id="workbench-crank-handle" class="workbench-handle workbench-crank-handle" aria-label="手动旋转曲轴" aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown Home End" hidden><span aria-hidden="true">↻</span><small>拖动试转</small></button>
+  </div>
   <div id="engine-caption" class="engine-caption" hidden><span class="eyebrow">ENGINE STUDY / 01</span><p>旋转，靠近，认识它的每一次呼吸。</p></div>
   <section id="engine-panel" class="topic-panel engine-panel" aria-label="F430 发动机专题" hidden>
     <div class="engine-panel-title"><span class="eyebrow">THE MECHANICAL HEART</span><button id="engine-home-view" class="text-button">视角复位 ↺</button></div>
@@ -107,16 +112,30 @@
     </div>
     <div id="engine-assembly-info" hidden>
       <div class="assembly-heading"><p class="eyebrow">BUILD / UNDERSTAND</p><button id="assembly-reset" class="text-button">全部复位 ↺</button></div>
-      <h3>亲手拆开，再装回去。</h3><p class="topic-copy">点选模块或三维部件，按结构顺序拆下，再逆序装回。</p>
+      <h3>亲手拆开，再装回去。</h3><p id="assembly-intro" class="topic-copy">点选模块或三维部件，按结构顺序拆下，再逆序装回。</p>
+      <div id="workbench-task" class="workbench-task" hidden>
+        <div class="workbench-task-heading"><span id="workbench-task-title">自由探索</span><output id="workbench-task-progress"></output></div>
+        <p id="workbench-task-copy">也可以试试装配任务：从七组总成开始，把这台 V8 装起来。</p>
+        <div class="workbench-task-actions"><button id="workbench-task-start">把这台 V8 装起来 →</button><button id="workbench-task-hint" hidden>下一步提示</button><button id="workbench-task-exit" hidden>返回自由探索</button><button id="workbench-task-replay" hidden>再装一次 ↺</button></div>
+        <p class="workbench-session-note">本次访问保留进度 · 刷新后恢复初始状态</p>
+      </div>
       <div class="assembly-progress"><span id="assembly-count">0 / 4 已拆下</span><span id="assembly-next"></span></div>
       <div id="assembly-modules" class="assembly-modules" aria-label="拆装模块"></div>
       <h4 id="assembly-title"></h4><p id="assembly-copy" class="topic-copy"></p>
+      <div id="workbench-inspection" class="workbench-inspection" hidden><button id="workbench-inspect">拿近观察所选总成 ⤢</button><button id="workbench-inspection-return" hidden>返回拆装视角 ←</button></div>
       <div class="assembly-actions"><button id="assembly-remove">拆下所选模块 ↗</button><button id="assembly-install">装回所选模块 ↙</button></div>
       <p id="assembly-message" class="assembly-message" role="status" aria-live="polite"></p>
-      <div class="angle-heading"><label for="assembly-spread">展开预览 · 收拢后试转</label><output id="assembly-spread-value" for="assembly-spread">0%</output></div>
+      <div id="assembly-spread-heading" class="angle-heading"><label for="assembly-spread">展开预览 · 收拢后试转</label><output id="assembly-spread-value" for="assembly-spread">0%</output></div>
       <input id="assembly-spread" class="engine-angle" type="range" min="0" max="100" step="1" value="0" aria-label="模块展开预览">
       <button id="assembly-test" class="assembly-test">试转装配后的机构 →</button>
-      <p class="teaching-note">教学模块拆装，省略紧固件及实际维修工序。部件拆下时机构暂停，装回后可进入工作原理试转。</p>
+      <div id="workbench-trial" class="workbench-trial" hidden>
+        <div class="angle-heading"><label for="workbench-trial-angle">亲手转动曲轴</label><output id="workbench-trial-value" for="workbench-trial-angle">0° / 720°</output></div>
+        <input id="workbench-trial-angle" class="engine-angle" type="range" min="0" max="720" step="1" value="0" aria-label="手动试转曲轴，0 到 720 度">
+        <div class="workbench-trial-steps"><button id="workbench-trial-back">← 反转 15°</button><button id="workbench-trial-forward">正转 15° →</button></div>
+        <div class="cylinder-heading"><span>选择气缸观察冲程</span><span>教学缸号</span></div><div id="workbench-cylinders" class="workbench-cylinders" aria-label="选择试转气缸"></div>
+        <div class="cycle-status workbench-cycle"><span id="workbench-cycle-dot"></span><strong id="workbench-cycle-title"></strong><span id="workbench-cycle-phase"></span></div><p id="workbench-cycle-copy" class="topic-copy"></p>
+      </div>
+      <p id="assembly-teaching-note" class="teaching-note">教学模块拆装，省略紧固件及实际维修工序。部件拆下时机构暂停，装回后可进入工作原理试转。</p>
     </div>
     <div id="engine-topic-error" class="topic-error" role="status" hidden><p>发动机资产暂时没有载入，请重试。</p><button id="engine-retry" class="primary">重新载入</button></div>
     <div id="engine-topic-loading" class="topic-loading" role="status" hidden>正在准备发动机展台…</div>

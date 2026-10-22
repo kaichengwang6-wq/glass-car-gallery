@@ -1,0 +1,51 @@
+/* F40 hands-on workbench; the existing compact layout owns the free model area. */
+.workbench-task { margin: 18px 0; padding: 14px; border: 1px solid rgba(200,183,142,.32); border-radius: 3px; background: rgba(200,183,142,.045); }
+.workbench-task-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; color: var(--gold); font-size: 12px; }
+.workbench-task-heading output { white-space: nowrap; font-variant-numeric: tabular-nums; font-size: 11px; }
+.workbench-task > p { margin: 10px 0; font-size: 11px; line-height: 1.8; color: var(--muted); }
+.workbench-task .workbench-session-note { margin: 10px 0 0; color: var(--quiet); font-size: 10px; }
+.workbench-task-actions, .workbench-trial-steps { display: flex; flex-wrap: wrap; gap: 8px; }
+.workbench-task-actions button, .workbench-inspection button, .workbench-trial-steps button { min-height: 44px; padding: 9px 10px; border: 1px solid rgba(200,183,142,.4); border-radius: 2px; color: var(--gold); font-size: 11px; }
+.workbench-task-actions button { flex: 1 1 auto; }
+.workbench-task-actions button:hover, .workbench-inspection button:hover, .workbench-trial-steps button:hover { background: rgba(200,183,142,.09); }
+.workbench-inspection { margin-top: 12px; }
+.workbench-inspection button { width: 100%; }
+.workbench-trial { margin-top: 18px; padding-top: 1px; border-top: 1px solid var(--line); }
+.workbench-trial-steps button { flex: 1; }
+.workbench-cylinders { display: grid; grid-template-columns: repeat(4,minmax(44px,1fr)); gap: 7px; }
+.workbench-cylinders button { display: flex; justify-content: center; align-items: center; gap: 7px; min-height: 44px; min-width: 44px; padding: 8px; border: 1px solid var(--line); border-radius: 2px; color: var(--muted); font-size: 12px; }
+.workbench-cylinders button i, #workbench-cycle-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--stage-color,var(--gold)); }
+.workbench-cylinders button[aria-pressed="true"] { border-color: var(--gold); color: var(--gold); background: rgba(200,183,142,.08); }
+.workbench-task[data-complete="true"] { border-color: #8ac3a0; }
+.workbench-task[data-complete="true"] .workbench-task-heading { color: #a1d1b2; }
+body[data-workbench="true"] .assembly-actions button, body[data-workbench="true"] .assembly-test { min-height: 44px; }
+body[data-workbench="true"] .assembly-progress { flex-wrap: wrap; row-gap: 5px; }
+body[data-workbench="true"] .assembly-modules button { min-height: 61px; }
+body[data-workbench="true"] .assembly-modules button { position: relative; }
+body[data-workbench="true"] .assembly-modules :is(b,small) { padding-left: 23px; }
+.assembly-number { position: absolute; top: 12px; left: 9px; color: var(--quiet); font-size: 10px; font-variant-numeric: tabular-nums; }
+.assembly-modules [aria-pressed="true"] .assembly-number { color: var(--gold); }
+.workbench-task button:disabled, .workbench-inspection button:disabled, .workbench-trial button:disabled { opacity: .4; cursor: default; }
+#workbench-handles { position: fixed; inset: 0; z-index: 18; pointer-events: none; }
+.workbench-handle { position: absolute; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; width: 64px; height: 64px; padding: 5px; transform: translate(-50%,-50%); pointer-events: auto; touch-action: none; user-select: none; -webkit-user-select: none; border: 1px solid rgba(225,206,164,.85); border-radius: 50%; background: rgba(23,34,27,.91); color: #e4cda2; box-shadow: 0 4px 18px rgba(0,0,0,.3); cursor: grab; }
+.workbench-handle span { display: inline-block; font-size: 24px; line-height: 1; transform: rotate(var(--handle-angle,0rad)); }
+.workbench-handle small { font-size: 9px; line-height: 1.35; white-space: nowrap; }
+.workbench-handle[data-dragging="true"] { cursor: grabbing; background: rgba(96,84,57,.95); }
+.workbench-handle[data-can-commit="true"] { border-color: #b3e5c6; background: rgba(41,75,53,.94); color: #d0f2dd; }
+.workbench-handle[hidden], #workbench-handles[hidden] { display: none; }
+.workbench-crank-handle span { font-size: 27px; }
+.workbench-crank-handle { width: 92px; height: 92px; }
+.workbench-crank-handle::before { content: ''; position: absolute; left: 50%; top: 50%; width: 10px; height: 10px; margin: -5px; border-radius: 50%; background: #e4cda2; box-shadow: 0 0 0 4px rgba(228,205,162,.12); transform: rotate(var(--handle-angle,0rad)) translateY(-36px); pointer-events: none; }
+.workbench-crank-handle::after { content: ''; position: absolute; inset: 9px; border: 1px dashed rgba(228,205,162,.5); border-radius: 50%; pointer-events: none; }
+.workbench-task button:focus-visible, .workbench-inspection button:focus-visible, .workbench-trial button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.workbench-handle:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+@media (max-width:900px), (max-width:1100px) and (pointer:coarse) {
+  .workbench-task { margin-block: 14px; padding: 12px; }
+  .workbench-task > p, .workbench-task-actions button, .workbench-inspection button, .workbench-trial-steps button { font-size: 12px; }
+  .workbench-task .workbench-session-note { font-size: 11px; }
+  .workbench-handle { width: 58px; height: 58px; }
+  .workbench-crank-handle { width: 84px; height: 84px; }
+  .workbench-crank-handle::before { transform: rotate(var(--handle-angle,0rad)) translateY(-32px); }
+  .workbench-handle small { font-size: 8px; }
+}
+@media (prefers-reduced-motion:reduce) { .workbench-handle { transition: none; } }

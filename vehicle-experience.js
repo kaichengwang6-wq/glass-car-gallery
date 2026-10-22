@@ -10,18 +10,21 @@ export class VehicleExperience {
     this.host = host; this.section = 'car'; this.engineMode = 'exterior'; this.chapter = 0;
     this.hotspot = 'intake'; this.epoch = 0; this.modeEpoch = 0; this.loading = false; this.error = null;
     this.stage = null; this.exterior = null; this.engine = null; this.manifest = null; this.snapshot = null;
-    this.assembly = null; this.AssemblyClass = null; this.lab = null; this.labModules = new Map(); this.labEpoch = 0; this.labLoading = false; this.labError = false;
+    this.assembly = null; this.AssemblyClass = null; this.WorkbenchClass = null; this.workbenchSessions = new Map(); this.inspectionCamera = null; this.trialCamera = null;
+    this.lab = null; this.labModules = new Map(); this.labEpoch = 0; this.labLoading = false; this.labError = false;
     this.meshCategories = new Map(); this.materialBases = new Map(); this.loader = new GLTFLoader();
     this.classes = new Map(); this.profile = vehicleProfiles.f430; this.configure('f430'); this.bind(); this.sync();
   }
   get stageVisible() { return (this.section === 'engine' && !!this.stage) || (this.section === 'lab' && !!this.lab && !this.vehicleLab); }
   get vehicleLab() { return (this.labProfile?.presentation || this.profile.labPresentation) === 'vehicle'; }
   get capabilities() { return this.profile.capabilities || ['car', 'history', 'engine', 'lab']; }
+  get workbench() { return this.section === 'engine' && this.engineMode === 'assembly' && this.profile.id === 'f40' && this.assembly?.exportSession ? this.assembly : null; }
+  get inspection() { return this.workbench?.getState().inspecting || null; }
   get isAnimating() { return this.section === 'lab' ? !!this.lab?.isAnimating : this.section === 'engine' && (this.engineMode === 'assembly' ? !!this.assembly?.isAnimating : this.engineMode === 'internal' && !!this.engine?.isAnimating); }
   bind() {
     $$('#experience-nav [data-section]').forEach(b => b.onclick = () => this.show(b.dataset.section));
     $$('.engine-mode-tabs [data-engine-mode]').forEach(b => b.onclick = () => this.setEngineMode(b.dataset.engineMode));
-    $('#engine-home-view').onclick = () => this.host.moveCamera(this.engineCamera());
+    $('#engine-home-view').onclick = () => { this.host.cancelWorkbenchInteraction?.(); if (this.inspection) this.endInspection(false); this.host.moveCamera(this.engineCamera()); };
     $('#engine-retry').onclick = () => this.stage ? this.setEngineMode(this.engineMode, true) : this.loadExterior();
     $('#engine-play').onclick = () => { if (!this.engine) return; this.engine.setPlaying(!this.engine.getState().playing); this.syncEngine(); this.host.invalidate(); };
     $('#engine-speed').onchange = e => { this.engine?.setSpeed(e.target.value); this.host.invalidate(); };
@@ -29,18 +32,44 @@ export class VehicleExperience {
     $$('#aero-controls button').forEach(b => b.onclick = () => this.setAero(b.dataset.aero));
     $('#assembly-remove').onclick = () => this.assemblyAction('remove');
     $('#assembly-install').onclick = () => this.assemblyAction('install');
-    $('#assembly-reset').onclick = () => { this.assembly?.reset(); this.assemblyDirection = 'remove'; this.syncAssembly(); this.host.invalidate(); };
+    $('#assembly-reset').onclick = () => { this.host.cancelWorkbenchInteraction?.(); this.endInspection(false); this.assembly?.reset(); this.trialCamera = null; this.assemblyDirection = 'remove'; this.syncAssembly(); if (this.workbench) this.host.moveCamera(this.engineCamera()); this.host.invalidate(); };
     $('#assembly-spread').oninput = e => { this.assembly?.setSpread(Number(e.target.value) / 100); this.syncAssembly(); this.host.invalidate(); };
     $('#assembly-test').onclick = async () => {
+      if (this.workbench) {
+        this.host.cancelWorkbenchInteraction?.();
+        const entering = !this.workbench.getState().trial;
+        const previous = entering ? this.captureWorkbenchCamera() : this.trialCamera;
+        const result = this.workbench.setTrial(entering);
+        if (result.ok) {
+          this.trialCamera = entering ? previous : null;
+          this.host.moveCamera(!entering && this.matchesWorkbenchViewport(previous) ? previous : this.engineCamera());
+        }
+        this.syncAssembly(); this.host.invalidate(); return;
+      }
       if (!this.assembly?.getState().canRun) return;
       await this.setEngineMode('internal');
       if (this.section === 'engine' && this.engineMode === 'internal' && this.engine) { this.engine.setPlaying(true); this.syncEngine(); this.host.invalidate(); }
     };
+    $('#workbench-inspect').onclick = () => this.inspectModule();
+    $('#workbench-inspection-return').onclick = () => this.endInspection();
+    for (const [id, action] of [['start', 'startTask'], ['replay', 'startTask'], ['exit', 'exitTask'], ['hint', 'hint']]) {
+      $(`#workbench-task-${id}`).onclick = () => {
+        if (!this.workbench) return;
+        this.host.cancelWorkbenchInteraction?.(); this.endInspection(false);
+        this.workbench[action](); if (action !== 'hint') this.trialCamera = null;
+        this.assemblyDirection = 'install'; this.syncAssembly();
+        if (action !== 'hint') this.host.moveCamera(this.engineCamera());
+        this.host.invalidate();
+      };
+    }
+    $('#workbench-trial-angle').oninput = e => this.setWorkbenchTrialAngle(Number(e.target.value));
+    $('#workbench-trial-back').onclick = () => this.setWorkbenchTrialAngle((this.workbench?.getState().trialAngle || 0) - 15);
+    $('#workbench-trial-forward').onclick = () => this.setWorkbenchTrialAngle((this.workbench?.getState().trialAngle || 0) + 15);
     $('#lab-home-view').onclick = () => this.host.moveCamera(this.labCamera());
     $('#lab-retry').onclick = () => this.loadLab(true);
     $('#lab-play').onclick = () => { if (this.lab) this.lab.setPlaying(!this.lab.getState().playing); this.syncLab(); this.host.invalidate(); };
     $('#lab-reset').onclick = () => { this.lab?.reset(); this.syncLab(); this.host.invalidate(); };
-    document.addEventListener('visibilitychange', () => { if (document.hidden) { this.engine?.setPlaying(false); this.lab?.setPlaying(false); this.syncEngine(); this.syncLab(); } });
+    document.addEventListener('visibilitychange', () => { if (document.hidden) { this.host.cancelWorkbenchInteraction?.(); this.workbench?.cancelDrag(); this.engine?.setPlaying(false); this.lab?.setPlaying(false); this.syncEngine(); this.syncAssembly(); this.syncLab(); } });
   }
   configure(id) {
     if (!vehicleProfiles[id]) return;
@@ -118,6 +147,7 @@ export class VehicleExperience {
     const available = this.host.getMode() === 'exhibit' && !!vehicleProfiles[selected];
     document.body.dataset.section = available ? this.section : 'car';
     document.body.dataset.engineMode = this.engineMode;
+    document.body.dataset.workbench = String(available && !!this.workbench);
     document.body.dataset.labPresentation = this.vehicleLab ? 'vehicle' : 'stage';
     $('#experience-nav').hidden = !available;
     $('#story-panel').hidden = !available || this.section !== 'history';
@@ -133,6 +163,8 @@ export class VehicleExperience {
     $('#engine-exterior-info').hidden = this.engineMode !== 'exterior' || !this.stage;
     $('#engine-internal-info').hidden = this.engineMode !== 'internal' || !this.engine || this.loading || !!this.error;
     $('#engine-assembly-info').hidden = this.engineMode !== 'assembly' || !this.assembly || this.loading || !!this.error;
+    $('#workbench-handles').hidden = !available || !this.workbench || this.loading || !!this.error;
+    if ($('#workbench-handles').hidden) { $('#workbench-drag-handle').hidden = true; $('#workbench-crank-handle').hidden = true; }
     $('#lab-topic-loading').hidden = !this.labLoading;
     $('#lab-topic-error').hidden = !this.labError;
     $('#lab-ready').hidden = !this.lab || this.labLoading || this.labError;
@@ -140,7 +172,7 @@ export class VehicleExperience {
     $('#engine-topic-loading').hidden = !this.loading;
     $('#engine-topic-error').hidden = !this.error;
     $('#engine-home-view').disabled = !this.stage;
-    if (available && this.section !== 'car') $('#gesture-hint').textContent = this.section === 'history' ? '选择章节，跟随视角探索' : this.section === 'lab' ? '拖动旋转 · 调节参数，观察变化' : '拖动旋转 · 滚轮缩放 · 点选部件';
+    if (available && this.section !== 'car') $('#gesture-hint').textContent = this.workbench ? '选中总成后拖动手柄 · 空白处旋转 · 随时放回车盒' : this.section === 'history' ? '选择章节，跟随视角探索' : this.section === 'lab' ? '拖动旋转 · 调节参数，观察变化' : '拖动旋转 · 滚轮缩放 · 点选部件';
     else if (this.host.getMode() === 'exhibit') $('#gesture-hint').textContent = '拖动旋转 · 滚轮缩放 · 点击车门与舱盖';
     this.host.invalidate();
   }
@@ -208,18 +240,28 @@ export class VehicleExperience {
     const framingRoot = this.stage || root;
     framingRoot.updateWorldMatrix(true, true);
     const bounds = new THREE.Box3();
+    // Once assembled, focus the live mechanism for hand cranking. Empty parking
+    // trays and removal clearances belong to the work view, not the trial view.
+    if (this.workbench?.getState().trial) {
+      for (const module of this.workbench.getState().modules) {
+        const moduleBounds = this.workbench.getModuleBounds(module.id);
+        if (moduleBounds) bounds.union(moduleBounds);
+      }
+      return bounds.isEmpty() ? null : bounds;
+    }
     framingRoot.traverseVisible(mesh => {
       if (!mesh.isMesh || !mesh.geometry) return;
       mesh.geometry.computeBoundingBox();
       if (mesh.geometry.boundingBox) bounds.union(mesh.geometry.boundingBox.clone().applyMatrix4(mesh.matrixWorld));
     });
-    // Assembly modules already record their collapsed bounds and maximum travel
-    // in engine-root coordinates. Reserve both endpoints before any animation,
-    // keeping every row and removed module in view without moving the camera
-    // while the user scrubs the spread slider.
-    if (this.engineMode === 'assembly') for (const module of this.assembly?._modules || []) {
-      bounds.union(module.bounds.clone().applyMatrix4(root.matrixWorld));
-      bounds.union(module.bounds.clone().translate(module.axis).applyMatrix4(root.matrixWorld));
+    // Reserve the complete motion envelope, including the raised/lowered
+    // clearance path. A correct parked pose alone cannot prove a safe framing.
+    if (this.engineMode === 'assembly') {
+      const workbenchBounds = this.workbench?.getFramingBounds?.();
+      if (workbenchBounds) bounds.union(workbenchBounds);
+      else for (const module of this.assembly?._modules || []) {
+        for (const offset of module.pathOffsets || [new THREE.Vector3(), module.axis]) bounds.union(module.bounds.clone().translate(offset).applyMatrix4(root.matrixWorld));
+      }
     }
     return bounds.isEmpty() ? null : bounds;
   }
@@ -289,6 +331,7 @@ export class VehicleExperience {
     const epoch = this.epoch, modeEpoch = ++this.modeEpoch, profile = this.profile;
     const current = () => epoch === this.epoch && modeEpoch === this.modeEpoch && this.section === 'engine';
     $('#engine-panel').scrollTop = 0;
+    this.saveWorkbenchSession();
     this.assembly?.dispose(); this.assembly = null;
     this.engine?.setPlaying(false); this.engineMode = mode; this.error = null; this.loading = false;
     this.exterior.visible = mode === 'exterior'; if (this.engine) this.engine.root.visible = mode !== 'exterior';
@@ -305,26 +348,53 @@ export class VehicleExperience {
           this.buildCylinderButtons();
         }
         if (mode === 'assembly') {
-          this.AssemblyClass ||= (await import(retry ? `./engine-assembly.js?retry=${Date.now()}` : './engine-assembly.js')).EngineAssembly;
+          let AssemblyClass;
+          if (profile.id === 'f40') {
+            this.WorkbenchClass ||= (await import(retry ? `./f40-workbench.js?retry=${Date.now()}` : './f40-workbench.js')).F40Workbench;
+            AssemblyClass = this.WorkbenchClass;
+          } else {
+            this.AssemblyClass ||= (await import(retry ? `./engine-assembly.js?retry=${Date.now()}` : './engine-assembly.js')).EngineAssembly;
+            AssemblyClass = this.AssemblyClass;
+          }
           if (!current()) return;
-          this.assembly = new this.AssemblyClass(this.engine, { reducedMotion: this.host.reduced() });
-          this.assemblyDirection = 'remove'; this.assembly.setSpread(0); this.buildAssembly(); this.syncAssembly();
+          this.assembly = new AssemblyClass(this.engine, { reducedMotion: this.host.reduced(), snapshot: this.workbenchSessions.get(profile.id) });
+          this.assemblyDirection = this.workbench?.getState().task.active ? 'install' : 'remove';
+          if (!this.workbench) this.assembly.setSpread(0);
+          this.buildAssembly(); this.syncAssembly();
         }
         this.engine.root.position.y = profile.internalHeight + (mode === 'assembly' ? (profile.assemblyHeight ?? (profile.cylinderCount === 8 ? .57 : .38)) : 0);
+        if (this.workbench) {
+          // Keep the lowest point of the crank removal route above the plinth,
+          // using the actual loaded geometry instead of an estimated lift.
+          const bounds = this.workbench.getFramingBounds();
+          if (bounds && !bounds.isEmpty() && bounds.min.y < .53) this.engine.root.position.y += .53 - bounds.min.y;
+        }
         this.loading = false;
       } catch (error) { if (!current()) return; this.loading = false; this.error = mode; }
     }
     this.syncEngine(); this.sync(); this.host.moveCamera(this.engineCamera());
   }
   buildAssembly() {
-    $('#assembly-modules').replaceChildren(...this.assembly.getState().modules.map(module => {
+    $('#assembly-modules').replaceChildren(...this.assembly.getState().modules.map((module, index) => {
       const button = document.createElement('button'); button.dataset.module = module.id;
+      if (this.workbench) button.append(Object.assign(document.createElement('span'), { className: 'assembly-number', textContent: String(index + 1).padStart(2, '0') }));
       button.append(Object.assign(document.createElement('b'), { textContent: module.label }), document.createElement('small'));
-      button.onclick = () => { this.assembly?.select(module.id); this.syncAssembly(); this.host.invalidate(); }; return button;
+      button.onclick = () => { this.host.cancelWorkbenchInteraction?.(); if (this.inspection) this.endInspection(); this.assembly?.select(module.id); this.syncAssembly(); this.host.invalidate(); }; return button;
     }));
+    $('#workbench-cylinders').replaceChildren(...(this.engine?.getState().cylinders || []).map(cylinder => {
+      const button = document.createElement('button'); button.dataset.trialCylinder = cylinder.id;
+      button.append(document.createElement('i'), document.createTextNode(cylinder.id));
+      button.onclick = () => { this.engine?.selectCylinder(cylinder.id); this.syncAssembly(); this.host.invalidate(); }; return button;
+    }));
+    const workbench = !!this.workbench;
+    $('#assembly-intro').textContent = workbench ? '选中总成，沿手柄箭头拖动，部件会沿预设路径拆出或装回。靠近两端会吸附；中途松手回到起点。空白处拖动可旋转视角。' : '点选模块或三维部件，按结构顺序拆下，再逆序装回。';
+    $('#assembly-spread-heading').hidden = workbench; $('#assembly-spread').hidden = workbench;
+    $('#workbench-task').hidden = !workbench; $('#workbench-inspection').hidden = !workbench;
+    $('#assembly-teaching-note').textContent = workbench ? '教学总成拆装，省略紧固件、正时校准及实际维修工序。拖动路径和接口轮廓为教学示意；试转使用教学缸号与示例点火顺序。' : '教学模块拆装，省略紧固件及实际维修工序。部件拆下时机构暂停，装回后可进入工作原理试转。';
   }
   assemblyAction(action) {
     if (!this.assembly) return;
+    this.host.cancelWorkbenchInteraction?.();
     const result = this.assembly[action](this.assembly.getState().selected);
     if (result.ok) this.assemblyDirection = action;
     this.syncAssembly(); this.host.invalidate();
@@ -343,12 +413,95 @@ export class VehicleExperience {
     $('#assembly-next').textContent = next ? `${installing ? '装回' : '下一拆卸'}：${next.label}` : '已全部拆开';
     $('#assembly-title').textContent = selected?.label || '';
     $('#assembly-copy').textContent = selected?.description || '';
-    $('#assembly-message').textContent = state.message || (state.canRun ? '机构完整，可以试转；也可以选择模块开始拆卸。' : '先按顺序装回部件，再把展开滑杆收回到 0%。');
-    $('#assembly-remove').disabled = !!selected?.removed;
-    $('#assembly-install').disabled = !selected?.removed;
+    $('#assembly-message').textContent = state.message || (state.canRun ? '机构完整，可以试转；也可以选择模块开始拆卸。' : this.workbench ? '先按顺序装回所有总成，再亲手转动曲轴。' : '先按顺序装回部件，再把展开滑杆收回到 0%。');
+    $('#assembly-remove').disabled = !!selected?.removed || !!state.inspecting || !!state.trial || !!state.dragging;
+    $('#assembly-install').disabled = !selected?.removed || !!state.inspecting || !!state.trial || !!state.dragging;
     $('#assembly-spread').value = Math.round(state.spread * 100);
     $('#assembly-spread-value').textContent = `${Math.round(state.spread * 100)}%`;
-    $('#assembly-test').disabled = !state.canRun;
+    $('#assembly-test').disabled = (!state.canRun && !state.trial) || !!state.inspecting || !!state.dragging;
+    $('#assembly-test').textContent = this.workbench ? state.trial ? '结束试转，回到拆装 ←' : '进入手动试转 ↻' : '试转装配后的机构 →';
+    $('#workbench-trial').hidden = !this.workbench || !state.trial;
+    if (this.workbench) this.syncWorkbench(state);
+  }
+  saveWorkbenchSession() {
+    const workbench = this.workbench; if (!workbench) return;
+    this.host.cancelWorkbenchInteraction?.(); workbench.cancelDrag();
+    this.workbenchSessions.set(this.profile.id, workbench.exportSession());
+    this.inspectionCamera = null; this.trialCamera = null;
+  }
+  captureWorkbenchCamera() {
+    const viewport = this.host.viewport?.() || { width: innerWidth, height: innerHeight };
+    return { position: this.host.camera.position.clone(), target: this.host.orbit.target.clone(), width: innerWidth, height: innerHeight, viewportWidth: viewport.width, viewportHeight: viewport.height };
+  }
+  matchesWorkbenchViewport(snapshot) {
+    if (!snapshot || snapshot.width !== innerWidth || snapshot.height !== innerHeight) return false;
+    const viewport = this.host.viewport?.() || { width: innerWidth, height: innerHeight };
+    return Math.abs(snapshot.viewportWidth - viewport.width) < 1 && Math.abs(snapshot.viewportHeight - viewport.height) < 1;
+  }
+  inspectModule() {
+    const workbench = this.workbench; if (!workbench) return;
+    this.host.cancelWorkbenchInteraction?.();
+    const id = workbench.getState().selected, bounds = workbench.getModuleBounds(id);
+    if (!bounds || bounds.isEmpty()) return;
+    const result = workbench.setInspection(id); if (!result.ok) { this.syncAssembly(); return; }
+    this.inspectionCamera ||= this.captureWorkbenchCamera();
+    this.host.moveCamera(this.inspectionView(bounds)); this.syncAssembly(); this.host.invalidate();
+  }
+  inspectionView(bounds = this.workbench?.getModuleBounds(this.inspection)) {
+    if (!bounds || bounds.isEmpty()) return this.engineCamera();
+    const target = bounds.getCenter(new THREE.Vector3());
+    const direction = this.host.camera.position.clone().sub(this.host.orbit.target).normalize();
+    if (direction.lengthSq() === 0) direction.set(-1, .6, 1).normalize();
+    const position = target.clone().addScaledVector(direction, Math.max(1.2, bounds.getSize(new THREE.Vector3()).length() * 1.25));
+    const preset = { position, target };
+    return this.host.fitCamera?.(preset, bounds, { padding: 1.35, force: true }) || preset;
+  }
+  endInspection(restoreCamera = true) {
+    if (!this.inspection) { this.inspectionCamera = null; return; }
+    this.host.cancelWorkbenchInteraction?.(); this.workbench.setInspection(null);
+    const previous = this.inspectionCamera; this.inspectionCamera = null;
+    if (restoreCamera) this.host.moveCamera(this.matchesWorkbenchViewport(previous) ? previous : this.engineCamera());
+    this.syncAssembly(); this.host.invalidate();
+  }
+  setWorkbenchTrialAngle(angle) {
+    if (!this.workbench?.getState().trial) return;
+    this.workbench.setTrialAngle(Math.max(0, Math.min(720, angle))); this.syncAssembly(); this.host.invalidate();
+  }
+  syncWorkbench(state = this.workbench?.getState()) {
+    if (!state) return;
+    const { task, inspecting, trial } = state;
+    $('#workbench-task').dataset.complete = String(task.complete);
+    $('#workbench-task-title').textContent = task.active ? task.complete ? '装配完成 · 已通过手动试转' : '装配任务' : '自由探索';
+    $('#workbench-task-progress').textContent = task.active ? `${task.installed} / ${task.total} 已安装` : '七组总成';
+    $('#workbench-task-copy').textContent = task.active ? task.complete ? '你已装回七组总成，并亲手转过完整四冲程。可以再装一次，或返回之前的自由探索。' : task.installed === task.total ? `装配到位。进入手动试转，转过 720° 完成任务。当前 ${Math.round(task.cycleDegrees || 0)}°。` : '判断安装顺序，把台面总成装回。需要帮助时，点击下一步提示。' : '也可以试试装配任务：从七组总成开始，把这台 V8 装起来。';
+    $('#workbench-task-start').hidden = task.active;
+    $('#workbench-task-hint').hidden = !task.active || task.complete;
+    $('#workbench-task-exit').hidden = !task.active;
+    $('#workbench-task-replay').hidden = !task.active || !task.complete;
+    $('#workbench-inspect').hidden = !!inspecting;
+    $('#workbench-inspect').disabled = !!trial || !!state.dragging || !!this.workbench.isAnimating;
+    $('#workbench-inspection-return').hidden = !inspecting;
+    $('#assembly-reset').textContent = task.active ? '任务复位 ↺' : '全部复位 ↺';
+    $('#workbench-trial-angle').value = state.trialAngle;
+    $('#workbench-trial-angle').setAttribute('aria-valuetext', `手动曲轴转角 ${Math.round(state.trialAngle)} 度`);
+    $('#workbench-trial-value').textContent = `${Math.round(state.trialAngle)}° / 720°`;
+    $('#workbench-crank-handle').setAttribute('aria-label', `手动曲轴转角 ${Math.round(state.trialAngle)} 度，方向键调整，Home 回到 0 度，End 转至 720 度`);
+    $('#workbench-trial-back').disabled = state.trialAngle <= 0;
+    $('#workbench-trial-forward').disabled = state.trialAngle >= 720;
+    const engineState = this.engine?.getState();
+    for (const cylinder of engineState?.cylinders || []) {
+      const button = $(`#workbench-cylinders [data-trial-cylinder="${cylinder.id}"]`); if (!button) continue;
+      button.setAttribute('aria-pressed', String(cylinder.id === engineState.selectedCylinder)); button.style.setProperty('--stage-color', cylinder.stageColor);
+    }
+    const cylinder = engineState?.cylinders.find(c => c.id === engineState.selectedCylinder);
+    if (cylinder) {
+      $('#workbench-cycle-dot').style.setProperty('--stage-color', cylinder.stageColor);
+      $('#workbench-cycle-title').textContent = `${cylinder.id} · ${cylinder.stage}`;
+      $('#workbench-cycle-phase').textContent = `${Math.round(cylinder.phase)}° / 720°`;
+      $('#workbench-cycle-copy').textContent = cylinder.description;
+    }
+    this.projectWorkbenchHandles();
+    this.host.invalidate();
   }
   labCamera() {
     if (this.vehicleLab) {
@@ -497,6 +650,7 @@ export class VehicleExperience {
     const changed = this.engine?.update(now); if (changed) this.syncEngine(); return !!changed;
   }
   projectLabels() {
+    this.projectWorkbenchHandles();
     if (this.section !== 'engine' || !this.stage || this.engineMode !== 'exterior') return;
     this.stage.updateMatrixWorld(true);
     const placed = [], desktop = !this.host.mobile();
@@ -538,18 +692,60 @@ export class VehicleExperience {
       b.style.setProperty('--leader-opacity', distance > 12 ? '1' : '0');
     }
   }
+  projectWorkbenchHandles() {
+    const workbench = this.workbench, layer = $('#workbench-handles'), drag = $('#workbench-drag-handle'), crank = $('#workbench-crank-handle');
+    const active = workbench && this.host.getMode() === 'exhibit' && !this.loading && !this.error;
+    layer.hidden = !active;
+    if (!active) { drag.hidden = true; crank.hidden = true; return; }
+    const state = workbench.getState(); if (state.inspecting) { drag.hidden = true; crank.hidden = true; return; }
+    this.stage.updateWorldMatrix(true, true);
+    const viewport = this.host.viewport?.() || { left: 0, top: 0, right: innerWidth, bottom: innerHeight, width: innerWidth, height: innerHeight };
+    const right = this.host.mobile() ? viewport.right : Math.min(viewport.right, $('#engine-panel').getBoundingClientRect().left - 12);
+    const left = Math.max(viewport.left, 8), top = this.host.mobile() ? viewport.top : Math.max(viewport.top, 88), bottom = this.host.mobile() ? viewport.bottom : Math.min(viewport.bottom, innerHeight - 55);
+    const project = point => {
+      const p = point.clone().project(this.host.camera);
+      return { x: viewport.left + (p.x * .5 + .5) * viewport.width, y: viewport.top + (-p.y * .5 + .5) * viewport.height, z: p.z };
+    };
+    const place = (button, point, radius) => {
+      if (!point) { button.hidden = true; return false; }
+      const p = project(point);
+      if (p.z < -1 || p.z > 1 || right - left < radius * 2 || bottom - top < radius * 2) { button.hidden = true; return false; }
+      button.hidden = false;
+      button.style.left = `${Math.max(left + radius, Math.min(right - radius, p.x))}px`;
+      button.style.top = `${Math.max(top + radius, Math.min(bottom - radius, p.y))}px`;
+      return true;
+    };
+    if (state.trial) {
+      drag.hidden = true;
+      if (place(crank, workbench.getCrankWorldPoint(), 48)) crank.style.setProperty('--handle-angle', `${state.trialAngle * Math.PI / 180}rad`);
+      return;
+    }
+    crank.hidden = true;
+    if (workbench.isAnimating && !state.dragging) { drag.hidden = true; return; }
+    const points = workbench.getDragWorldPoints(); if (!points) { drag.hidden = true; return; }
+    if (place(drag, points.point, 34)) {
+      const selected = state.modules.find(module => module.id === state.selected);
+      drag.setAttribute('aria-label', `${selected?.label || '所选总成'}：沿箭头拖动，或按 Enter ${selected?.removed ? '装回' : '拆下'}`);
+      const from = project(points.start), to = project(points.end);
+      drag.style.setProperty('--handle-angle', `${Math.atan2(to.y - from.y, to.x - from.x)}rad`);
+      drag.dataset.dragging = String(!!state.dragging); drag.dataset.canCommit = String(!!state.dragging?.canCommit);
+      drag.querySelector('small').textContent = state.dragging?.canCommit ? '松手吸附' : '沿箭头拖动';
+    }
+  }
   pick(raycaster) {
     if (this.section === 'lab') { this.lab?.pick?.(raycaster); this.syncLab(); this.host.invalidate(); return; }
     if (this.section !== 'engine' || !this.stage) return;
-    if (this.engineMode === 'assembly') { const id = this.assembly?.pick(raycaster); if (id) { this.assembly.select(id); this.syncAssembly(); this.host.invalidate(); } return; }
+    if (this.engineMode === 'assembly') { if (this.inspection) return; const id = this.assembly?.pick(raycaster); if (id) { this.assembly.select(id); this.syncAssembly(); this.host.invalidate(); } return; }
     if (this.engineMode === 'internal') { const id = this.engine?.pick(raycaster); if (id) { this.engine.selectCylinder(id); this.syncEngine(); this.host.invalidate(); } }
     else { const hit = raycaster.intersectObject(this.exterior, true)[0]; if (hit) this.selectHotspot(this.meshCategories.get(hit.object.name)); }
   }
-  resize() { if (this.section === 'history') this.host.applyCamera(this.storyCamera()); else if (this.section === 'engine' && this.stage) this.host.applyCamera(this.engineCamera()); else if (this.section === 'lab' && this.lab) this.host.applyCamera(this.labCamera()); }
+  resize() { if (this.section === 'history') this.host.applyCamera(this.storyCamera()); else if (this.section === 'engine' && this.stage) this.host.applyCamera(this.inspection ? this.inspectionView() : this.engineCamera()); else if (this.section === 'lab' && this.lab) this.host.applyCamera(this.labCamera()); }
   releaseEngine() {
+    this.saveWorkbenchSession();
     ++this.epoch; ++this.modeEpoch; this.assembly?.dispose(); this.assembly = null; this.engine?.setPlaying(false); this.engine?.dispose(); this.engine = null;
     if (this.stage) this.host.disposeModel(this.stage); this.stage = null; this.exterior = null; this.manifest = null;
     this.materialBases.clear(); this.meshCategories.clear(); this.loading = false; this.error = null;
+    $('#workbench-handles').hidden = true;
   }
   releaseLab() { ++this.labEpoch; this.lab?.setPlaying(false); this.lab?.dispose(); this.lab?.root?.removeFromParent(); this.lab = null; this.labProfile = null; this.labLoading = false; this.labError = false; }
   reset() { this.releaseEngine(); this.releaseLab(); this.restoreParts(); this.snapshot = null; this.section = 'car'; this.engineMode = 'exterior'; this.sync(); }
